@@ -85,13 +85,11 @@
 
 [Click Here For Solution](question_11.c)
 
-##
+## 12. Write a program to accept a name and basic salary of an employee calculate and display the gross salary Program in C.
 
-**Formula**
+**Gross Salary** = Basic_Salary + HRA + Other_Allowance.
 
-![Example](./images/)
-
-[Click Here For Solution](.c)
+[Click Here For Solution](question_12.c)
 
 ##
 
