@@ -11,7 +11,7 @@
 | long double | 16           | 3.4E-4932 to 1.1E+4932          | %Lf              |
 | char        | 1            | -128 to 127                     | %c               |
 
-[Click Here For Solution](question1.c)
+[Click Here For Solution](question_1.c)
 
 ## 2. Write a program to accept values of two numbers and print their addition, subtraction, multiplication, division.
 
@@ -23,7 +23,7 @@
 
 **division:** x / y;
 
-[Click Here For Solution](question2.c)
+[Click Here For Solution](question_2.c)
 
 ## 3. Write a program to accept a number from user and print it’s square & cube in C language
 
@@ -31,7 +31,7 @@
 
 **Cube:** x \* x \* x
 
-[Click Here For Solution](question3.c)
+[Click Here For Solution](question_3.c)
 
 ## 4. Write a program to accept two values a & b and interchange their values in C language
 
@@ -39,17 +39,17 @@
 
 **After Interchange value:** a = 15; b = 12
 
-[Click Here For Solution](question4.c)
+[Click Here For Solution](question_4.c)
 
 ## 5. Write a program to accept roll no & marks of 3 subjects of a student, Calculate total 3 subjects and average in c language
 
 **Average:** Snaskrit + Hindi + Math / 3
 
-[Click Here For Solution](question5.c)
+[Click Here For Solution](question_5.c)
 
 ## 6. Print following outputs: http:\\www.kodegod.com\new in C language
 
-[Click Here For Solution](question6.c)
+[Click Here For Solution](question_6.c)
 
 ## 7. Area and Circumference of a Circle
 
@@ -57,11 +57,11 @@
 
 **Circumstances of the Circle are:** 2 \* π \* r
 
-[Click Here For Solution](question7.c)
+[Click Here For Solution](question_7.c)
 
 ## 8. Print Ascii Value of the Character
 
-[Click Here For Solution](question8.c)
+[Click Here For Solution](question_8.c)
 
 ## 9. Write a program to print area of a triangle
 
@@ -69,7 +69,7 @@
 
 ![Example](./images/triangle.webp)
 
-[Click Here For Solution](question9.c)
+[Click Here For Solution](question_9.c)
 
 ## 10. Convert a Person’s Name in Abbreviated
 
@@ -77,13 +77,13 @@
 
 **Abbreviated Name:** G. P. Singh
 
-[Click Here For Solution](question10.c)
+[Click Here For Solution](question_10.c)
 
 ## 11. C Program For Calculate Simple Interest
 
 **Simple Interest** = ( Principal Amount \* Rate of Interest \* Time ) / 100;
 
-[Click Here For Solution](question11.c)
+[Click Here For Solution](question_11.c)
 
 ##
 
