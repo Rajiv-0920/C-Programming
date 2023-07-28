@@ -1,6 +1,6 @@
-# Basic Simple C Programs
+# (16) Basic Simple C Programs
 
-## 1. C Program to Display The Size of Different Data Types
+### 1. C Program to Display The Size of Different Data Types
 
 | Data Type   | Size (bytes) | Range                           | Format Specifier |
 | ----------- | ------------ | ------------------------------- | ---------------- |
@@ -13,7 +13,7 @@
 
 [Click Here For Solution](question_1.c)
 
-## 2. Write a program to accept values of two numbers and print their addition, subtraction, multiplication, division.
+### 2. Write a program to accept values of two numbers and print their addition, subtraction, multiplication, division.
 
 **Addition:** x + y;
 
@@ -91,141 +91,128 @@
 
 [Click Here For Solution](question_12.c)
 
-##
+## 13. Calculate Percentage of 5 Subjects
 
-**Formula**
+**percentage =** ((sanskrit + hindi + math + english + accountancy) / 500) \* 100
 
-![Example](./images/)
+[Click Here For Solution](question_13.c)
 
-[Click Here For Solution](.c)
+## 14. C Program For Converting Temperature Celsius Into Fahrenheit
 
-##
+**Fahrenheit =**((9/5) \* Celsius) + 32; or you can use 1.8 in place of 9/5
 
-**Formula**
+![Example](./images/Fahrenheit%20into%20Celsius.png)
 
-![Example](./images/)
+[Click Here For Solution](question_14.c)
 
-[Click Here For Solution](.c)
+## 15. First Three Powers (N, N \* N, N \* N \* N) Without Using Power Function
 
-##
+**Three Powers:** (N, N \* N, N \* N \* N)
 
-**Formula**
+[Click Here For Solution](question_16.c)
 
-![Example](./images/)
+<!-- ## 15. Write A Program To Accept A Number From User And Print It’s Factorial In C Language
 
-[Click Here For Solution](.c)
+**factorial of 5 is:** 5! = 5 x 4 x 3 x 2 x 1 = 120
 
-##
+![Example](./images/Factorial.webp)
 
-**Formula**
+[Click Here For Solution](question_15.c) -->
 
-![Example](./images/)
+# (12) If/Else Statement
 
-[Click Here For Solution](.c)
+## 17. Write a program to accept a number and print if the number is Positive/Negative in C language
 
-##
+![Example](./images/positive-negative-numbers.png)
 
-**Formula**
+[Click Here For Solution](question_17.c)
 
-![Example](./images/)
+## 18. Write a program to accept a number from user and print if it is even or odd in C language
 
-[Click Here For Solution](.c)
+**Even number is divisible by 2 and generates a remainder of 0**
 
-##
+![Example](./images/even-odd.png)
 
-**Formula**
+[Click Here For Solution](question_18.c)
 
-![Example](./images/)
+## 19. Write a program to accept two numbers from user and compare them in C language
 
-[Click Here For Solution](.c)
+[Click Here For Solution](question_19.c)
 
-##
+## 20. Write a program to accept three numbers from user and print them in ascending and descending order in C language
 
-**Formula**
+[Click Here For Solution](question_20.c)
 
-![Example](./images/)
+## 21. Write a program to calculate roots of a quadratic equations in C language
 
-[Click Here For Solution](.c)
+![Example](./images/quadratic_roots.jpg)
 
-##
+[Click Here For Solution](question_21.c)
 
-**Formula**
+## 22. Write a program to accept roll number ,and marks for three subjects, print total marks and average, also print grade by considering following conditions
 
-![Example](./images/)
+**Avg>=60** Grade A
 
-[Click Here For Solution](.c)
+**Avg<60, Avg>=50** Grade B
 
-##
+**Avg<50, Avg>=40** Grade C Grade F.
 
-**Formula**
+[Click Here For Solution](question_22.c)
 
-![Example](./images/)
+## 23. Write a Program to accept user’s marital status, gender and age to check if he/she is eligible for marriage or not.
 
-[Click Here For Solution](.c)
+[Click Here For Solution](question_23.c)
 
-##
+## 24. Check Character Is Vowel or Consonant
 
-**Formula**
+![Example](./images/vowel-or-consonant.webp)
 
-![Example](./images/)
+[Click Here For Solution](question_24.c)
 
-[Click Here For Solution](.c)
+## 25. A Character Is an Alphabet or Not
 
-##
+[Click Here For Solution](question_25.c)
 
-**Formula**
+## 26. C Program to Check Uppercase or Lowercase or Digit or Special Character
 
-![Example](./images/)
+**Hint:** [ASCII](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html) value of the digit is between 48 to 58 and lowercase characters have ASCII values in the range of 97 to122, and uppercase is between 65 and 90.
 
-[Click Here For Solution](.c)
+[Click Here For Solution](question_26.c)
 
-##
+## 27. Leap Year Program in C Using IF-ELSE
 
-**Formula**
+**Leap Year Examples:**
 
-![Example](./images/)
+- 1992: Leap Year
+- 2002: Not a Leap Year
+- 2016: Leap Year
+- 2100: Not a Leap Year
 
-[Click Here For Solution](.c)
+![Example](./images/LeapYearMath.png)
 
-##
+[Click Here For Solution](question27.c)
 
-**Formula**
+## 28. Given Date Month and the Year Is Correct or Not Using If-Else
 
-![Example](./images/)
+**Valid Date Examples:**
 
-[Click Here For Solution](.c)
+- 09-03-2002
+- 01-01-2023
+- 31-12-2025
 
-##
+**Invalid Date Examples:**
 
-**Formula**
+- 29-02-2023
+- 32-12-2023
+- 31-03-2023
 
-![Example](./images/)
+[Click Here For Solution](question_28.c)
 
-[Click Here For Solution](.c)
+# Loops C Programs
 
-##
+## 29.
 
-**Formula**
-
-![Example](./images/)
-
-[Click Here For Solution](.c)
-
-##
-
-**Formula**
-
-![Example](./images/)
-
-[Click Here For Solution](.c)
-
-##
-
-**Formula**
-
-![Example](./images/)
-
-[Click Here For Solution](.c)
+[Click Here For Solution](question_29.c)
 
 ##
 
