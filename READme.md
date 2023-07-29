@@ -360,7 +360,7 @@ So:
 
 ### 44. Write a Program to print first n odd numbers in C language
 
-**HINT: Odd number is divisible by 2 and generates a remainder of 1**
+**HINT: Odd number which is not divisible by “2”. An odd number always ends in 1, 3, 5, 7, or 9.**
 
 ![Example](./images/even-odd.png)
 
