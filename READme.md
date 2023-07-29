@@ -376,7 +376,7 @@ So:
 
 **Ex: 153 Sum of its digit is 9**
 
-![Example](./images/)
+![Example](./images/sum-of.webp)
 
 [Click Here For Solution](question_46.c)
 
