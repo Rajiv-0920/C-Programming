@@ -1,4 +1,4 @@
-# (16) Basic Simple C Programs
+# (15) Basic Simple C Programs
 
 ### 1. C Program to Display The Size of Different Data Types
 
@@ -43,7 +43,7 @@
 
 ### 5. Write a program to accept roll no & marks of 3 subjects of a student, Calculate total 3 subjects and average in c language
 
-**Average:** Snaskrit + Hindi + Math / 3
+**Average:** Sanskrit + Hindi + Math / 3
 
 [Click Here For Solution](question_5.c)
 
@@ -438,77 +438,98 @@ So:
 
 [Click Here For Solution](question_52.c)
 
-### .
+### 53. Write A Program To Print Following Outputs In C Language
 
-**Formula**
+    * * * * * *
+    * * * * * *
+    * * * * * *
+    * * * * * *
+    * * * * * *
 
-![Example](./images/)
+[Click Here For Solution](question_53.c)
 
-[Click Here For Solution](.c)
+### 54. Write A Program To Print Following Outputs In C Language
 
-### .
+    *
+    * *
+    * * *
+    * * * *
+    * * * * *
 
-**Formula**
+[Click Here For Solution](question_54.c)
 
-![Example](./images/)
+### 55. Write A Program To Print Following Outputs In C Language
 
-[Click Here For Solution](.c)
+    * * * * *
+    * * * *
+    * * *
+    * *
+    *
 
-### .
+[Click Here For Solution](question_55.c)
 
-**Formula**
+### 56. Write A Program To Print Following Outputs In C Language
 
-![Example](./images/)
+    * * * * *
+      * * * *
+        * * *
+          * *
+            *
 
-[Click Here For Solution](.c)
+[Click Here For Solution](question_56.c)
 
-### .
+### 57. Write A Program To Print Following Outputs In C Language
 
-**Formula**
+            *
+          * *
+        * * *
+      * * * *
+    * * * * *
 
-![Example](./images/)
+[Click Here For Solution](question_57.c)
 
-[Click Here For Solution](.c)
+### 58. Write A Program To Print Following Outputs In C Language
 
-### .
+            *
+          * * *
+        * * * * *
+      * * * * * * *
+    * * * * * * * * *
 
-**Formula**
+[Click Here For Solution](question_58.c)
 
-![Example](./images/)
+### 59. Write A Program To Print Following Outputs In C Language
 
-[Click Here For Solution](.c)
+    * * * * * * * * *
+      * * * * * * *
+        * * * * *
+          * * *
+            *
 
-### .
+[Click Here For Solution](question_59.c)
 
-**Formula**
+### 60. Write A Program To Print Following Outputs In C Language
 
-![Example](./images/)
+            *
+          * * *
+        * * * * *
+      * * * * * * *
+    * * * * * * * * *
+      * * * * * * *
+        * * * * *
+          * * *
+            *
 
-[Click Here For Solution](.c)
+[Click Here For Solution](question_60.c)
 
-### .
+### 61. Write A Program To Print Following Outputs In C Language
 
-**Formula**
+    1
+    1 2
+    1 2 3
+    1 2 3 4
 
-![Example](./images/)
-
-[Click Here For Solution](.c)
-
-### .
-
-**Formula**
-
-![Example](./images/)
-
-[Click Here For Solution](.c)
-
-### .
-
-**Formula**
-
-![Example](./images/)
-
-[Click Here For Solution](.c)
+[Click Here For Solution](question_61.c)
 
 ### .
 
