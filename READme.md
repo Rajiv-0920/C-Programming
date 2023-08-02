@@ -531,34 +531,41 @@ So:
 
 [Click Here For Solution](question_61.c)
 
-### .
+### 62. Write A Program To Print Following Outputs In C Language
 
-**Formula**
+    1
+    2 2
+    3 3 3
+    4 4 4 4
 
-![Example](./images/)
+[Click Here For Solution](question_62.c)
 
-[Click Here For Solution](.c)
+### 63. Write A Program To Print Following Outputs In C Language
 
-### .
+          A
+        B B B
+      C C C C C
+    D D D D D D D
 
-**Formula**
+[Click Here For Solution](question_63.c)
 
-![Example](./images/)
+### 64. Write A Program To Print Following Outputs In C Language
 
-[Click Here For Solution](.c)
+    A B C D E E D C B A
+    A B C D     D C B A
+    A B C         C B A
+    A B             B A
+    A                 A
 
-### .
+[Click Here For Solution](question_64.c)
 
-**Formula**
+### 65. Write A Program To Print Following Outputs In C Language
 
-![Example](./images/)
+    1
+    1 1
+    1 2 1
+    1 2 3 1
+    1 2 3 4 1
+    1 2 3 4 5 1
 
-[Click Here For Solution](.c)
-
-### .
-
-**Formula**
-
-![Example](./images/)
-
-[Click Here For Solution](.c)
+[Click Here For Solution](question_65.c)
