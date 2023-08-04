@@ -569,3 +569,66 @@ So:
     1 2 3 4 5 1
 
 [Click Here For Solution](question_65.c)
+
+### 66. Write A Program To Print Following Outputs In C Language
+
+    x
+    x x x
+    x x x x x
+    x x x x x x x
+    x x x x x x x x x
+
+[Click Here For Solution](question_66.c)
+
+### 67. Write A Program To Print Following Outputs In C Language
+
+    * * * * * *
+    *         *
+    *         *
+    * * * * * *
+
+[Click Here For Solution](question_67.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
+
+### . Write A Program To Print Following Outputs In C Language
+
+[Click Here For Solution](question_.c)
