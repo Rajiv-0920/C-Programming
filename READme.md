@@ -438,6 +438,8 @@ So:
 
 [Click Here For Solution](question_52.c)
 
+#### Pattern
+
 ### 53. Write A Program To Print Following Outputs In C Language
 
     * * * * * *
