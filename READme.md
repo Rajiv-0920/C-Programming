@@ -591,29 +591,62 @@ So:
 
 [Click Here For Solution](question_67.c)
 
-### . Write A Program To Print Following Outputs In C Language
+### 68. Write A Program To Print Following Outputs In C Language
 
-[Click Here For Solution](question_.c)
+    1
+    2 3
+    4 5 6
+    7 8 9 10
+    11 12 13 15
 
-### . Write A Program To Print Following Outputs In C Language
+[Click Here For Solution](question_68.c)
 
-[Click Here For Solution](question_.c)
+### 69. Write A Program To Print Following Outputs In C Language
 
-### . Write A Program To Print Following Outputs In C Language
+    1
+    0 1
+    1 0 1
+    0 1 0 1
+    1 0 1 0 1
 
-[Click Here For Solution](question_.c)
+[Click Here For Solution](question_69.c)
 
-### . Write A Program To Print Following Outputs In C Language
+### 70. Write A Program To Print Following Outputs In C Language
 
-[Click Here For Solution](question_.c)
+    *             *
+    * *         * *
+    * * *     * * *
+    * * * * * * * *
+    * * * * * * * *
+    * * *     * * *
+    * *         * *
+    *             *
 
-### . Write A Program To Print Following Outputs In C Language
+[Click Here For Solution](question_70.c)
 
-[Click Here For Solution](question_.c)
+### 71. Write A Program To Print Following Outputs In C Language
 
-### . Write A Program To Print Following Outputs In C Language
+[Click Here For Solution](question_71.c)
 
-[Click Here For Solution](question_.c)
+### 72. Write A Program To Print Following Outputs In C Language
+
+            * * * * *
+          *       *
+        *       *
+      *       *
+    * * * * *
+
+[Click Here For Solution](question_72.c)
+
+### 73. Write A Program To Print Following Outputs In C Language
+
+        1
+       2 2
+      3 3 3
+     4 4 4 4
+    5 5 5 5 5
+
+[Click Here For Solution](question_73.c)
 
 ### . Write A Program To Print Following Outputs In C Language
 

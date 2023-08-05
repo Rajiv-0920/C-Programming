@@ -13,25 +13,35 @@
 #include <stdio.h>
 
 int main(){
+  int n;
 
-  for(int row_1 = 0; row_1 < 5; row_1++){
-    for(int col_1 = 0; col_1 < 5 - row_1; col_1++){
-        printf("   ");
+  printf("Enter n number: ");
+  scanf("%d", &n);
+
+  for(int i = 1; i <= n; i++){
+    // Spaces 
+    for(int j = 1; j <= n - i; j++){
+      printf("  ");
     }
-    for(int col_2 = 0; col_2 < 1 + row_1 * 2; col_2++){
-        printf(" * ");
+    // Starts
+    for(int j = 1; j <= i * 2 - 1; j++){
+      printf("* ");
     }
-      printf("\n");
+    // Next line
+    printf("\n");
   }
 
-  for(int row_2 = 0; row_2 < 4; row_2++){
-    for(int col_1 = 0; col_1 < 2 + row_2; col_1++){
-      printf("   ");
+  for(int i = n - 1; i >= 1; i--){
+    // Spaces 
+    for(int j = 1; j <= n - i; j++){
+      printf("  ");
     }
-    for(int col_2 = 0; col_2 < 7 - row_2 * 2; col_2++){
-      printf(" * ");
+    // Starts
+    for(int j = 1; j <= i * 2 - 1; j++){
+      printf("* ");
     }
-      printf("\n");
+    // Next line
+    printf("\n");
   }
-    return 0;
+  return 0;
 }
