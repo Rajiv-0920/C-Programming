@@ -648,6 +648,72 @@ So:
 
 [Click Here For Solution](question_73.c)
 
+### 74. Write A Program To Print Following Outputs In C Language
+
+            1
+          2 1 2
+        3 2 1 2 3
+      4 3 2 1 2 3 4
+    5 4 3 2 1 2 3 4 5
+
+[Click Here For Solution](question_74.c)
+
+### 75. Write A Program To Print Following Outputs In C Language
+
+    *
+    * *
+    * * *
+    * * * *
+    * * * * *
+    * * * *
+    * * *
+    * *
+    *
+
+[Click Here For Solution](question_75.c)
+
+### 76. Write A Program To Print Following Outputs In C Language
+
+            *
+          * *
+        * * *
+      * * * *
+    * * * * *
+      * * * *
+        * * *
+          * *
+            *
+
+[Click Here For Solution](question_76.c)
+
+### 77. Write A Program To Print Following Outputs In C Language
+
+    * * * * * * * * *
+    * * * * * * *
+    * * * * *
+    * * *
+    *
+    * * *
+    * * * * *
+    * * * * * * *
+    * * * * * * * * *
+
+[Click Here For Solution](question_77.c)
+
+### 78. Write A Program To Print Following Outputs In C Language
+
+    * * * * * * * * *
+        * * * * * * *
+            * * * * *
+                * * *
+                    *
+                * * *
+            * * * * *
+        * * * * * * *
+    * * * * * * * * *
+
+[Click Here For Solution](question_78.c)
+
 ### . Write A Program To Print Following Outputs In C Language
 
 [Click Here For Solution](question_.c)
