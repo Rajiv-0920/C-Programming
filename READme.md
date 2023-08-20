@@ -1,4 +1,9 @@
-# (15) Basic Simple C Programs
+# Table of Content
+
+1. [Basic Simple C Programs](#basic)
+1. [If/Else](#if)
+
+# Basic Simple C Programs <a name="basic"></a>
 
 ### 1. C Program to Display The Size of Different Data Types
 
@@ -111,15 +116,15 @@
 
 [Click Here For Solution](question_15.c)
 
-# (12) If/Else Statement
+# If/Else Statement <a name="if"></a>
 
-### 17. Write a program to accept a number and print if the number is Positive/Negative in C language
+### 1. Write a program to accept a number and print if the number is Positive/Negative in C language
 
 ![Example](./images/positive-negative-numbers.png)
 
 [Click Here For Solution](question_17.c)
 
-### 18. Write a program to accept a number from user and print if it is even or odd in C language
+### 2. Write a program to accept a number from user and print if it is even or odd in C language
 
 **HINT: Even number is divisible by 2 and generates a remainder of 0**
 
@@ -127,21 +132,21 @@
 
 [Click Here For Solution](question_18.c)
 
-### 19. Write a program to accept two numbers from user and compare them in C language
+### 3. Write a program to accept two numbers from user and compare them in C language
 
 [Click Here For Solution](question_19.c)
 
-### 20. Write a program to accept three numbers from user and print them in ascending and descending order in C language
+### 4. Write a program to accept three numbers from user and print them in ascending and descending order in C language
 
 [Click Here For Solution](question_20.c)
 
-### 21. Write a program to calculate roots of a quadratic equations in C language
+### 5. Write a program to calculate roots of a quadratic equations in C language
 
 ![Example](./images/quadratic_roots.jpg)
 
 [Click Here For Solution](question_21.c)
 
-### 22. Write a program to accept roll number ,and marks for three subjects, print total marks and average, also print grade by considering following conditions
+### 6. Write a program to accept roll number ,and marks for three subjects, print total marks and average, also print grade by considering following conditions
 
 **Avg>=60** Grade A
 
@@ -151,27 +156,27 @@
 
 [Click Here For Solution](question_22.c)
 
-### 23. Write a Program to accept user’s marital status, gender and age to check if he/she is eligible for marriage or not.
+### 7. Write a Program to accept user’s marital status, gender and age to check if he/she is eligible for marriage or not.
 
 [Click Here For Solution](question_23.c)
 
-### 24. Check Character Is Vowel or Consonant
+### 8. Check Character Is Vowel or Consonant
 
 ![Example](./images/vowel-or-consonant.webp)
 
 [Click Here For Solution](question_24.c)
 
-### 25. A Character Is an Alphabet or Not
+### 9. A Character Is an Alphabet or Not
 
 [Click Here For Solution](question_25.c)
 
-### 26. C Program to Check Uppercase or Lowercase or Digit or Special Character
+### 10. C Program to Check Uppercase or Lowercase or Digit or Special Character
 
 **Hint:** [ASCII](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html) value of the digit is between 48 to 58 and lowercase characters have ASCII values in the range of 97 to122, and uppercase is between 65 and 90.
 
 [Click Here For Solution](question_26.c)
 
-## 27. Leap Year Program in C Using IF-ELSE
+## 11. Leap Year Program in C Using IF-ELSE
 
 **Leap Year Examples:**
 
@@ -184,7 +189,7 @@
 
 [Click Here For Solution](question27.c)
 
-### 28. Given Date Month and the Year Is Correct or Not Using If-Else
+### 12. Given Date Month and the Year Is Correct or Not Using If-Else
 
 **Valid Date Examples:**
 
@@ -202,13 +207,13 @@
 
 # Loops C Programs
 
-### 29. C Program to Reverse a Number Using FOR Loop
+### 1. C Program to Reverse a Number Using FOR Loop
 
 ![Example](./images/Reverse.jpg)
 
 [Click Here For Solution](question_29.c)
 
-### 30. Write a c program to check whether a given number is an Armstrong number or not.
+### 2. Write a c program to check whether a given number is an Armstrong number or not.
 
 **Example: 153 is an Armstrong number**
 
@@ -228,17 +233,17 @@ So:
 
 [Click Here For Solution](question_30.c)
 
-### 31. Calculate the Sum of n Natural Numbers Using the While Loop
+### 3. Calculate the Sum of n Natural Numbers Using the While Loop
 
 ![Example](./images/Natural-Numbers.png)
 
 [Click Here For Solution](question_31.c)
 
-### 32. Write a C Program to Print the Multiplication Table of N
+### 4. Write a C Program to Print the Multiplication Table of N
 
 [Click Here For Solution](question_32.c)
 
-### 33. Fibonacci Series Program in C Using DO While Loop
+### 5. Fibonacci Series Program in C Using DO While Loop
 
 **Fibonacci Series:** 0, 1, 1, 2, 3, 5, 8, 13, 21, 34. Fibonacci Series is up to 10 Elements.
 
@@ -246,13 +251,13 @@ So:
 
 [Click Here For Solution](question_33.c)
 
-### 34. GCD of Two Numbers in C | Greatest Common Divisor Program
+### 6. GCD of Two Numbers in C | Greatest Common Divisor Program
 
 ![Example](images/GCD.png)
 
 [Click Here For Solution](question_34.c)
 
-### 35. Program to Find LCM of Two Numbers in C Using While Loop
+### 7. Program to Find LCM of Two Numbers in C Using While Loop
 
 **Formula**
 
@@ -260,17 +265,17 @@ So:
 
 [Click Here For Solution](question_35.c)
 
-### 36. Palindrome Program in C Using While Loop
+### 8. Palindrome Program in C Using While Loop
 
 ![Example](./images/palindrome.png)
 
 [Click Here For Solution](question_36.c)
 
-### 37. Count the Number of Digits of an Integer Using the While Loop
+### 9. Count the Number of Digits of an Integer Using the While Loop
 
 [Click Here For Solution](question_37.c)
 
-### 38. Find a Generic Root of a Number Using While Loop
+### 10. Find a Generic Root of a Number Using While Loop
 
 **For Example:** If user input number is 12345, then we add all the individual digits of the number i.e., 1 + 2 + 3 + 4 + 5 = 15. We got 15. Now we add individual digits of number 15 i.e., 1 + 5 = 6. So Generic Root of number 12345 is 6.
 
@@ -278,7 +283,7 @@ So:
 
 [Click Here For Solution](question_38.c)
 
-### 39. C Program to Print The Calendar of a Month of 31 Days
+### 11. C Program to Print The Calendar of a Month of 31 Days
 
 **Output**
 
@@ -306,13 +311,13 @@ So:
 
 [Click Here For Solution](question_39.c)
 
-### 40. Check Whether a Number Is Divisible by 11 Using (Vedic Maths)
+### 12. Check Whether a Number Is Divisible by 11 Using (Vedic Maths)
 
 ![Example](./images/divisible.png)
 
 [Click Here For Solution](question_40.c)
 
-### 41. Denomination of an Amount Using While Loop
+### 13. Denomination of an Amount Using While Loop
 
     Logic :- The Logic Behind we have to divide a money by Above Money lets take a example Suppose money is 16108 then follow the Step We are taking a example of Indian Currency In present
 
@@ -346,11 +351,11 @@ So:
 
 [Click Here For Solution](question_41.c)
 
-### 42. Write a Program to print numbers 1 to n using while loop in C language
+### 14. Write a Program to print numbers 1 to n using while loop in C language
 
 [Click Here For Solution](question_42.c)
 
-### 43. Write a Program to print first n even numbers in C language
+### 15. Write a Program to print first n even numbers in C language
 
 **HINT: Even number is divisible by 2 and generates a remainder of 0**
 
@@ -358,7 +363,7 @@ So:
 
 [Click Here For Solution](question_43.c)
 
-### 44. Write a Program to print first n odd numbers in C language
+### 16. Write a Program to print first n odd numbers in C language
 
 **HINT: Odd number which is not divisible by “2”. An odd number always ends in 1, 3, 5, 7, or 9.**
 
@@ -366,13 +371,13 @@ So:
 
 [Click Here For Solution](question_44.c)
 
-### 45. Write A Program To Accept A Number From User And Print If It Is Prime Or Not In C Language
+### 17. Write A Program To Accept A Number From User And Print If It Is Prime Or Not In C Language
 
 ![Example](./images/Prime.png)
 
 [Click Here For Solution](question_45.c)
 
-### 46. Write a Program to accept a number and print sum of it’s digits in C language
+### 18. Write a Program to accept a number and print sum of it’s digits in C language
 
 **Ex: 153 Sum of its digit is 9**
 
@@ -380,7 +385,7 @@ So:
 
 [Click Here For Solution](question_46.c)
 
-### 47. Write A Program To Accept A Number From User And Print It’s Factorial In C Language
+### 19. Write A Program To Accept A Number From User And Print It’s Factorial In C Language
 
 **factorial of 5 is:** 5! = 5 x 4 x 3 x 2 x 1 = 120
 
@@ -388,13 +393,13 @@ So:
 
 [Click Here For Solution](question_47.c)
 
-### 48. Write a program to accept a number and print prime numbers between 2 and n in C language
+### 20. Write a program to accept a number and print prime numbers between 2 and n in C language
 
 ![Example](./images/Prime.png)
 
 [Click Here For Solution](question_48.c)
 
-### 49. Write a program to print digits, alphabets in capital and lower case in C language
+### 21. Write a program to print digits, alphabets in capital and lower case in C language
 
 **[ASCII](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html)**
 
@@ -412,13 +417,13 @@ So:
 
 [Click Here For Solution](question_49.c)
 
-### 50. Write a program to print out ASCII chart on a single screen (all 256 characters from 0 to 255) in a tabular form. The ASCII code should be followed by the corresponding character in C language
+### 22. Write a program to print out ASCII chart on a single screen (all 256 characters from 0 to 255) in a tabular form. The ASCII code should be followed by the corresponding character in C language
 
 **[ASCII](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html)**
 
 [Click Here For Solution](question_50.c)
 
-### 51. Program To Print Triangular Number Series Till n
+### 23. Program To Print Triangular Number Series Till n
 
 **Triangular Number Example:** 15 is Triangular Number because it can be obtained by 1+2+3+4+5+6 i.e. 1+2+3+4+5+6=15
 
@@ -428,7 +433,7 @@ So:
 
 [Click Here For Solution](question_51.c)
 
-### 52. C Program to Check Whether a Number is Triangular or Not
+### 24. C Program to Check Whether a Number is Triangular or Not
 
 **Triangular Number Example:** 15 is Triangular Number because it can be obtained by 1+2+3+4+5+6 i.e. 1+2+3+4+5+6=15
 
@@ -440,7 +445,7 @@ So:
 
 ## Pattern
 
-### 53. Write A Program To Print Following Outputs In C Language
+### 1. Write A Program To Print Following Outputs In C Language
 
     * * * * * *
     * * * * * *
@@ -450,7 +455,7 @@ So:
 
 [Click Here For Solution](question_53.c)
 
-### 54. Write A Program To Print Following Outputs In C Language
+### 2. Write A Program To Print Following Outputs In C Language
 
     *
     * *
@@ -460,7 +465,7 @@ So:
 
 [Click Here For Solution](question_54.c)
 
-### 55. Write A Program To Print Following Outputs In C Language
+### 3. Write A Program To Print Following Outputs In C Language
 
     * * * * *
     * * * *
@@ -470,7 +475,7 @@ So:
 
 [Click Here For Solution](question_55.c)
 
-### 56. Write A Program To Print Following Outputs In C Language
+### 4. Write A Program To Print Following Outputs In C Language
 
     * * * * *
       * * * *
@@ -480,7 +485,7 @@ So:
 
 [Click Here For Solution](question_56.c)
 
-### 57. Write A Program To Print Following Outputs In C Language
+### 5. Write A Program To Print Following Outputs In C Language
 
             *
           * *
@@ -490,7 +495,7 @@ So:
 
 [Click Here For Solution](question_57.c)
 
-### 58. Write A Program To Print Following Outputs In C Language
+### 6. Write A Program To Print Following Outputs In C Language
 
             *
           * * *
@@ -500,7 +505,7 @@ So:
 
 [Click Here For Solution](question_58.c)
 
-### 59. Write A Program To Print Following Outputs In C Language
+### 7. Write A Program To Print Following Outputs In C Language
 
     * * * * * * * * *
       * * * * * * *
@@ -510,7 +515,7 @@ So:
 
 [Click Here For Solution](question_59.c)
 
-### 60. Write A Program To Print Following Outputs In C Language
+### 8. Write A Program To Print Following Outputs In C Language
 
             *
           * * *
@@ -524,7 +529,7 @@ So:
 
 [Click Here For Solution](question_60.c)
 
-### 61. Write A Program To Print Following Outputs In C Language
+### 9. Write A Program To Print Following Outputs In C Language
 
     1
     1 2
@@ -533,7 +538,7 @@ So:
 
 [Click Here For Solution](question_61.c)
 
-### 62. Write A Program To Print Following Outputs In C Language
+### 10. Write A Program To Print Following Outputs In C Language
 
     1
     2 2
@@ -542,7 +547,7 @@ So:
 
 [Click Here For Solution](question_62.c)
 
-### 63. Write A Program To Print Following Outputs In C Language
+### 11. Write A Program To Print Following Outputs In C Language
 
           A
         B B B
@@ -551,7 +556,7 @@ So:
 
 [Click Here For Solution](question_63.c)
 
-### 64. Write A Program To Print Following Outputs In C Language
+### 12. Write A Program To Print Following Outputs In C Language
 
     A B C D E E D C B A
     A B C D     D C B A
@@ -561,7 +566,7 @@ So:
 
 [Click Here For Solution](question_64.c)
 
-### 65. Write A Program To Print Following Outputs In C Language
+### 13. Write A Program To Print Following Outputs In C Language
 
     1
     1 1
@@ -572,7 +577,7 @@ So:
 
 [Click Here For Solution](question_65.c)
 
-### 66. Write A Program To Print Following Outputs In C Language
+### 14. Write A Program To Print Following Outputs In C Language
 
     x
     x x x
@@ -582,7 +587,7 @@ So:
 
 [Click Here For Solution](question_66.c)
 
-### 67. Write A Program To Print Following Outputs In C Language
+### 15. Write A Program To Print Following Outputs In C Language
 
     * * * * * *
     *         *
@@ -591,7 +596,7 @@ So:
 
 [Click Here For Solution](question_67.c)
 
-### 68. Write A Program To Print Following Outputs In C Language
+### 16. Write A Program To Print Following Outputs In C Language
 
     1
     2 3
@@ -601,7 +606,7 @@ So:
 
 [Click Here For Solution](question_68.c)
 
-### 69. Write A Program To Print Following Outputs In C Language
+### 17. Write A Program To Print Following Outputs In C Language
 
     1
     0 1
@@ -611,7 +616,7 @@ So:
 
 [Click Here For Solution](question_69.c)
 
-### 70. Write A Program To Print Following Outputs In C Language
+### 18. Write A Program To Print Following Outputs In C Language
 
     *             *
     * *         * *
@@ -624,11 +629,11 @@ So:
 
 [Click Here For Solution](question_70.c)
 
-### 71. Write A Program To Print Following Outputs In C Language
+### 19. Write A Program To Print Following Outputs In C Language
 
 [Click Here For Solution](question_71.c)
 
-### 72. Write A Program To Print Following Outputs In C Language
+### 20. Write A Program To Print Following Outputs In C Language
 
             * * * * *
           *       *
@@ -638,7 +643,7 @@ So:
 
 [Click Here For Solution](question_72.c)
 
-### 73. Write A Program To Print Following Outputs In C Language
+### 21. Write A Program To Print Following Outputs In C Language
 
         1
        2 2
@@ -648,7 +653,7 @@ So:
 
 [Click Here For Solution](question_73.c)
 
-### 74. Write A Program To Print Following Outputs In C Language
+### 22. Write A Program To Print Following Outputs In C Language
 
             1
           2 1 2
@@ -658,7 +663,7 @@ So:
 
 [Click Here For Solution](question_74.c)
 
-### 75. Write A Program To Print Following Outputs In C Language
+### 23. Write A Program To Print Following Outputs In C Language
 
     *
     * *
@@ -672,7 +677,7 @@ So:
 
 [Click Here For Solution](question_75.c)
 
-### 76. Write A Program To Print Following Outputs In C Language
+### 24. Write A Program To Print Following Outputs In C Language
 
             *
           * *
@@ -686,7 +691,7 @@ So:
 
 [Click Here For Solution](question_76.c)
 
-### 77. Write A Program To Print Following Outputs In C Language
+### 25. Write A Program To Print Following Outputs In C Language
 
     * * * * * * * * *
     * * * * * * *
@@ -700,7 +705,7 @@ So:
 
 [Click Here For Solution](question_77.c)
 
-### 78. Write A Program To Print Following Outputs In C Language
+### 26. Write A Program To Print Following Outputs In C Language
 
     * * * * * * * * *
         * * * * * * *
