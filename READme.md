@@ -1,7 +1,9 @@
 # Table of Content
 
 1. [Basic Simple C Programs](#basic)
-1. [If/Else](#if)
+1. [If/Else Statement](#if)
+1. [Loops](#loops)
+1. [Patterns](#patterns)
 
 # Basic Simple C Programs <a name="basic"></a>
 
@@ -205,7 +207,7 @@
 
 [Click Here For Solution](question_28.c)
 
-# Loops C Programs
+# Loops C Programs <a name="loops"></a>
 
 ### 1. C Program to Reverse a Number Using FOR Loop
 
@@ -443,7 +445,7 @@ So:
 
 [Click Here For Solution](question_52.c)
 
-## Pattern
+## Pattern <a name="patterns"></a>
 
 ### 1. Write A Program To Print Following Outputs In C Language
 
