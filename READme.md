@@ -124,7 +124,7 @@
 
 ### 13. Calculate Percentage of 5 Subjects
 
-**percentage =** ((sanskrit + hindi + math + english + accountancy) / 500) \* 100
+**percentage =** $((sanskrit + hindi + math + english + accountancy) / 500) * 100$
 
 [Click Here For Solution](question_13.c)
 
@@ -145,6 +145,124 @@
 **Three Powers:** (N, N \* N, N \* N \* N)
 
 [Click Here For Solution](question_15.c)
+
+[Back to Top &uarr;](#content)
+
+### 16. Write a C program to compute the perimeter and area of a rectangle with a height of 7 inches and width of 5 inches.
+
+**Area of Rectangle** = $length * width$;
+
+**Perimeter of the rectangle** = $2(length + width)$;
+
+[Click Here For Solution](question_16.c)
+
+[Back to Top &uarr;](#content)
+
+### 17. Write a C program to accept 3 characters and print the sum of their [ascii](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html).
+
+[Click Here For Solution](sum_of_3_ascii_character.c)
+
+[Back to Top &uarr;](#content)
+
+### 18. Write a C program to convert specified days into years, weeks and days.
+
+Note: Ignore leap year.
+
+![Example](https://www.w3resource.com/w3r_images/c-basic-declarations-and-expressions-image-exercise-8.png)
+
+[Click Here For Solution](days_into_year.c)
+
+[Back to Top &uarr;](#content)
+
+### 19. Write a C program to calculate the distance between the two points
+
+Formula:- $\sqrt{(x_1 - x_2)^2 + (y_1 + y_2)^2}$
+
+Test Data :
+
+    Input x1: 25
+    Input y1: 15
+    Input x2: 35
+    Input y2: 10
+
+Expected Output:
+
+    Distance between the said points: 11.1803
+
+[Click Here For Solution](distance_between_two_points.c)
+
+[Back to Top &uarr;](#content)
+
+### 20. Write a C program to read an amount (integer value) and break the amount into smallest possible number of bank notes.
+
+Test Data :
+
+    Input the amount: 375
+
+Expected Output:
+
+    There are:
+    3 Note(s) of 100.00
+    1 Note(s) of 50.00
+    1 Note(s) of 20.00
+    0 Note(s) of 10.00
+    1 Note(s) of 5.00
+    0 Note(s) of 2.00
+    0 Note(s) of 1.00
+
+[Click Here For Solution](break_amount_into_smallest.c)
+
+[Back to Top &uarr;](#content)
+
+### 21. Write a C program to convert a given integer (in seconds) to hours, minutes and seconds.
+
+Test Data :
+
+    Input seconds: 25300
+    Expected Output:
+    There are:
+    H:M:S - 7:1:40
+
+[Click Here For Solution](seconds_to_hours_minute.c)
+
+[Back to Top &uarr;](#content)
+
+### 22. Write a C program to convert a given integer (in millimeters) to kilometers, meters and centimeters.
+
+    1 centimeter = 10 millimeters.
+    1 meter = 100 centimeters.
+    1 meter = 1,000 millimeters.
+    1 kilometer = 1,000 meters.
+
+Test Data :
+
+    Input no. of days: 2535220
+
+Expected Output:
+
+    2.53 kilometers
+    2535.22 Meters
+    253522.0 Centimeters
+
+[Click Here For Solution](millimeters_to_kilometers_meters_centimeters.c)
+
+[Back to Top &uarr;](#content)
+
+### .
+
+[Click Here For Solution](.c)
+
+[Back to Top &uarr;](#content)
+
+### .
+
+[Click Here For Solution](.c)
+
+[Back to Top &uarr;](#content)
+
+### .
+
+[Click Here For Solution](.c)
 
 [Back to Top &uarr;](#content)
 
@@ -544,6 +662,24 @@ So:
 ![Example](./images/triangular.png)
 
 [Click Here For Solution](question_52.c)
+
+[Back to Top &uarr;](#content)
+
+### 25. Write a C program that read 5 numbers and sum of all odd values between them.
+
+Test Data :
+
+    Input the first number: 11
+    Input the second number: 17
+    Input the third number: 13
+    Input the fourth number: 12
+    Input the fifth number: 5
+
+Expected Output:
+
+    Sum of all odd values: 46
+
+[Click Here For Solution](sum_of_odd_number.c)
 
 [Back to Top &uarr;](#content)
 
