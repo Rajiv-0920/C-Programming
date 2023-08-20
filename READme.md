@@ -248,7 +248,24 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### .
+### 23. Write a C program that accepts two item’s weight (floating points' values ) and number of purchase (floating points' values) and calculate the average value of the items.
+
+Test Data :
+
+    Weight - Item1: 15
+    No. of item1: 5
+    Weight - Item2: 25
+    No. of item2: 4
+
+Expected Output:
+
+    Average Value = 19.444444
+
+[Click Here For Solution](average_value_of_item.c)
+
+[Back to Top &uarr;](#content)
+
+<!-- ### .
 
 [Click Here For Solution](.c)
 
@@ -258,13 +275,7 @@ Expected Output:
 
 [Click Here For Solution](.c)
 
-[Back to Top &uarr;](#content)
-
-### .
-
-[Click Here For Solution](.c)
-
-[Back to Top &uarr;](#content)
+[Back to Top &uarr;](#content) -->
 
 # If/Else Statement <a name="if"></a>
 
