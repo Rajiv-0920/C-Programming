@@ -58,7 +58,7 @@
 
 ### 5. Write a program to accept roll no & marks of 3 subjects of a student, Calculate total 3 subjects and average in c language
 
-**Average:** Sanskrit + Hindi + Math / 3
+$Average: Sanskrit + Hindi + Math / 3$
 
 [Click Here For Solution](question_5.c)
 
@@ -72,9 +72,9 @@
 
 ### 7. Area and Circumference of a Circle
 
-**Area of the Circle is:** π \* r \* r
+Area of the Circle is: $πr^2$
 
-**Circumstances of the Circle are:** 2 \* π \* r
+Circumstances of the Circle are: $2π r$
 
 [Click Here For Solution](question_7.c)
 
@@ -88,7 +88,7 @@
 
 ### 9. Write a program to print area of a triangle
 
-**Triangle =** 0.5 \* Base \* Height
+**Triangle =** $0.5 * Base * Height$
 
 ![Example](./images/triangle.webp)
 
@@ -132,7 +132,7 @@
 
 ### 14. C Program For Converting Temperature Celsius Into Fahrenheit
 
-**Fahrenheit =**((9/5) \* Celsius) + 32; or you can use 1.8 in place of 9/5
+**Fahrenheit =** $((9/5) * Celsius) + 32$ or you can use `1.8` in place of `9/5`
 
 ![Example](./images/Fahrenheit%20into%20Celsius.png)
 
