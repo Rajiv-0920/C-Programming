@@ -265,17 +265,58 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
+### 24. Program to show swap of two number
+
+```
+i) using three variable
+
+ii) without using third variable.
+
+iii) swap withing a single line.
+```
+
+Text Data :
+
+    Input two number a and b: 5 10
+
+Expected Output:
+
+    a = 10 and b = 5
+
+[Click Here For Solution](swap_two_number.c)
+
+[Back to Top &uarr;](#content)
+
+### 25. Write a program to display last digit of a number. Number is entered through keyboard.
+
+[Click Here For Solution](last_digit.c)
+
+[Back to Top &uarr;](#content)
+
+### 26. Write a program to calculate sum of the digits of three digit number.
+
+[Click Here For Solution](sum_of_three_digit.c)
+
+[Back to Top &uarr;](#content)
+
+### 27. Write a program to print profit and profit percentage. Selling price and cost price is given by user.
+
+formula :-
+
+$profit = selling - cost$
+
+$profitPercentage = \frac{profit} {cost} * 100$
+
+[Click Here For Solution](profit_percentage.c)
+
+[Back to Top &uarr;](#content)
+
 <!-- ### .
 
 [Click Here For Solution](.c)
 
-[Back to Top &uarr;](#content)
-
-### .
-
-[Click Here For Solution](.c)
-
-[Back to Top &uarr;](#content) -->
+[Back to Top ↑](#content)
+ -->
 
 # If/Else Statement <a name="if"></a>
 
@@ -297,7 +338,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 3. Write a program to accept two numbers from user and compare them in C language
+### 3. Write a program to find greater between two numbers.
 
 [Click Here For Solution](question_19.c)
 
@@ -406,12 +447,12 @@ Expected Output:
 
 153 = (1 \* 1 \*1) + (5 \* 5 \* 5) + (3 \* 3 \* 3)
 
-where:  
-(1 \* 1 \* 1)=1  
-(5 \* 5 \* 5)=125  
+where:
+(1 \* 1 \* 1)=1
+(5 \* 5 \* 5)=125
 (3 \*3 \* 3)=27
 
-So:  
+So:
 1 + 125 + 27 = 153
 
 153 is an Armstrong number
@@ -504,7 +545,6 @@ So:
 
     Enter First Day of the month 0 to 6:5
 
-
     Mon     Tue     Wed     Thu     Fri     Sat     Sun
     _________________________________________________
     -       -       -       -       -       1       2
@@ -544,7 +584,6 @@ So:
     so follow the next step
 
     Step 7:- This is a Last step divide 1 by 1 we get zero remainder now print the total no of denomination needed and along with total no of count require to fulfill a requirement
-
 
     So for 16108 You Need to
 
@@ -746,7 +785,7 @@ Expected Output:
 
 ### 5. Write A Program To Print Following Outputs In C Language
 
-            *
+    *
           * *
         * * *
       * * * *
@@ -758,7 +797,7 @@ Expected Output:
 
 ### 6. Write A Program To Print Following Outputs In C Language
 
-            *
+    *
           * * *
         * * * * *
       * * * * * * *
@@ -782,7 +821,7 @@ Expected Output:
 
 ### 8. Write A Program To Print Following Outputs In C Language
 
-            *
+    *
           * * *
         * * * * *
       * * * * * * *
@@ -820,7 +859,7 @@ Expected Output:
 
 ### 11. Write A Program To Print Following Outputs In C Language
 
-          A
+    A
         B B B
       C C C C C
     D D D D D D D
@@ -924,7 +963,7 @@ Expected Output:
 
 ### 20. Write A Program To Print Following Outputs In C Language
 
-            * * * * *
+    * * * * *
           *       *
         *       *
       *       *
@@ -936,7 +975,7 @@ Expected Output:
 
 ### 21. Write A Program To Print Following Outputs In C Language
 
-        1
+    1
        2 2
       3 3 3
      4 4 4 4

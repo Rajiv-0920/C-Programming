@@ -1,4 +1,5 @@
-// 19. Write a program to accept two numbers from user and compare them in C language
+// 19. Write a program to find greater between two numbers. 
+
 
 #include <stdio.h>
 
