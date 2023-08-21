@@ -413,7 +413,7 @@ $profitPercentage = \frac{profit} {cost} * 100$
 
 [Back to Top &uarr;](#content)
 
-### 12. Given Date Month and the Year Is Correct or Not Using If-Else
+## 12. Given Date Month and the Year Is Correct or Not Using If-Else
 
 **Valid Date Examples:**
 
@@ -733,9 +733,9 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-## Pattern <a name="patterns"></a>
+# Pattern <a name="patterns"></a>
 
-### 1. Write A Program To Print Following Outputs In C Language
+## 1. Write A Program To Print Following Outputs In C Language
 
     * * * * * *
     * * * * * *
@@ -747,7 +747,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 2. Write A Program To Print Following Outputs In C Language
+## 2. Write A Program To Print Following Outputs In C Language
 
     *
     * *
@@ -759,7 +759,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 3. Write A Program To Print Following Outputs In C Language
+## 3. Write A Program To Print Following Outputs In C Language
 
     * * * * *
     * * * *
@@ -771,7 +771,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 4. Write A Program To Print Following Outputs In C Language
+## 4. Write A Program To Print Following Outputs In C Language
 
     * * * * *
       * * * *
@@ -783,9 +783,9 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 5. Write A Program To Print Following Outputs In C Language
+## 5. Write A Program To Print Following Outputs In C Language
 
-    *
+            *
           * *
         * * *
       * * * *
@@ -795,9 +795,9 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 6. Write A Program To Print Following Outputs In C Language
+## 6. Write A Program To Print Following Outputs In C Language
 
-    *
+            *
           * * *
         * * * * *
       * * * * * * *
@@ -807,7 +807,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 7. Write A Program To Print Following Outputs In C Language
+## 7. Write A Program To Print Following Outputs In C Language
 
     * * * * * * * * *
       * * * * * * *
@@ -819,9 +819,9 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 8. Write A Program To Print Following Outputs In C Language
+## 8. Write A Program To Print Following Outputs In C Language
 
-    *
+            *
           * * *
         * * * * *
       * * * * * * *
@@ -835,7 +835,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 9. Write A Program To Print Following Outputs In C Language
+## 9. Write A Program To Print Following Outputs In C Language
 
     1
     1 2
@@ -846,7 +846,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 10. Write A Program To Print Following Outputs In C Language
+## 10. Write A Program To Print Following Outputs In C Language
 
     1
     2 2
@@ -857,9 +857,9 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 11. Write A Program To Print Following Outputs In C Language
+## 11. Write A Program To Print Following Outputs In C Language
 
-    A
+          A
         B B B
       C C C C C
     D D D D D D D
@@ -868,7 +868,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 12. Write A Program To Print Following Outputs In C Language
+## 12. Write A Program To Print Following Outputs In C Language
 
     A B C D E E D C B A
     A B C D     D C B A
@@ -880,7 +880,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 13. Write A Program To Print Following Outputs In C Language
+## 13. Write A Program To Print Following Outputs In C Language
 
     1
     1 1
@@ -893,7 +893,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 14. Write A Program To Print Following Outputs In C Language
+## 14. Write A Program To Print Following Outputs In C Language
 
     x
     x x x
@@ -905,7 +905,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 15. Write A Program To Print Following Outputs In C Language
+## 15. Write A Program To Print Following Outputs In C Language
 
     * * * * * *
     *         *
@@ -916,7 +916,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 16. Write A Program To Print Following Outputs In C Language
+## 16. Write A Program To Print Following Outputs In C Language
 
     1
     2 3
@@ -928,7 +928,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 17. Write A Program To Print Following Outputs In C Language
+## 17. Write A Program To Print Following Outputs In C Language
 
     1
     0 1
@@ -940,7 +940,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 18. Write A Program To Print Following Outputs In C Language
+## 18. Write A Program To Print Following Outputs In C Language
 
     *             *
     * *         * *
@@ -955,15 +955,15 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 19. Write A Program To Print Following Outputs In C Language
+## 19. Write A Program To Print Following Outputs In C Language
 
 [Click Here For Solution](question_71.c)
 
 [Back to Top &uarr;](#content)
 
-### 20. Write A Program To Print Following Outputs In C Language
+## 20. Write A Program To Print Following Outputs In C Language
 
-    * * * * *
+            * * * * *
           *       *
         *       *
       *       *
@@ -973,9 +973,9 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 21. Write A Program To Print Following Outputs In C Language
+## 21. Write A Program To Print Following Outputs In C Language
 
-    1
+        1
        2 2
       3 3 3
      4 4 4 4
@@ -985,7 +985,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 22. Write A Program To Print Following Outputs In C Language
+## 22. Write A Program To Print Following Outputs In C Language
 
             1
           2 1 2
@@ -997,7 +997,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 23. Write A Program To Print Following Outputs In C Language
+## 23. Write A Program To Print Following Outputs In C Language
 
     *
     * *
@@ -1013,7 +1013,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 24. Write A Program To Print Following Outputs In C Language
+## 24. Write A Program To Print Following Outputs In C Language
 
             *
           * *
@@ -1029,7 +1029,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 25. Write A Program To Print Following Outputs In C Language
+## 25. Write A Program To Print Following Outputs In C Language
 
     * * * * * * * * *
     * * * * * * *
@@ -1045,7 +1045,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### 26. Write A Program To Print Following Outputs In C Language
+## 26. Write A Program To Print Following Outputs In C Language
 
     * * * * * * * * *
         * * * * * * *
@@ -1061,7 +1061,7 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
-### . Write A Program To Print Following Outputs In C Language
+## . Write A Program To Print Following Outputs In C Language
 
 [Click Here For Solution](question_.c)
 
