@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 int main(){
-    int length, width, area, perimeter;
+    int height, width, area, perimeter;
 
-    printf("Enter length and width of the rectangle respectively: ");
-    scanf("%d %d", &length, &width);
+    printf("Enter height and width of the rectangle respectively: ");
+    scanf("%d %d", &height, &width);
 
-    area = length * width;
-    perimeter = 2 * (length + width);
+    area = height * width;
+    perimeter = 2 * (height + width);
 
     printf("Area of a rectangle = %d square inches \nPerimeter of a rectangle = %d inches", area, perimeter);
 

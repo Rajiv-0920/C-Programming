@@ -150,9 +150,9 @@
 
 ### 16. Write a C program to compute the perimeter and area of a rectangle with a height of 7 inches and width of 5 inches.
 
-**Area of Rectangle** = $length * width$;
+**Perimeter of the rectangle** = $2(height + width)$;
 
-**Perimeter of the rectangle** = $2(length + width)$;
+**Area of Rectangle** = $height * width$;
 
 [Click Here For Solution](question_16.c)
 
