@@ -275,7 +275,7 @@ ii) without using third variable.
 iii) swap withing a single line.
 ```
 
-Text Data :
+Test Data :
 
     Input two number a and b: 5 10
 
@@ -311,7 +311,72 @@ $profitPercentage = \frac{profit} {cost} * 100$
 
 [Back to Top &uarr;](#content)
 
+### 28. Input a number and change the sign.
+
+Test Data:
+
+    input number : 10
+    input number : -15
+
+Expected Output:
+
+    Sign Changed number = -10
+    Sign Changed number = 15
+
+[Click Here For Solution](sign-changing.c)
+
+[Back to Top ↑](#content)
+
+### 29. Input two number and display quotient and remainder.
+
+Test Data:
+
+    input number : 27 2
+
+Expected Output:
+
+    quotient = 13
+    remainder = 1
+
+![example](https://www.splashlearn.com/math-vocabulary/wp-content/uploads/2022/05/image2-10.png)
+
+[Click Here For Solution](quotient_remainder.c)
+
+[Back to Top ↑](#content)
+
+### 30. Input a 5 digit number and calculate the sum of last and first digit number.
+
+Test Data:
+
+    number : 12345
+
+Expected Output:
+
+    sum = 6
+
+[Click Here For Solution](sum_of_Last_First_digit.c)
+
+[Back to Top ↑](#content)
+
+### 31. Input a 3 digit number and reverse it.
+
+Test Data:
+
+    number = 123
+
+Expected Output:
+
+    reverse number = 321
+
+[Click Here For Solution](reverse_3Digit_number.c)
+
+[Back to Top ↑](#content)
+
 <!-- ### .
+
+Test Data:
+
+Expected Output:
 
 [Click Here For Solution](.c)
 
