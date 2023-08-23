@@ -1,4 +1,4 @@
-// Write a C program to compute the perimeter and area of a rectangle with a height of 7 inches and width of 5 inches.
+// Write a C program input a number to compute the perimeter and area of a rectangle.
 
 #include <stdio.h>
 

@@ -1,4 +1,4 @@
-// 18. Write a C program to convert specified days into years, weeks and days.
+//  Write a C program to convert specified days into years, weeks and days.
 
 #include <stdio.h>
 

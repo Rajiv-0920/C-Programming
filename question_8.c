@@ -3,16 +3,12 @@
 #include <stdio.h>
 
 int main(){
-
-    int value;
     char a;
 
     printf("Enter The Character: ");
     scanf("%c", &a);
 
-    value = a;
-
-    printf("Value: %d", value);
+    printf("Value: %d", a);
     
     return 0;
 }

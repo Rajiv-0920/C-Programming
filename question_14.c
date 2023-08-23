@@ -9,23 +9,16 @@ formula:-
 
 int main(){
     float celsius, fahrenheit, calculation;
-    char type;
 
-    printf("Enter 'f' for Fahrenheit to celsius or 'c' for Celsius to Fahrenheit: ");
-    scanf("%c", &type);
+    printf("\nEnter Celsius: ");
+    scanf("%f", &celsius);
+    calculation = (1.8 * celsius) + 32;
+    printf("\nFahrenheit: %f", calculation);
 
-    switch(type){
-        case 'c':printf("Enter Celsius: ");
-                scanf("%f", &celsius);
-                calculation = (1.8 * celsius) + 32;
-                printf("Fahrenheit: %f", calculation);
-                break;
-        case 'f':printf("Enter Fahrenheit: ");
-                scanf("%f", &fahrenheit);
-                calculation = (fahrenheit - 32) * 5 / 9;
-                printf("Celsius: %f", calculation);
-                break;
-        default: printf("Enter small f or c: ");
-    }
+    printf("\nEnter Fahrenheit: ");
+    scanf("%f", &fahrenheit);
+    calculation = (fahrenheit - 32) * 5 / 9;
+    printf("\nCelsius: %f", calculation);
+
     return 0;
 }

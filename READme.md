@@ -148,7 +148,7 @@ Circumstances of the Circle are: $2π r$
 
 [Back to Top &uarr;](#content)
 
-### 16. Write a C program to compute the perimeter and area of a rectangle with a height of 7 inches and width of 5 inches.
+### 16. Write a C program input a number to compute the perimeter and area of a rectangle.
 
 **Perimeter of the rectangle** = $2(height + width)$;
 
@@ -331,12 +331,12 @@ Expected Output:
 
 Test Data:
 
-    input number : 27 2
+    input number : 98 4
 
 Expected Output:
 
-    quotient = 13
-    remainder = 1
+    quotient = 24
+    remainder = 2
 
 ![example](https://www.splashlearn.com/math-vocabulary/wp-content/uploads/2022/05/image2-10.png)
 

@@ -1,4 +1,4 @@
-// 17. Write a C program to accept 3 characters and print the sum of their ascii.
+// Write a C program to accept 3 characters and print the sum of their ascii.
 
 #include <stdio.h>
 

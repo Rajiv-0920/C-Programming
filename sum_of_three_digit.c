@@ -9,7 +9,7 @@ int main(){
     scanf("%d", &num);
 
     sum = sum + num % 10;
-    num = num % 10;
+    num = num / 10;
     sum = sum + num % 10;
     sum = sum + num / 10;
 
