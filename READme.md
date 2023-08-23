@@ -11,11 +11,11 @@
 
 | Data Type   | Size (bytes) | Range                           | Format Specifier |
 | ----------- | ------------ | ------------------------------- | ---------------- |
-| int         | 4            | -2,147,483,648 to 2,147,483,647 | %d               |
+| int         | 2            | -2,147,483,648 to 2,147,483,647 | %d               |
 | long int    | 4            | -2,147,483,648 to 2,147,483,647 | %ld              |
 | float       | 4            | 1.2E-38 to 3.4E+38              | %f               |
 | double      | 8            | 1.7E-308 to 1.7E+308            | %lf              |
-| long double | 16           | 3.4E-4932 to 1.1E+4932          | %Lf              |
+| long double | 12           | 3.4E-4932 to 1.1E+4932          | %Lf              |
 | char        | 1            | -128 to 127                     | %c               |
 
 [Click Here For Solution](question_1.c)
@@ -361,6 +361,20 @@ Expected Output:
     reverse number = 321
 
 [Click Here For Solution](reverse_3Digit_number.c)
+
+[Back to Top ↑](#content)
+
+### 32. WAP to calculate the remainder of 2 numbers without using % operator.
+
+Test Data:
+
+    Enter 2 number: 10 5
+
+Expected Output:
+
+    Remainder = 0
+
+[Click Here For Solution](get_remainder_without_%.c)
 
 [Back to Top ↑](#content)
 
