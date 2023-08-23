@@ -90,8 +90,6 @@ Circumstances of the Circle are: $2π r$
 
 **Triangle =** $0.5 * Base * Height$
 
-![Example](./images/triangle.webp)
-
 [Click Here For Solution](question_9.c)
 
 [Back to Top &uarr;](#content)
@@ -134,8 +132,6 @@ Circumstances of the Circle are: $2π r$
 
 **Fahrenheit =** $((9/5) * Celsius) + 32$ or you can use `1.8` in place of `9/5`
 
-![Example](./images/Fahrenheit%20into%20Celsius.png)
-
 [Click Here For Solution](question_14.c)
 
 [Back to Top &uarr;](#content)
@@ -167,8 +163,6 @@ Circumstances of the Circle are: $2π r$
 ### 18. Write a C program to convert specified days into years, weeks and days.
 
 Note: Ignore leap year.
-
-![Example](https://www.w3resource.com/w3r_images/c-basic-declarations-and-expressions-image-exercise-8.png)
 
 [Click Here For Solution](days_into_year.c)
 
@@ -338,8 +332,6 @@ Expected Output:
     quotient = 24
     remainder = 2
 
-![example](https://www.splashlearn.com/math-vocabulary/wp-content/uploads/2022/05/image2-10.png)
-
 [Click Here For Solution](quotient_remainder.c)
 
 [Back to Top ↑](#content)
@@ -387,8 +379,6 @@ Expected Output:
 
 ### 1. Write a program to accept a number and print if the number is Positive/Negative in C language
 
-![Example](./images/positive-negative-numbers.png)
-
 [Click Here For Solution](question_17.c)
 
 [Back to Top &uarr;](#content)
@@ -396,8 +386,6 @@ Expected Output:
 ### 2. Write a program to accept a number from user and print if it is even or odd in C language
 
 **HINT: Even number is divisible by 2 and generates a remainder of 0**
-
-![Example](./images/even-odd.png)
 
 [Click Here For Solution](question_18.c)
 
@@ -416,8 +404,6 @@ Expected Output:
 [Back to Top &uarr;](#content)
 
 ### 5. Write a program to calculate roots of a quadratic equations in C language
-
-![Example](./images/quadratic_roots.jpg)
 
 [Click Here For Solution](question_21.c)
 
@@ -442,8 +428,6 @@ Expected Output:
 [Back to Top &uarr;](#content)
 
 ### 8. Check Character Is Vowel or Consonant
-
-![Example](./images/vowel-or-consonant.webp)
 
 [Click Here For Solution](question_24.c)
 
@@ -472,8 +456,6 @@ Expected Output:
 - 2016: Leap Year
 - 2100: Not a Leap Year
 
-![Example](./images/LeapYearMath.png)
-
 [Click Here For Solution](question27.c)
 
 [Back to Top &uarr;](#content)
@@ -500,8 +482,6 @@ Expected Output:
 
 ### 1. C Program to Reverse a Number Using FOR Loop
 
-![Example](./images/Reverse.jpg)
-
 [Click Here For Solution](question_29.c)
 
 [Back to Top &uarr;](#content)
@@ -522,15 +502,11 @@ So:
 
 153 is an Armstrong number
 
-![Example](./images/armstrong.png)
-
 [Click Here For Solution](question_30.c)
 
 [Back to Top &uarr;](#content)
 
 ### 3. Calculate the Sum of n Natural Numbers Using the While Loop
-
-![Example](./images/Natural-Numbers.png)
 
 [Click Here For Solution](question_31.c)
 
@@ -546,15 +522,11 @@ So:
 
 **Fibonacci Series:** 0, 1, 1, 2, 3, 5, 8, 13, 21, 34. Fibonacci Series is up to 10 Elements.
 
-![Example](./images/Fibonacci-sequence.png)
-
 [Click Here For Solution](question_33.c)
 
 [Back to Top &uarr;](#content)
 
 ### 6. GCD of Two Numbers in C | Greatest Common Divisor Program
-
-![Example](images/GCD.png)
 
 [Click Here For Solution](question_34.c)
 
@@ -564,15 +536,11 @@ So:
 
 **Formula**
 
-![Example](./images/LCM.png)
-
 [Click Here For Solution](question_35.c)
 
 [Back to Top &uarr;](#content)
 
 ### 8. Palindrome Program in C Using While Loop
-
-![Example](./images/palindrome.png)
 
 [Click Here For Solution](question_36.c)
 
@@ -587,8 +555,6 @@ So:
 ### 10. Find a Generic Root of a Number Using While Loop
 
 **For Example:** If user input number is 12345, then we add all the individual digits of the number i.e., 1 + 2 + 3 + 4 + 5 = 15. We got 15. Now we add individual digits of number 15 i.e., 1 + 5 = 6. So Generic Root of number 12345 is 6.
-
-![Example](./images/generic_root.png)
 
 [Click Here For Solution](question_38.c)
 
@@ -624,8 +590,6 @@ So:
 [Back to Top &uarr;](#content)
 
 ### 12. Check Whether a Number Is Divisible by 11 Using (Vedic Maths)
-
-![Example](./images/divisible.png)
 
 [Click Here For Solution](question_40.c)
 
@@ -676,8 +640,6 @@ So:
 
 **HINT: Even number is divisible by 2 and generates a remainder of 0**
 
-![Example](./images/even-odd.png)
-
 [Click Here For Solution](question_43.c)
 
 [Back to Top &uarr;](#content)
@@ -686,15 +648,11 @@ So:
 
 **HINT: Odd number which is not divisible by “2”. An odd number always ends in 1, 3, 5, 7, or 9.**
 
-![Example](./images/even-odd.png)
-
 [Click Here For Solution](question_44.c)
 
 [Back to Top &uarr;](#content)
 
 ### 17. Write A Program To Accept A Number From User And Print If It Is Prime Or Not In C Language
-
-![Example](./images/Prime.png)
 
 [Click Here For Solution](question_45.c)
 
@@ -704,8 +662,6 @@ So:
 
 **Ex: 153 Sum of its digit is 9**
 
-![Example](./images/sum-of.webp)
-
 [Click Here For Solution](question_46.c)
 
 [Back to Top &uarr;](#content)
@@ -714,15 +670,11 @@ So:
 
 **factorial of 5 is:** 5! = 5 x 4 x 3 x 2 x 1 = 120
 
-![Example](./images/Factorial.webp)
-
 [Click Here For Solution](question_47.c)
 
 [Back to Top &uarr;](#content)
 
 ### 20. Write a program to accept a number and print prime numbers between 2 and n in C language
-
-![Example](./images/Prime.png)
 
 [Click Here For Solution](question_48.c)
 
@@ -762,8 +714,6 @@ So:
 
 **List of Triangular Numbers:** 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190, 210, 231, 253, 276, 300, 325, 351, 378, 406, 435, 465, 496, 528, 561, 595, 630, 666,
 
-![Example](./images/triangular.png)
-
 [Click Here For Solution](question_51.c)
 
 [Back to Top &uarr;](#content)
@@ -773,8 +723,6 @@ So:
 **Triangular Number Example:** 15 is Triangular Number because it can be obtained by 1+2+3+4+5+6 i.e. 1+2+3+4+5+6=15
 
 **List of Triangular Numbers:** 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190, 210, 231, 253, 276, 300, 325, 351, 378, 406, 435, 465, 496, 528, 561, 595, 630, 666,
-
-![Example](./images/triangular.png)
 
 [Click Here For Solution](question_52.c)
 
@@ -1123,11 +1071,5 @@ Expected Output:
     * * * * * * * * *
 
 [Click Here For Solution](question_78.c)
-
-[Back to Top &uarr;](#content)
-
-## . Write A Program To Print Following Outputs In C Language
-
-[Click Here For Solution](question_.c)
 
 [Back to Top &uarr;](#content)
