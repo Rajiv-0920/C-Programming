@@ -266,7 +266,7 @@ i) using three variable
 
 ii) without using third variable.
 
-iii) swap withing a single line.
+iii) swap within a single line.
 ```
 
 Test Data :
@@ -375,6 +375,28 @@ Expected Output:
     Remainder = 0
 
 [Click Here For Solution](get_remainder_without_%.c)
+
+[Back to Top ↑](#content)
+
+### 33. WAP to SWAP (interchange) three numbers.
+
+```
+i) using four variable
+
+ii) without using four variable.
+
+iii) swap within a single line.
+```
+
+Test Data:
+
+    Enter 3 number : 5 10 15
+
+Expected Output:
+
+    changed number = 15 5 10
+
+[Click Here For Solution](swap_3_numbers.c)
 
 [Back to Top ↑](#content)
 
