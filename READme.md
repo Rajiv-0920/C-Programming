@@ -378,7 +378,7 @@ Expected Output:
 
 [Back to Top ↑](#content)
 
-### 33. WAP to SWAP (interchange) three numbers.
+### 33. WAP. to SWAP (interchange) three numbers.
 
 ```
 i) using four variable
@@ -397,6 +397,38 @@ Expected Output:
     changed number = 15 5 10
 
 [Click Here For Solution](swap_3_numbers.c)
+
+[Back to Top ↑](#content)
+
+### 34. WAP. to Print the range of a number. E.g. number 78 is between 70 and 79, 102 is between 100 and 109.
+
+Test Data:
+
+    Enter a number : 78
+
+    Enter a number : 102
+
+Expected Output:
+
+    78 number is between 70 and 79
+
+    102 number is between 100 and 109
+
+[Click Here For Solution](number_is_between.c)
+
+[Back to Top ↑](#content)
+
+### 35. WAP. to merge three number. E.g. a= 1, b= 2, c = 8 is 128.
+
+Test Data:
+
+    Enter 3 number: 1 2 3
+
+Expected Output:
+
+    merge number = 123
+
+[Click Here For Solution](merge_3_number.c)
 
 [Back to Top ↑](#content)
 

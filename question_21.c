@@ -4,7 +4,6 @@
 #include <math.h>
 
 int main(){
-
     float a, b, c, d, x, y;
 
     printf("Enter a, b and c:");
