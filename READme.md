@@ -432,6 +432,20 @@ Expected Output:
 
 [Back to Top ↑](#content)
 
+### 36. WAP. to input paisa and convert it into rs. and paisa
+
+Test Data:
+
+    input paisa: 1550
+
+Expected Output:
+
+    15 rs. 50 paisa
+
+[Click Here For Solution](convert_into_rs.c)
+
+[Back to Top ↑](#content)
+
 <!-- ### .
 
 Test Data:

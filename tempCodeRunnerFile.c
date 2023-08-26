@@ -1,1 +1,1 @@
-%d %d %d %d
+max + num3 + abs(max - num3)
