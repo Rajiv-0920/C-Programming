@@ -493,11 +493,11 @@ Expected Output:
 
 ### 6. Write a program to accept roll number ,and marks for three subjects, print total marks and average, also print grade by considering following conditions
 
-**Avg>=60** Grade A
+**Avg >= 60** Grade A
 
-**Avg<60, Avg>=50** Grade B
+**Avg < 60, Avg >= 50** Grade B
 
-**Avg<50, Avg>=40** Grade C Grade F.
+**Avg < 50, Avg >= 40** Grade C Grade F.
 
 [Click Here For Solution](question_22.c)
 
