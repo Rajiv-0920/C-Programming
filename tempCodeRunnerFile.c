@@ -1,1 +1,1 @@
-max + num3 + abs(max - num3)
+i && j

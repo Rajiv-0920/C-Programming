@@ -560,6 +560,176 @@ Expected Output:
 
 [Back to Top &uarr;](#content)
 
+### 13. While purchasing certain items, a discount of 10% is offered if the quantity purchased is more than 1000. if quantity and price per item are input through the keyboard, write a program to calculate the total expenses.
+
+Test Data:
+
+    Enter quantity and price per item: 1000  2
+
+Expected Output:
+
+    Total expenses = 1800.00
+
+[Click Here For Solution](calculate_total_expenses.c)
+
+[Back to Top ↑](#content)
+
+### 14. If cost price and selling price of an item is input through the keyboard, write a program to determine whether the seller has made profit or incurred loss. Also determine how much profit he made or loss he incurred.
+
+Test Data:
+
+    Enter cost price and selling price: 50 100
+
+Expected Output:
+
+    He incurred profit of Rs.50
+
+[Click Here For Solution](profit_or_loss.c)
+
+[Back to Top ↑](#content)
+
+### 15. A five-digit number is entered through the keyboard. Write a program to obtain the reversed number and to determine whether the original and reversed numbers are equal or not.
+
+Test Data:
+
+    Enter 5 digit number: 12345
+
+Expected Output:
+
+    Reverse number = 54321
+    Reverse number is not equal to original number.
+
+[Click Here For Solution](check_rev_equal.c)
+
+[Back to Top ↑](#content)
+
+### 16. Write a program to check whether a triangle is valid or not, when the three angles of the triangle are entered through the keyboard. A triangle is valid if the sum of all the three angles is equal to 180 degrees
+
+Test Data:
+
+    input 3 angles of triangle: 45 45 90
+
+Expected Output:
+
+    Triangle is valid
+
+[Click Here For Solution](tiangle_is_valid_not.c)
+
+[Back to Top ↑](#content)
+
+### 17. Find the absolute value of a number entered through the keyboard.
+
+Test Data:
+
+    Enter a number: -15
+    Enter a number: 25
+
+Expected Output:
+
+    Absolute number = 15
+    Absolute number = 25
+
+[Click Here For Solution](convert_into_abs.c)
+
+[Back to Top ↑](#content)
+
+### 18. Given the length and breadth of a rectangle, write a program to find whether the area of the rectangle is greater than its perimeter. For example, the area of the rectangle with length = 5 and breadth = 4 is greater than its perimeter.
+
+Test Data:
+
+    Enter the length and breadth of a rectangle: 5 4
+
+Expected Output:
+
+    Area of rectangle is greater than its perimeter.
+
+[Click Here For Solution](area_greater_perimeter.c)
+
+[Back to Top ↑](#content)
+
+### 19. Given three points (x1, y1), (x2, y2) and (x3, y3), write a program to check if all the three points fall on one straight line.
+
+Test Data:
+
+    Enter points (x1, y1):1 2
+    Enter points (x2, y2):3 4
+    Enter points (x3, y3):5 6
+
+Expected Output:
+
+    All the three points fall on the straight line:
+
+[Click Here For Solution](three_points_in_same_line.c)
+
+[Back to Top ↑](#content)
+
+### 20. A certain grade of steel is graded according to the following conditions:
+
+```
+(i) Hardness must be greater than 50
+(ii) Carbon content must be less than 0.7
+(iii) Tensile strength must be greater than 5600
+The grades are as follows:
+
+Grade is 10 if all three conditions are met
+Grade is 9 if conditions (i) and (ii) are met
+Grade is 8 if conditions (ii) and (iii) are met
+Grade is 7 if conditions (i) and (iii) are met
+Grade is 6 if only one condition is met
+Grade is 5 if none of the conditions are met
+
+Write a program, which will require the user to give values of hardness, carbon content and tensile strength of the steel under consideration and output the grade of the steel.
+```
+
+Test Data:
+
+    Enter hardness, carbon and tensile: 60 0.8 5700
+
+Expected Output:
+
+    Grade is 7
+
+[Click Here For Solution](let_us_c_Ch4_D_c.c)
+
+[Back to Top ↑](#content)
+
+### 21. Write a C program to input side of a triangle and check whether triangle is valid or not using if else.
+
+> A triangle is valid if sum of its two sides is greater than the third side.
+
+Test Data:
+
+    Enter 3 sides of a triangle: 7 10 5
+
+Expected Output:
+
+    Valid Triangle
+
+[Click Here For Solution](check_valid_triangle.c)
+
+[Back to Top ↑](#content)
+
+### 22. If the three sides of a triangle are entered through the keyboard, write a program to check whether the triangle is isosceles, equilateral, scalene or right-angled triangle.
+
+Test Data:
+
+Expected Output:
+
+[Click Here For Solution](check_triangle.c)
+
+[Back to Top ↑](#content)
+
+<!-- ### .
+
+Test Data:
+
+Expected Output:
+
+[Click Here For Solution](.c)
+
+[Back to Top ↑](#content)
+ -->
+
 # Loops C Programs <a name="loops"></a>
 
 ### 1. C Program to Reverse a Number Using FOR Loop
@@ -1155,3 +1325,7 @@ Expected Output:
 [Click Here For Solution](question_78.c)
 
 [Back to Top &uarr;](#content)
+
+```
+
+```
