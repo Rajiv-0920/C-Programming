@@ -16,6 +16,8 @@ Expected Output:
 
     changed number = 15 5 10
 
+Solution :-
+
 ```c
 #include <stdio.h>
 
@@ -61,6 +63,8 @@ Expected Output:
     78 number is between 70 and 79
 
     102 number is between 100 and 109
+
+Solution :-
 
 ```c
 #include <stdio.h>
@@ -123,6 +127,8 @@ Test Data:
 Expected Output:
 
     15 rs. 50 paisa
+
+Solution :-
 
 ```c
 #include <stdio.h>
