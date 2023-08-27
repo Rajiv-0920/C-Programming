@@ -711,11 +711,84 @@ Expected Output:
 
 ### 22. If the three sides of a triangle are entered through the keyboard, write a program to check whether the triangle is isosceles, equilateral, scalene or right-angled triangle.
 
+[Click Here For Solution](check_triangle.c)
+
+[Back to Top ↑](#content)
+
+### 23. Write a program to find the greatest of three numbers entered through the keyboard. Use conditional operators.
+
+Test Data:
+
+    Enter 3 number: 1 2 3
+
+Expected Output:
+
+    Greatest number is 3
+
+[Click Here For Solution](greatest_of_three.c)
+
+[Back to Top ↑](#content)
+
+### 24. WAP to print the second maximum out of three numbers.
+
+Test Data:
+
+    Enter 3 numbers : 1 2 3
+
+Expected Output:
+
+    Second maximum = 2
+
+[Click Here For Solution](second_maximum.c)
+
+[Back to Top ↑](#content)
+
+### 25. WAP to check whether a 3 digit number is a magic number or not. (Palindrome) A number is a magic number if its reverse is same as the original number.
+
+Test Data:
+
+    Enter a number: 123
+
+Expected Output:
+
+    Not a magic number.
+
+[Click Here For Solution](is_palindrome.c)
+
+[Back to Top ↑](#content)
+
+### 26. WAP to compute the pension of an employee.
+
+```
+If the person is male.
+Age >= 90 pension is 4000
+Age >= 60 pension is 6000
+Age < 60 pension is 0
+
+if the person is female.
+Age >= 90 pension is 3000
+Age >= 60 pension is 5000
+Age < 60 pension is 0
+```
+
+[Click Here For Solution](emp_pension.c)
+
+[Back to Top ↑](#content)
+
+### 27. Calculate Telephone Bill:-
+
+| calls          | Rate/call |
+| -------------- | --------- |
+| First 50 calls | free      |
+| next 100 calls | Rs.3/call |
+| next 200 calls | Rs.5/call |
+| next 350 calls | Rs.7/call |
+
 Test Data:
 
 Expected Output:
 
-[Click Here For Solution](check_triangle.c)
+[Click Here For Solution](telephone_bill.c)
 
 [Back to Top ↑](#content)
 
