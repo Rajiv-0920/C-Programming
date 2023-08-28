@@ -288,8 +288,8 @@ int main(){
     area = height * width;
     perimeter = 2 * (height + width);
 
-    printf("Area of a rectangle = %d square inches \nPerimeter of a rectangle = %d inches",
-     area, perimeter);
+    printf("Area of a rectangle = %d square inches \nPerimeter of a rectangle = %d inches"
+    , area, perimeter);
 
     return 0;
 }
