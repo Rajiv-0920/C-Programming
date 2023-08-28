@@ -7,23 +7,6 @@
 
 # Basic Simple C Programs <a name="basic"></a>
 
-### 1. C Program to Display The Size of Different Data Types
-
-| Data Type   | Size (bytes) | Range                           | Format Specifier |
-| ----------- | ------------ | ------------------------------- | ---------------- |
-| int         | 2            | -2,147,483,648 to 2,147,483,647 | %d               |
-| long int    | 4            | -2,147,483,648 to 2,147,483,647 | %ld              |
-| float       | 4            | 1.2E-38 to 3.4E+38              | %f               |
-| double      | 8            | 1.7E-308 to 1.7E+308            | %lf              |
-| long double | 12           | 3.4E-4932 to 1.1E+4932          | %Lf              |
-| char        | 1            | -128 to 127                     | %c               |
-
-[Click Here For Solution](question_1.c)
-
-[Back to Top &uarr;](#content)
-
-[Back to Top &uarr;](#content)
-
 <!-- ### .
 
 Test Data:

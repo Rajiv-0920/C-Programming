@@ -549,7 +549,7 @@ int main(){
 
 > Formula
 
-Gross Salary = $b + da + o$
+**Gross Salary** = $b + da + o$
 
 **b** = _Basic Salary,_ **da** = _Dearness Allowance_ **o** = _Other Allowance_
 
@@ -585,7 +585,7 @@ int main(){
 
 ---
 
-### 18. WAP. to print profit and profit percentage. Selling price and cost price is given by user.
+### 18. WAP. to print profit and profit percentage. Selling price and cost price is given by user.>
 
 > Formula
 
@@ -595,7 +595,11 @@ int main(){
 
 > Test Data
 
+    Enter Selling price and Cost price respectively: 200 150
+
 > Expected Output
+
+Total Profit = 50% and Profit percentage = 33%
 
 > Source Code
 
@@ -702,11 +706,11 @@ ii) without using third variable.
 iii) swap within a single line.
 ```
 
-Test Data :
+> Test Data :
 
     Input two number a and b: 5 10
 
-Expected Output:
+> Expected Output:
 
     a = 10 and b = 5
 
@@ -752,11 +756,11 @@ ii) without using four variable.
 iii) swap within a single line.
 ```
 
-Test Data:
+> Test Data:
 
     Enter 3 number : 5 10 15
 
-Expected Output:
+> Expected Output:
 
     changed number = 15 5 10
 
