@@ -1,6 +1,6 @@
 # Basic Simple C Programs <a name="basic"></a>
 
-### 1. WAP. to print "Hello World".
+### 1. WAP(Write a program) to print "Hello World".
 
 > Expected Output
 
@@ -76,7 +76,8 @@ int main(){
     mul = num1 * num2;
     div = num1 / num2;
 
-    printf("Addition = %d \nSubtraction = %d \nMultiplication = %d \nDivision = %d", add, sub, mul, div);
+    printf("Addition = %d \nSubtraction = %d \nMultiplication = %d \nDivision = %d"
+    , add, sub, mul, div);
 
     return 0;
 }
