@@ -4,26 +4,16 @@
 
 int main(){
 
-    int roll, sanskrit, hindi, math, average, total;
+    float sub1, sub2, sub3, average, total;
 
-    printf("Enter Roll No: ");
-    scanf("%d", &roll);
+    printf("Enter marks of 3 subjects: ");
+    scanf("%f %f %f", &sub1, &sub2, &sub3);
 
-    printf("Enter Sanskrit marks: ");
-    scanf("%d", &sanskrit);
-
-    printf("Enter Hindi marks: ");
-    scanf("%d", &hindi);
-
-    printf("Enter Math marks: ");
-    scanf("%d", &math);
-
-    total = (sanskrit + hindi + math);
+    total = (sub1 + sub2 + sub3);
     average =  total / 3;
-
-    printf("\n\nStudent Roll No: %d", roll);
-    printf("\n\nTotal marks: %d", total);
-    printf("\n\nAverage marks: %d", average);
+    
+    printf("\nTotal marks: %f", total);
+    printf("\nAverage marks: %f", average);
 
     return 0;
 }

@@ -112,7 +112,7 @@ Circumstances of the Circle are: $2π r$
 
 [Back to Top &uarr;](#content)
 
-### 12. Write a program to accept a name and basic salary of an employee calculate and display the gross salary Program in C.
+### 12. WAP. to Calculate Gross Salary of an Employee whose dearness allowance is 40% of basic salary and house rent allowance is 20% of basic salary.
 
 **Gross Salary** = Basic_Salary + HRA + Other_Allowance.
 

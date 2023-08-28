@@ -11,7 +11,7 @@ int main(){
     profit = sellingPrice - costPrice;
     profitPercentage = (profit * 100) / costPrice;
 
-    printf("Total Profit = %d and Profit percentage = %d", profit, profitPercentage);
+    printf("Total Profit = %d%% and Profit percentage = %d%%", profit, profitPercentage);
     
     return 0;
 }

@@ -8,17 +8,16 @@ formula:-
 #include <stdio.h>
 
 int main(){
-    float celsius, fahrenheit, calculation;
+    float celFah, fahrenheit, celsius;
 
-    printf("\nEnter Celsius: ");
-    scanf("%f", &celsius);
-    calculation = (1.8 * celsius) + 32;
-    printf("\nFahrenheit: %f", calculation);
+    printf("\nEnter Celsius or Fahrenheit: ");
+    scanf("%f", &celFah);
 
-    printf("\nEnter Fahrenheit: ");
-    scanf("%f", &fahrenheit);
-    calculation = (fahrenheit - 32) * 5 / 9;
-    printf("\nCelsius: %f", calculation);
+    fahrenheit = (9.0 / 5.0 * celFah) + 32.0;
+    celsius = (celFah - 32.0) * (5.0 / 9.0);
+
+    printf("\nCelsius to Fahrenheit: %f", fahrenheit);
+    printf("\nFahrenheit to Celsius: %f", celsius);
 
     return 0;
 }

@@ -7,20 +7,20 @@ C Program For Calculate Simple Interest
 
 int main(){
 
-    int si, amount, intrest, time;
+    float si, amount, interest, time;
 
     printf("Enter Principal Amount: ");
-    scanf("%d", &amount);
+    scanf("%f", &amount);
     
-    printf("Enter Rate of Intrest: ");
-    scanf("%d", &intrest);
+    printf("Enter Rate of Interest: ");
+    scanf("%f", &interest);
 
     printf("Enter Time: ");
-    scanf("%d", &time);
+    scanf("%f", &time);
 
-    si = (amount * intrest * time) / 100;
+    si = (amount * interest * time) / 100;
 
-    printf("Simple intrest: %d", si);
+    printf("Simple interest: %f", si);
     
     return 0;
 }

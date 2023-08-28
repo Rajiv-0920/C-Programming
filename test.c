@@ -1,17 +1,16 @@
 #include <stdio.h>
 
 int main(){
+    float millimeters, kilometers, meters, centimeters;
 
-    float area, circum, radius, pi = 3.141;
+    printf("Enter millimeters:");
+    scanf("%f", &millimeters);
 
-    printf("\nEnter Radius: ");
-    scanf("%f", &radius);
+    centimeters = millimeters / 10;
+    meters = centimeters / 100;
+    kilometers = meters / 1000;
 
-    area = radius * radius * pi;
-    circum = 2 * pi * radius;
-
-    printf("Area of the circle: %f \n", area);
-    printf("Circumference of the circle: %f \n", circum);
-
+    printf("Kilometers = %f Meters = %f Centimeters = %f", kilometers, meters, centimeters);
+    
     return 0;
 }

@@ -4,7 +4,7 @@
 
 int main(){
 
-    printf("http:\\\\www.kodegod.com\\learn-programming");
+    printf("Google Link: https:\\\\www.google.com\\ ");
 
     return 0;
 }

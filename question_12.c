@@ -1,5 +1,6 @@
 /*
-Write a program to accept a name and basic salary of an employee calculate and display the gross salary Program in C.
+
+WAP. to Calculate Gross Salary of an Employee whose dearness allowance is 40% of basic salary and house rent allowance is 20% of basic salary.
 
 Formula:-
     Gross Salary = Basic_Salary + HRA + Other_Allowance.
@@ -8,25 +9,16 @@ Formula:-
 
 int main(){
 
-    char name[20];
-    int grossSalary, basicSalary, da, hra;
-
-    printf("Enter Employee Name: ");
-    scanf(" %s", &name);
+    int gs, bs, da, hra;
 
     printf("Enter Basic salary: ");
-    scanf(" %d", &basicSalary);
+    scanf("%d", &bs);
 
-    printf("Enter House Rent Allowance: ");
-    scanf(" %d", &hra);
+    da = bs *  40 / 100;
+    hra = bs * 20 / 100;
+    gs = bs + da + hra;
 
-    printf("Enter Other Allowance: ");
-    scanf(" %d", &da);
-
-    grossSalary = basicSalary + da + hra;
-
-    printf("Name: %s \n", name);
-    printf("Gross Salary: %d \n", grossSalary);
+    printf("Gross Salary: %d \n", gs);
 
     return 0;
 }

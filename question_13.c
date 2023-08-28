@@ -4,23 +4,16 @@
 
 int main(){
 
-    int sanskrit, math, eng, hin, accounts;
-    float percentage;
+    float sanskrit, math, eng, hin, accounts, percentage, total;
 
-    printf("Enter Sanskrit Marks:");
-    scanf("%d", &sanskrit);
-    printf("Enter Hindi Marks:");
-    scanf("%d", &hin);
-    printf("Enter English Marks:");
-    scanf("%d", &eng);
-    printf("Enter Math Marks:");
-    scanf("%d", &math);
-    printf("Enter Accountancy Marks:");
-    scanf("%d", &accounts);
-    
-    percentage = ((float)(sanskrit + hin + eng + math + accounts) / 500 ) * 100;
+    printf("Enter marks of 5 subjects:");
+    scanf("%f %f %f %f %f", &sanskrit, &hin, &eng, &math, &accounts);
 
-    printf("\nYour Overall Percentage: %2f", percentage);
+    total = sanskrit + hin + eng + math + accounts;
+    percentage = total / 500 * 100;
+
+    printf("\nTotal Marks = %f \nYour Overall Percentage: %f", total,
+    percentage);
 
     return 0;
 }
