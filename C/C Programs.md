@@ -218,12 +218,11 @@ int main(){
 
 ### 8. WAP. to calculate Area and Circumference of a Circle.
 
-$πr^2$
-
 > Formula
 
-    Area of a Circle = $πr^2$
-    Circumference of a circle =
+Area of a Circle = $πr^2$
+
+Circumference of a circle = $2πr$
 
 > Test Data
 
