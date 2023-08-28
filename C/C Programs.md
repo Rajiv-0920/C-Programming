@@ -220,9 +220,9 @@ int main(){
 
 > Formula
 
-Area of a Circle = $πr^2$
+`Area of a Circle =` $πr^2$
 
-Circumference of a circle = $2πr$
+`Circumference of a circle =` $2πr$
 
 > Test Data
 
