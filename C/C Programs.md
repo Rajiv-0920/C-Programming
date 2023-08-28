@@ -19,6 +19,8 @@ int main(){
 
 [Back to Top &uarr;](#content)
 
+---
+
 ### 2. WAP. to input a number and print them.
 
 > Test Data
@@ -45,6 +47,8 @@ int main(){
     return 0;
 }
 ```
+
+---
 
 ### 3. WAP. to accept two numbers and print their addition, subtraction, multiplication, division.
 
