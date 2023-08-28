@@ -17,8 +17,6 @@ int main(){
 }
 ```
 
-[Back to Top &uarr;](#content)
-
 ---
 
 ### 2. WAP. to input a number and print them.
