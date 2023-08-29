@@ -792,6 +792,20 @@ Expected Output:
 
 [Back to Top ↑](#content)
 
+### 28. WAP. to check whether a given number is even or odd without using modulo (%) operator.
+
+> Test Data:
+
+    Enter a number: 12
+
+> Expected Output:
+
+    Even number
+
+[Click Here For Solution](even_odd.c)
+
+[Back to Top ↑](#content)
+
 <!-- ### .
 
 Test Data:
