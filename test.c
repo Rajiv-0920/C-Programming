@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 int main(){
-    float millimeters, kilometers, meters, centimeters;
+    int num, sum;
 
-    printf("Enter millimeters:");
-    scanf("%f", &millimeters);
+    printf("Enter a 5 digit number: ");
+    scanf("%d", &num);
 
-    centimeters = millimeters / 10;
-    meters = centimeters / 100;
-    kilometers = meters / 1000;
+    sum = (num % 10) + (num / 10000);
 
-    printf("Kilometers = %f Meters = %f Centimeters = %f", kilometers, meters, centimeters);
-    
+    printf("Sum = %d", sum);
+
     return 0;
 }

@@ -746,7 +746,7 @@ int main(){
 
 ---
 
-### 22. WAP. to SWAP (any format) three numbers.
+### 22. WAP. to SWAP three numbers (any format).
 
 ```
 i) using four variable
@@ -958,12 +958,12 @@ int main(){
 #include <stdio.h>
 
 int main(){
-    int num, sum = 0;
+    int num, sum;
 
     printf("Enter a 5 digit number: ");
     scanf("%d", &num);
 
-    sum = sum + (num % 10) + (num / 10000);
+    sum = (num % 10) + (num / 10000);
 
     printf("Sum = %d", sum);
 
@@ -1075,7 +1075,8 @@ int main(){
     meters = centimeters / 100;
     kilometers = meters / 1000;
 
-    printf("Kilometers = %f Meters = %f Centimeters = %f", kilometers, meters, centimeters);
+    printf("Kilometers = %f Meters = %f Centimeters = %f",
+     kilometers, meters, centimeters);
 
     return 0;
 }
