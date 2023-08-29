@@ -17,6 +17,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -47,6 +49,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -89,6 +93,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -122,6 +128,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -158,6 +166,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -190,6 +200,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -225,6 +237,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -269,6 +283,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -311,6 +327,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -346,6 +364,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -395,6 +415,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -432,6 +454,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -474,6 +498,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -508,6 +534,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -530,6 +558,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -573,6 +603,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -615,6 +647,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -654,6 +688,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -686,6 +722,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -731,6 +769,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -783,6 +823,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -839,6 +881,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -874,6 +918,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -912,6 +958,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -954,6 +1002,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -990,6 +1040,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -1022,6 +1074,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -1060,6 +1114,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -1096,6 +1152,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -1139,6 +1197,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -1196,6 +1256,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -1237,6 +1299,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -1267,6 +1331,8 @@ int main(){
     return 0;
 }
 ```
+
+<br>
 
 ---
 
@@ -1302,6 +1368,8 @@ int main(){
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -1309,47 +1377,91 @@ int main(){
 ### 35. WAP. to Display The Size of Different Data Types
 
 | Data Type | Size (bytes) | Range | Format Specifier |
+<br>
+
 | ---
 
-<br>---
+<br>
 
 <br>---
+
+<br>
+
+<br>---
+
+<br>
 
 <br>-- | ---
 
-<br>---
+<br>
 
 <br>---
 
+<br>
+
 <br>---
+
+<br>
+
+<br>---
+
+<br>
 
 <br> | ---
 
-<br>---
+<br>
 
 <br>---
 
-<br>---
+<br>
 
 <br>---
 
-<br>---
+<br>
 
 <br>---
 
-<br>---
+<br>
 
 <br>---
 
+<br>
+
 <br>---
+
+<br>
+
+<br>---
+
+<br>
+
+<br>---
+
+<br>
+
+<br>---
+
+<br>
+
+<br>---
+
+<br>
 
 <br>- | ---
 
-<br>---
+<br>
 
 <br>---
 
+<br>
+
 <br>---
+
+<br>
+
+<br>---
+
+<br>
 
 <br>---
 
@@ -1384,6 +1496,8 @@ int main() {
 }
 ```
 
+<br>
+
 ---
 
 <br>
@@ -1399,6 +1513,8 @@ int main() {
 ```c
 
 ```
+
+<br>
 
 ---
 
