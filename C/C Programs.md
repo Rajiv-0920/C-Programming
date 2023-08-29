@@ -19,6 +19,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 2. WAP. to input a number and print them.
 
 > Test Data
@@ -47,6 +49,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 3. WAP. to accept two numbers and print their addition, subtraction, multiplication, division.
 
@@ -87,6 +91,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 4. WAP. to input a number and change the sign.
 
 > Test Data
@@ -118,6 +124,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 5. WAP. to input two number and display quotient and remainder.
 
@@ -152,6 +160,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 6. WAP. to display last digit of a number.
 
 > Test Data
@@ -182,6 +192,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 7. WAP. to accept a number from user and print it’s square & cube in C language.
 
@@ -215,6 +227,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 8. WAP. to calculate Area and Circumference of a Circle.
 
@@ -257,6 +271,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 9. WAP. to input a number to compute the perimeter and area of a rectangle.
 
 > Formula
@@ -297,6 +313,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 10. WAP. to Calculate Percentage of 5 Subjects.
 
 > Test Data
@@ -330,6 +348,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 11. WAP. to Calculate Simple Interest.
 
@@ -377,6 +397,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 12. WAP. to print area of a triangle.
 
 > Formula
@@ -412,6 +434,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 13. WAP. to accept marks of 3 subjects of a student, Calculate total of 3 subjects and average in c language
 
@@ -452,6 +476,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 14. WAP. to input paisa and convert it into rs. and paisa
 
 > Test Data
@@ -484,6 +510,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 15. WAP. to print the following outputs: `https:\\www.google.com\` in C language
 
 > Expected Output
@@ -504,6 +532,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 16. WAP. For Converting Temperature Celsius Into Fahrenheit and Fahrenheit to Celsius
 
@@ -545,6 +575,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 17. WAP. to Calculate Gross Salary of an Employee whose dearness allowance is 40% of basic salary and house rent allowance is 20% of basic salary.
 
 > Formula
@@ -585,6 +617,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 18. WAP. to print profit and profit percentage. Selling price and cost price is given by user.>
 
 > Formula
@@ -622,6 +656,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 19. WAP. to calculate the remainder of 2 numbers without using % operator.
 
 > Test Data:
@@ -652,6 +688,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 20. WAP. that accepts two item’s weight (floating points' values ) and number of purchase (floating points' values) and calculate the average value of the items.
 
@@ -695,6 +733,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 21. WAP. to show swap of two numbers.
 
@@ -745,6 +785,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 22. WAP. to SWAP three numbers (any format).
 
@@ -799,6 +841,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 23. WAP. to merge three number. E.g. a= 1, b= 2, c = 8 is 128.
 
 > Test Data:
@@ -832,6 +876,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 24 .WAP. to Print the range of a number. E.g. number 78 is between 70 and 79, 102 is between 100 and 109.
 
@@ -868,6 +914,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 25. WAP. to input a 3 digit number and reverse it.
 
@@ -908,6 +956,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 26. WAP. to calculate sum of the digits of three digit number.
 
 > Test Data
@@ -942,6 +992,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 27. WAP. to input a 5 digit number and calculate the sum of last and first digit number.
 
 > Test Data:
@@ -972,6 +1024,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 28. WAP. to convert specified days into years, weeks and days.
 
@@ -1008,6 +1062,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 29. WAP. to convert a given integer (in seconds) to hours, minutes and seconds.
 
 > Test Data :
@@ -1042,6 +1098,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 30. WAP. to convert a given integer (in millimeters) to kilometers, meters and centimeters.
 
@@ -1083,6 +1141,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 31. WAP. to read an amount (integer value) and break the amount into smallest possible number of bank notes.
 
@@ -1138,6 +1198,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 32. Write a C program to calculate the distance between the two points
 
 > Formula
@@ -1177,6 +1239,8 @@ int main(){
 
 ---
 
+<br>
+
 ### 33. WAP. to Print the Ascii Value of the Character.
 
 > Test Data
@@ -1205,6 +1269,8 @@ int main(){
 ```
 
 ---
+
+<br>
 
 ### 34. WAP. to accept 3 characters and print the sum of their [ascii](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html).
 
@@ -1238,16 +1304,62 @@ int main(){
 
 ---
 
+<br>
+
 ### 35. WAP. to Display The Size of Different Data Types
 
-| Data Type   | Size (bytes) | Range                           | Format Specifier |
-| ----------- | ------------ | ------------------------------- | ---------------- |
-| int         | 2            | -2,147,483,648 to 2,147,483,647 | %d               |
-| long int    | 4            | -2,147,483,648 to 2,147,483,647 | %ld              |
-| float       | 4            | 1.2E-38 to 3.4E+38              | %f               |
-| double      | 8            | 1.7E-308 to 1.7E+308            | %lf              |
-| long double | 12           | 3.4E-4932 to 1.1E+4932          | %Lf              |
-| char        | 1            | -128 to 127                     | %c               |
+| Data Type | Size (bytes) | Range | Format Specifier |
+| ---
+
+<br>---
+
+<br>---
+
+<br>-- | ---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br> | ---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br>- | ---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br>---
+
+<br>- |
+| int | 2 | -2,147,483,648 to 2,147,483,647 | %d |
+| long int | 4 | -2,147,483,648 to 2,147,483,647 | %ld |
+| float | 4 | 1.2E-38 to 3.4E+38 | %f |
+| double | 8 | 1.7E-308 to 1.7E+308 | %lf |
+| long double | 12 | 3.4E-4932 to 1.1E+4932 | %Lf |
+| char | 1 | -128 to 127 | %c |
 
 > Source Code
 
@@ -1274,6 +1386,8 @@ int main() {
 
 ---
 
+<br>
+
 <!-- ### 4.
 
 > Test Data
@@ -1286,7 +1400,9 @@ int main() {
 
 ```
 
---- -->
+---
+
+<br> -->
 
 <h1 align="center">Hi 👋, I'm Rajiv Kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
