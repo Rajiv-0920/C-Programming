@@ -19,10 +19,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 2. WAP. to input a number and print them.
 
 > Test Data
@@ -49,10 +45,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -95,10 +87,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 4. WAP. to input a number and change the sign.
 
 > Test Data
@@ -128,10 +116,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -168,10 +152,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 6. WAP. to display last digit of a number.
 
 > Test Data
@@ -200,10 +180,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -237,10 +213,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -285,10 +257,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 9. WAP. to input a number to compute the perimeter and area of a rectangle.
 
 > Formula
@@ -329,10 +297,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 10. WAP. to Calculate Percentage of 5 Subjects.
 
 > Test Data
@@ -364,10 +328,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -417,10 +377,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 12. WAP. to print area of a triangle.
 
 > Formula
@@ -454,10 +410,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -500,10 +452,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 14. WAP. to input paisa and convert it into rs. and paisa
 
 > Test Data
@@ -536,10 +484,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 15. WAP. to print the following outputs: `https:\\www.google.com\` in C language
 
 > Expected Output
@@ -558,10 +502,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -605,10 +545,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 17. WAP. to Calculate Gross Salary of an Employee whose dearness allowance is 40% of basic salary and house rent allowance is 20% of basic salary.
 
 > Formula
@@ -649,10 +585,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 18. WAP. to print profit and profit percentage. Selling price and cost price is given by user.>
 
 > Formula
@@ -690,10 +622,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 19. WAP. to calculate the remainder of 2 numbers without using % operator.
 
 > Test Data:
@@ -722,10 +650,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -769,10 +693,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -823,10 +743,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -883,10 +799,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 23. WAP. to merge three number. E.g. a= 1, b= 2, c = 8 is 128.
 
 > Test Data:
@@ -918,10 +830,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -958,10 +866,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1004,10 +908,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 26. WAP. to calculate sum of the digits of three digit number.
 
 > Test Data
@@ -1042,10 +942,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 27. WAP. to input a 5 digit number and calculate the sum of last and first digit number.
 
 > Test Data:
@@ -1074,10 +970,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1116,10 +1008,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 29. WAP. to convert a given integer (in seconds) to hours, minutes and seconds.
 
 > Test Data :
@@ -1152,10 +1040,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1197,10 +1081,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1258,10 +1138,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 32. Write a C program to calculate the distance between the two points
 
 > Formula
@@ -1301,10 +1177,6 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 33. WAP. to Print the Ascii Value of the Character.
 
 > Test Data
@@ -1331,10 +1203,6 @@ int main(){
     return 0;
 }
 ```
-
-<br>
-
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1370,100 +1238,52 @@ int main(){
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 ### 35. WAP. to Display The Size of Different Data Types
 
 | Data Type | Size (bytes) | Range | Format Specifier |
-<br>
-
-| <hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br
 
 <br>
 
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br>
 
 <br>
 
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br>
 
 <br>
 
-<br>-- | <hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br>
 
 <br>
 
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br>
 
 <br>
 
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br>
 
 <br>
 
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br>
 
 <br>
 
-<br> | <hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br>
 
 <br>
 
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br>
 
 <br>
 
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
+<br>
 
 <br>
 
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
 <br>
 
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
 <br>
-
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
-<br>- | <hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
-<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>- |
 | int | 2 | -2,147,483,648 to 2,147,483,647 | %d |
@@ -1498,10 +1318,6 @@ int main() {
 
 <br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
-
-<br>
-
 <!-- ### 4.
 
 > Test Data
@@ -1514,9 +1330,7 @@ int main() {
 
 ```
 
-<br>
 
-<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br> -->
 
