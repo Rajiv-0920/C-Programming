@@ -19,7 +19,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -52,7 +52,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -95,7 +95,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -131,7 +131,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -168,7 +168,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -203,7 +203,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -240,7 +240,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -285,7 +285,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -329,7 +329,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -367,7 +367,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -417,7 +417,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -457,7 +457,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -500,7 +500,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -536,7 +536,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -561,7 +561,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -605,7 +605,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -649,7 +649,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -690,7 +690,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -725,7 +725,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -772,7 +772,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -826,7 +826,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -883,7 +883,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -921,7 +921,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -961,7 +961,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1004,7 +1004,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1042,7 +1042,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1077,7 +1077,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1116,7 +1116,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1155,7 +1155,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1200,7 +1200,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1258,7 +1258,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1301,7 +1301,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1334,7 +1334,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1370,7 +1370,7 @@ int main(){
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1379,91 +1379,91 @@ int main(){
 | Data Type | Size (bytes) | Range | Format Specifier |
 <br>
 
-| ---
+| <hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>-- | ---
+<br>-- | <hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br> | ---
+<br> | <hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>- | ---
+<br>- | <hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
-<br>---
+<br<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>- |
 | int | 2 | -2,147,483,648 to 2,147,483,647 | %d |
@@ -1498,7 +1498,7 @@ int main() {
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br>
 
@@ -1516,7 +1516,7 @@ int main() {
 
 <br>
 
----
+<hr style="height:1px; border:none; color:#000; background-color:#000;">
 
 <br> -->
 
