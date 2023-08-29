@@ -1287,10 +1287,6 @@ int main() {
 
 --- -->
 
-<div align="center">
-<img src="https://avatars.githubusercontent.com/u/133740418?v=4" style="border-radius:50%" align="left" height="" width="150" />
-</div>
-
 <h1 align="center">Hi 👋, I'm Rajiv Kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
 
