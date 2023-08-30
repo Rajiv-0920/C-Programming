@@ -806,17 +806,6 @@ Expected Output:
 
 [Back to Top ↑](#content)
 
-<!-- ### .
-
-Test Data:
-
-Expected Output:
-
-[Click Here For Solution](.c)
-
-[Back to Top ↑](#content)
- -->
-
 # Loops C Programs <a name="loops"></a>
 
 ### 1. C Program to Reverse a Number Using FOR Loop

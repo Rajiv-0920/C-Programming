@@ -1273,8 +1273,540 @@ int main() {
 ```
 
 <br>
+<br>
+<br>
+<br>
 
-<!-- ### 4.
+# If/Else Statement <a name="if"></a>
+
+### 1. WAP. to print greatest among the two numbers.
+
+> Test Data
+
+    Enter 2 Numbers: 15 20
+
+> Expected Output
+
+    Greater number = 20
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2, great;
+
+    printf("Enter 2 numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    if(num1 > num2)
+        great = num1;
+    else
+        great = num2;
+
+    printf("\nGreater number = %d", great);
+    return 0;
+}
+```
+
+<br>
+
+### 2. WAP. to check the given number is positive or negative.
+
+> Test Data
+
+    Enter a number: 15
+
+> Expected Output
+
+    Number is 'Positive'.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num;
+
+    printf("Enter a number:");
+    scanf("%d", &num);
+
+    if(num < 0)
+        printf("number is 'Negative'.");
+    else
+        printf("number is 'Positive'.");
+    return 0;
+}
+```
+
+<br>
+
+### 3. WAP. to check the given number is even or odd.
+
+> Test Data
+
+    Enter a number: 12
+
+> Expected Output
+
+    number is 'Even'.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num;
+
+    printf("\nEnter a number:");
+    scanf("%d", &num);
+
+    if(num % 2 == 0)
+        printf("\nnumber is 'Even'.");
+    else
+        printf("\nnumber is 'Odd'.");
+    return 0;
+}
+```
+
+<br>
+
+### 4. WAP. to check the person is eligible for vote or not.
+
+> Test Data
+
+    Enter your age: 17
+
+> Expected Output
+
+    Your are not eligible for vote.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int age;
+
+    printf("\nEnter your age:");
+    scanf("%d", &age);
+
+    if(age < 18)
+        printf("\nYour are not eligible for vote.");
+    else
+        printf("\nYour are eligible for vote.");
+    return 0;
+}
+```
+
+<br>
+
+### 5. WAP. to input a character and check whether it is vowel or consonant.
+
+> Test Data
+
+    Enter a character: a
+
+> Expected Output
+
+    Character is 'Vowel'.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    char ch;
+
+    printf("Enter a character:");
+    scanf("%c", &ch);
+
+    if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+        printf("Character is 'Vowel'.");
+    else
+        printf("Character is 'Consonant'.");
+
+    return 0;
+}
+```
+
+<br>
+
+### 6. WAP. to check the given year is leap year or not.
+
+> Test Data
+
+    Enter a year: 2023
+
+> Expected Output
+
+    Not a leap year
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int year;
+
+    printf("Enter a year:");
+    scanf("%d", &year);
+
+    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+        printf("\nYear is Leap Year.");
+    else
+        printf("\nYear is Not a Leap Year.");
+
+    return 0;
+}
+```
+
+<br>
+
+### 7. WAP. to check the given number is buzz number or not.
+
+> Buzz number
+
+Buzz numbers are those numbers that are **_divisible by 7_** or **_end with 7_**.
+
+> Test Data
+
+    Enter a number: 47
+
+> Expected Output
+
+    47 is a Buzz Number.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num;
+
+    printf("\nEnter a number:");
+    scanf("%d", &num);
+
+    if(num % 7 == 0 || num % 10 == 7)
+        printf("%d is a Buzz number.", num);
+    else
+        printf("%d is not a Buzz number.", num);
+
+    return 0;
+}
+```
+
+<br>
+
+### 8. WAP. to input cost and sales price and calculate percentage of profit or loss.
+
+> Test Data
+
+    Enter Cost price and Sales price : 20 45
+
+> Expected Output
+
+    Total Profit = 25 and Percentage of Profit =
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int costPrice, sellingPrice, profit, perProfit, loss, perLoss;
+
+    printf("Enter Cost price and Sales price: ");
+    scanf("%d %d", &costPrice, &sellingPrice);
+
+    if(costPrice > sellingPrice){
+        loss = costPrice - sellingPrice;
+        perLoss = loss * 100 / costPrice;
+        printf("\nTotal Loss = %dRs. and Percentage of Loss = %d%%",
+        loss, perLoss);
+    } else{
+        profit = sellingPrice - costPrice;
+        perProfit = profit * 100 / costPrice;
+        printf("\nTotal Profit = %dRs. and Percentage of Profit = %d%%",
+        profit, perProfit);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 9. WAP. to input two number and check they are proper division or not.
+
+> Test Data
+
+    Enter 2 numbers: 45 90
+    Enter 2 numbers: 45 5
+
+> Expected Output
+
+    They are not a proper division.
+    They are a proper division.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2;
+
+    printf("\nEnter 2 number:");
+    scanf("%d %d", &num1, &num2);
+
+    if(num1 % num2 == 0)
+        printf("\nThey are a proper division.");
+    else
+        printf("\nThey are not a proper division.");
+    return 0;
+}
+```
+
+<br>
+
+### 10. WAP. to input age and marks. If age >= 18 and marks >= 80 then the student is eligible for admission otherwise not.
+
+> Test Data
+
+    Enter age and marks: 18 85
+
+> Expected Output
+
+    You are eligible for Admission.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int age, marks;
+
+    printf("\nEnter your age and marks:");
+    scanf("%d %d", &age, &marks);
+
+    if(age >= 18 && marks >= 80)
+        printf("\nYou are eligible for admission.");
+    else
+        printf("\nYou are not eligible for admission.");
+    return 0;
+}
+```
+
+<br>
+
+### 11. WAP. to check the given number is perfect square or not.
+
+> Test Data
+
+    Enter a number: 25
+
+> Expected Output
+
+    25 is a Perfect Square.
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+
+int main(){
+    int num, sqr;
+
+    printf("\nEnter a number:");
+    scanf("%d", &num);
+
+    sqr = sqrt(num);
+
+    if(sqr * sqr == num)
+        printf("%d is a Perfect Square.", num);
+    else
+        printf("%d is not a Perfect Square.", num);
+
+    return 0;
+}
+```
+
+<br>
+
+### 12. WAP. to check the given number is 3 digit number or not.
+
+> Test Data
+
+    Enter a number: 22
+
+> Expected Output
+
+    22 is not a 3 digit number
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num;
+
+    printf("\nEnter a number:");
+    scanf("%d", &num);
+
+    if(num > 99 && num < 1000)
+        printf("\n%d is a 3 digit number.", num);
+    else
+        printf("\n%d is not a 3 digit number.", num);
+
+    return 0;
+}
+```
+
+<br>
+
+### 13. WAP. to calculate greatest among the 3 numbers.
+
+> Test Data
+
+    Enter 3 numbers: 15 20 25
+
+> Expected Output
+
+    Greater number is 25
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2, num3, great;
+
+    printf("\nEnter 3 numbers:");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    if(num1 > num2 && num1 > num3)
+        great = num1;
+    else if(num1 < num2 && num2 > num3)
+        great = num2;
+    else
+        great = num3;
+
+    printf("Greater number = %d", great);
+    return 0;
+}
+```
+
+<br>
+
+### 14. WAP. to calculate the grade of a student after the input of marks of that student.
+
+> Grade
+
+Percentage >= 90 grade is **_‘A’_**
+
+Percentage >= 70 grade is **_‘B’_**
+
+Percentage >= 50 grade is **_‘C’_**
+
+Percentage >= 35 grade is **_‘D’_**
+
+Percentage < 35 grade is **_‘F’_**
+
+> Test Data
+
+    Enter marks: 80
+
+> Expected Output
+
+    Grade is 'B'.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int marks;
+
+    printf("\nEnter marks:");
+    scanf("%d", &marks);
+
+    if(marks >= 90)
+        printf("\nGrade is 'A'.");
+    else if(marks >= 70)
+        printf("\nGread is 'B'.");
+    else if(marks >= 50)
+        printf("\nGread is 'C'.");
+    else if(marks >= 35)
+        printf("\nGread is 'D'.");
+    else
+        printf("\nGread is 'F'.");
+    return 0;
+}
+```
+
+<br>
+
+### 15. WAP. to Calculate Telephone Bill:-
+
+| calls          | Rate/call |
+| -------------- | --------- |
+| First 50 calls | free      |
+| next 100 calls | Rs.3/call |
+| next 200 calls | Rs.5/call |
+| next 350 calls | Rs.7/call |
+
+> Test Data
+
+    Enter numbers of call: 155
+
+> Expected Output
+
+    Total Telephone Bill = 325
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int calls, totalBill;
+
+    printf("\nEnter numbers of call:");
+    scanf("%d", &calls);
+
+    if(calls <= 50)
+        totalBill = 0;
+    else if(calls > 50 && calls < 150)
+        totalBill = (calls - 50) * 3;
+    else if(calls > 150 && calls < 350)
+        totalBill = 300 + (calls - 150) * 5;
+    else
+        totalBill = 1300 + (calls - 350) * 7;
+
+    printf("\nTotal Telephone Bill = %d", totalBill);
+
+    return 0;
+}
+```
+
+<br>
+
+<!--
+### .
 
 > Test Data
 
@@ -1286,9 +1818,8 @@ int main() {
 
 ```
 
-
-
-<br> -->
+<br>
+-->
 
 <h1 align="center">Hi 👋, I'm Rajiv Kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
@@ -1306,6 +1837,6 @@ int main() {
 </a>  
 </div>
 
-# 💻 Tech Stack:
+## 💻 Tech Stack:
 
 <p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
