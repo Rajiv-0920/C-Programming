@@ -460,7 +460,7 @@ int main(){
 
 > Expected Output
 
-    Total 21 Rs. and 50 Paisa
+    Total 21 ₹ and 50 Paisa
 
 > Source Code
 
@@ -476,7 +476,7 @@ int main(){
     rs = paisa / 100;
     paisa = paisa % 100;
 
-    printf("Total %d Rs. and %d Paisa", rs, paisa);
+    printf("Total %d ₹ and %d Paisa", rs, paisa);
 
     return 0;
 }
@@ -1530,12 +1530,12 @@ int main(){
     if(costPrice > sellingPrice){
         loss = costPrice - sellingPrice;
         perLoss = loss * 100 / costPrice;
-        printf("\nTotal Loss = %dRs. and Percentage of Loss = %d%%",
+        printf("\nTotal Loss = %d₹ and Percentage of Loss = %d%%",
         loss, perLoss);
     } else{
         profit = sellingPrice - costPrice;
         perProfit = profit * 100 / costPrice;
-        printf("\nTotal Profit = %dRs. and Percentage of Profit = %d%%",
+        printf("\nTotal Profit = %d₹ and Percentage of Profit = %d%%",
         profit, perProfit);
     }
 
@@ -1766,9 +1766,9 @@ int main(){
 | calls          | Rate/call |
 | -------------- | --------- |
 | First 50 calls | free      |
-| next 100 calls | Rs.3/call |
-| next 200 calls | Rs.5/call |
-| next 350 calls | Rs.7/call |
+| next 100 calls | ₹3/call   |
+| next 200 calls | ₹5/call   |
+| next 350 calls | ₹7/call   |
 
 > Test Data
 
@@ -1806,8 +1806,339 @@ int main(){
 
 <br>
 
+### 16. WAP. to input 3 sides of a triangle and check whether it is possible or not. It possible then check whether the triangle is an equilateral, isosceles or scalene triangle.
+
+> Triangle
+
+- **_Equilateral Triangle:_** A triangle is considered to be an equilateral triangle _when all three sides have the same length._
+- **_Isosceles triangle:_** _When two sides of a triangle are equal or congruent_, then it is called an isosceles triangle.
+- **_Scalene triangle:_** _When none of the sides of a triangle are equal_, it is called a scalene triangle.
+
+> Test Data
+
+    Enter 3 sides of a triangle: 2 2 1
+
+> Expected Output
+
+    Isosceles Triangle.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int s1, s2, s3;
+
+    printf("Enter 3 sides of a triangle:");
+    scanf("%d %d %d", &s1, &s2, &s3);
+
+    if(s1 + s2 > s3 || s1 + s3 > s2 || s2 + s3 > s1){
+        if(s1 == s2 && s2 == s3)
+            printf("\nEquilateral Triangle.");
+        else if(s1 != s2 && s2 != s3)
+            printf("\nScalene Triangle.");
+        else
+            printf("\nIsosceles Triangle.");
+    } else
+        printf("\nNot a Valid Triangle.");
+    return 0;
+}
+```
+
+<br>
+ 
+### 17. WAP. to compute income tax paid by an employee:
+
+| Annual Salary        | Rate of Income Tax                           |
+| -------------------- | -------------------------------------------- |
+| up to ₹100000        | NO TAX                                       |
+| ₹100001 to 150000    | 10% of amount exceeding ₹100000              |
+| RS.150001 to ₹250000 | ₹5000 + 20% of the amount exceeding ₹150000  |
+| Above ₹250000        | ₹25000 + 30% of the amount exceeding ₹250000 |
+
+> Test Data
+
+    Enter your salary: 275000
+
+> Expected Output
+
+    Total tax paid by him = 32500.000000
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    float salary, taxableAmount;
+
+    printf("\nEnter your salary:");
+    scanf("%f", &salary);
+
+    if(salary < 100000)
+        taxableAmount = 0;
+    else if(salary > 100000 && salary <= 150000)
+        taxableAmount = (salary - 100000) * 10 / 100;
+    else if(salary > 150000 && salary <= 250000)
+        taxableAmount = 5000 + (salary - 150000) * 20 / 100;
+    else
+        taxableAmount = 25000 + (salary - 250000) * 30 / 100;
+
+    printf("\nTotal Tax paid by him = %f", taxableAmount);
+    return 0;
+}
+```
+
+<br>
+
+### 18. WAP. to accept three numbers from user and print them in ascending and descending order in c.
+
+> Test Data
+
+    Enter 3 numbers: 3 4 1
+
+> Expected Output
+
+    Ascending order = 4 3 1
+    Descending order = 1 3 4
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2, num3;
+
+    printf("\nEnter 3 numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    if(num1 > num2 && num1 > num3){
+        if(num2 > num3){
+            printf("\nAscending order: %d %d %d",
+            num1, num2, num3);
+            printf("\nDescending order: %d %d %d",
+            num3, num2, num1);
+        } else{
+            printf("\nAscending order: %d %d %d",
+            num1, num3, num2);
+            printf("\nDescending order: %d %d %d",
+            num2, num3, num1);
+        }
+    } else if(num2 > num1 && num2 > num3){
+        if(num1 > num3){
+            printf("\nAscending order = %d %d %d",
+            num2, num1, num3);
+            printf("\nDescending order = %d %d %d",
+            num3, num1, num2);
+        } else {
+            printf("\nAscending order = %d %d %d",
+            num2, num3, num1);
+            printf("\nDescending order = %d %d %d",
+            num1, num3, num2);
+        }
+    } else{
+        if(num1 > num2){
+            printf("\nAscending order = %d %d %d",
+            num3, num1, num2);
+            printf("\nDescending order = %d %d %d",
+            num2, num1, num3);
+        } else{
+            printf("\nAscending order = %d %d %d",
+            num3, num2, num1);
+            printf("\nDescending order = %d %d %d",
+            num1, num2, num3);
+        }
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 19. WAP. to check the given date is correct or not.
+
+> Test Data
+
+    Enter Date month and year e.g.(dd mm yyyy): 29 2 2023
+
+> Expected Output
+
+    29-2-2023 is not a valid date.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int date, month, year, valid = 0;
+
+    printf("\nEnter Date month and year (dd mm yyyy):");
+    scanf("%d %d %d", &date, &month, &year);
+
+    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+        if(month == 2 && (date <= 29 && date >= 1)){
+            valid = 1;
+        } else {
+            valid = 0;
+        }
+    } else {
+        if(month == 2 && (date <= 28 && date >= 1)){
+            valid = 1;
+        } else {
+            valid = 0;
+        }
+    }
+
+    if(valid == 1 ||
+    (((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) && (date <= 31 && date >= 1)) ||
+    ((month == 4 || month == 6 || month == 9 || month == 11) && (date <= 30 && date >= 1))))
+        printf("\n%d-%d-%d is a Valid Date.",
+         date, month, year);
+    else
+        printf("\n%d-%d-%d is not a Valid Date.",
+     date, month, year);
+
+    return 0;
+}
+```
+
+<br>
+
+### 20. WAP. to input week number and print weekday.
+
+> Test Data
+
+    Enter Week number: 4
+
+> Expected Output
+
+    Thursday
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int weekNO;
+
+    printf("\nEnter Week number:");
+    scanf("%d", &weekNO);
+
+    if(weekNO == 1)
+        printf("\nMonday");
+    else if(weekNO == 2)
+        printf("\nTuesday");
+    else if(weekNO == 3)
+        printf("\nWednesday");
+    else if(weekNO == 4)
+        printf("\nThursday");
+    else if(weekNO == 5)
+        printf("\nFriday");
+    else if(weekNO == 6)
+        printf("\nSaturday");
+    else if(weekNO == 7)
+        printf("\nSunday");
+    else
+        printf("\nEnter a valid week number.");
+
+    return 0;
+}
+```
+
+<br>
+
+### 21. WAP. to input month number and print number of days in that month.
+
+> Test Data
+
+    Enter month number: 4
+
+> Expected Output
+
+    30 Days
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int monthNum, flag;
+
+    printf("\nEnter month number:");
+    scanf("%d", &monthNum);
+
+    if(monthNum == 1 || monthNum == 3 || monthNum == 5 || monthNum == 7 ||
+        monthNum == 8 || monthNum == 10 || monthNum == 12)
+        flag = 1;
+    else if (monthNum == 2)
+        flag = 3;
+    else if(monthNum == 4 || monthNum == 6
+            || monthNum == 9 || monthNum == 11)
+        flag = 2;
+    else
+        flag = 0;
+
+
+    if(flag == 1)
+        printf("\n31 Days");
+    else if(flag == 2)
+        printf("\n30 Days");
+    else if(flag == 3)
+        printf("\n28 or 29 Days");
+    else
+        printf("\nNot a Valid month.");
+
+
+    return 0;
+}
+```
+
+<br>
+
+### 22. WAP. to check whether a triangle is valid or not, when the three angles of the triangle are entered through the keyboard.
+
+> Condition
+
+A triangle is valid if the sum of all the three angles is **_equal to 180 degrees._**
+
+> Test Data
+
+    Enter 3 angles of a triangle: 90 45 45
+
+> Expected Output
+
+    Valid Triangle
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int a1, a2, a3;
+
+    printf("\nEnter 3 angles of a triangle:");
+    scanf("%d %d %d", &a1, &a2, &a3);
+
+    if(a1 + a2 + a3 == 180)
+        printf("\nValid Triangle");
+    else
+        printf("\nnot a Valid Triangle");
+
+    return 0;
+}
+```
+
+<br>
+
 <!--
-### .
+### . WAP. to
 
 > Test Data
 
