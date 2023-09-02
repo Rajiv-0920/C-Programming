@@ -643,7 +643,7 @@ Expected Output:
 
     Area of rectangle is greater than its perimeter.
 
-[Click Here For Solution](area_greater_perimeter.c)
+[Click Here For Solution](area_greater_.c)
 
 [Back to Top ↑](#content)
 

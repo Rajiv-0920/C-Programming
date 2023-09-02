@@ -1,15 +1,15 @@
+
 #include <stdio.h>
 
 int main(){
-    int a1, a2, a3;
+    char ch;
 
-    printf("\nEnter 3 angles of a triangle:");
-    scanf("%d %d %d", &a1, &a2, &a3);
+    printf("Enter a character: ");
+    scanf("%c", &ch);
 
-    if(a1 + a2 + a3 == 180)
-        printf("\nValid Triangle");
-    else
-        printf("\nnot a Valid Triangle");
+    ch >= 65 && ch <= 90 ? printf("Character is Uppercase.") :
+    ch >= 97 && ch <= 121 ? printf("Character is Lowercase.") :
+    printf("Not a character.");
     
     return 0;
 }

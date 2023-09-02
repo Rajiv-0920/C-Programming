@@ -2139,6 +2139,781 @@ int main(){
 
 <br>
 
+### 23. WAP. to print the second largest out of three numbers.
+
+> Test Data
+
+    Enter 3 numbers: 45 99 53
+
+> Expected Output
+
+    Second largest number = 53
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2, num3, secLargest;
+
+    printf("Enter 3 numbers:");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    if((num1 < num3 || num1 < num2) &&
+       (num1 > num2 || num1 > num3))
+        secLargest = num1;
+    else if((num2 < num3 || num2 < num1) &&
+            (num2 > num1 || num2 > num3))
+        secLargest = num2;
+    else
+        secLargest = num3;
+
+    printf("\nSecond Largest number = %d", secLargest);
+
+    return 0;
+}
+```
+
+<br>
+
+### 24. WAP. to compute the pension of an employee.
+
+**_If the person is male._**
+
+| Age       | Pension         |
+| --------- | --------------- |
+| Age >= 90 | pension is 4000 |
+| Age >= 60 | pension is 6000 |
+| Age < 60  | pension is 0    |
+
+**_If the person is female._**
+
+| Age       | Pension         |
+| --------- | --------------- |
+| Age >= 90 | pension is 3000 |
+| Age >= 60 | pension is 5000 |
+| Age < 60  | pension is 0    |
+
+> Test Data
+
+    Enter Your Age and Gender: 99 f
+
+> Expected Output
+
+    Pension = 3000
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int age, pension;
+    char gender;
+
+    printf("\nEnter Your Age and Gender: ");
+    scanf("%d %c", &age, &gender);
+
+    if(age >= 90){
+        if(gender == 'm')
+            pension = 4000;
+        else if(gender == 'f')
+            pension = 3000;
+        else
+            printf("\nEnter a Valid Gender.");
+    } else if(age >= 60){
+        if(gender == 'm')
+            pension = 6000;
+        else if(gender == 'f')
+            pension = 5000;
+        else
+            printf("\nEnter a Valid Gender.");
+    } else {
+        pension = 0;
+    }
+
+    printf("\nPension = %d", pension);
+    return 0;
+}
+```
+
+<br>
+
+### 25. WAP. to check whether a 3 digit number is a magic number or not. (Palindrome) A number is a magic number if its reverse is same as the original number.
+
+> Test Data
+
+    Enter number 121
+
+> Expected Output
+
+    121 is a magic number
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num, rev, temp;
+
+    printf("\nEnter a number:");
+    scanf("%d", &num);
+
+    temp = num;
+
+    rev = num % 10;
+    temp = temp / 10;
+    rev = (rev * 10) + temp % 10;
+    rev = (rev * 10) + temp / 10;
+
+    printf("%d %d", rev, num);
+    if(rev == num)
+        printf("\n%d is a magic number.", num);
+    else
+        printf("\n%d is not a magic number.", num);
+
+    return 0;
+}
+```
+
+<br>
+
+### 26. WAP. to Find the absolute value of a number entered through the keyboard.
+
+> Test Data
+
+    Enter a number: 11
+    Enter a number: -23
+
+> Expected Output
+
+    Absolute number = 11
+    Absolute number = 23
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num;
+
+    printf("\nEnter a number:");
+    scanf("%d", &num);
+
+    if(num < 0)
+        num = num * -1;
+
+    printf("Absolute number = %d", num);
+    return 0;
+}
+```
+
+<br>
+
+### 27. WAP. to to accept users marital status, gender and age to check if he/she is eligible for marriage or not.
+
+> Test Data
+
+    Enter MaritalStatus: m (married) / u (unmarried): u
+    Enter your gender: m (male) / f (female): m
+    Enter your age: 24
+
+> Expected Output
+
+    You can marry!
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    int age;
+    char maritalStatus, gender;
+
+    printf("\nEnter MaritalStatus: m (married) / u (unmarried): ");
+    scanf(" %c", &maritalStatus);
+
+    printf("\nEnter your gender: m (male) / f (female): ");
+    scanf(" %c", &gender);
+
+    printf("\nEnter your age: ");
+    scanf(" %d", &age);
+
+    if(maritalStatus == 'm')
+        printf("\nYou can not marry!");
+    else if(maritalStatus == 'u'){
+        if(gender == 'm'){
+            if(age >= 21)
+                printf("\nYou can marry!");
+            else
+                printf("\nYou can not marry!");
+        } else if(gender == 'f'){
+            if(age >= 18)
+                printf("\nYou can marry!");
+            else
+                printf("\nYou can not marry!");
+        } else
+            printf("\nEnter valid gender: ");
+    } else
+        printf("\nEnter valid Marital Status: ");
+    return 0;
+}
+```
+
+<br>
+
+### 28. WAP. to Count the total numbers of notes in given amount.
+
+> Test Data
+
+    Enter the amount: 375
+
+> Expected Output
+
+    2000 = 0
+    500 = 2
+    200 = 1
+    100 = 0
+    50 = 0
+    20 = 1
+    10 = 0
+    5 = 0
+    2 = 0
+    1 = 1
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int amount, twoThousand = 0, fiveHundred = 0, twoHundred = 0,
+    oneHundred = 0, fifty = 0, twenty = 0, ten = 0,
+    five = 0, two = 0, one = 0;
+
+    printf("\nEnter amount:");
+    scanf("%d", &amount);
+
+    if(amount > 2000){
+        twoThousand = amount / 2000;
+        amount = amount % 2000;
+    }
+
+    if(amount > 500){
+        fiveHundred = amount / 500;
+        amount = amount % 500;
+    }
+
+    if(amount > 200){
+        twoHundred = amount / 200;
+        amount = amount % 200;
+    }
+
+    if(amount > 100){
+        oneHundred = amount / 100;
+        amount = amount % 100;
+    }
+
+    if(amount > 50){
+        fifty = amount / 50;
+        amount = amount % 50;
+    }
+
+    if(amount > 20){
+        twenty = amount / 20;
+        amount = amount % 20;
+    }
+
+    if(amount > 10){
+        ten = amount / 10;
+        amount = amount % 10;
+    }
+
+    if(amount > 5){
+        five = amount / 5;
+        amount = amount % 5;
+    }
+
+    if(amount > 2){
+        two = amount / 2;
+        amount = amount % 2;
+    }
+
+    if(amount >= 1){
+        one = amount;
+    }
+
+    printf("\n2000 = %d", twoThousand);
+    printf("\n500 = %d", fiveHundred);
+    printf("\n200 = %d", twoHundred);
+    printf("\n100 = %d", oneHundred);
+    printf("\n50 = %d", fifty);
+    printf("\n20 = %d", twenty);
+    printf("\n10 = %d", ten);
+    printf("\n5 = %d", five);
+    printf("\n2 = %d", two);
+    printf("\n1 = %d", one);
+    return 0;
+}
+```
+
+<br>
+
+### 29. WAP. to determine whether the given character is a capital letter, a small case letter, a digit or a special symbol.
+
+> Hint
+
+[**_ASCII_**](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html) value of the **digit** is between **48 to 58** and **lowercase characters** in the range of **97 to 122**, and **uppercase** is between **65 and 90**, and **special symbol** is between **(32 to 47, 58 to 64, 91 to 96, 123 to 127).**
+
+> Test Data
+
+    Enter Any Character: c
+
+> Expected Output
+
+    Character is 'Lowercase'.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    char ch;
+
+    printf("Enter Any Character: ");
+    scanf("%c", &ch);
+
+    if(ch >= 48 && ch < 58){
+        printf("Character is 'Digit'.");
+    } else if(ch >= 32 && ch <= 47 || ch >= 58 && ch <= 64
+     ||ch >= 91 && ch <= 96 ||ch >= 123 && ch <= 127){
+        printf("Character is 'Special Character'.");
+    } else if(ch >= 65 && ch <= 90){
+        printf("Character is 'UpperCase'.");
+    } else if(ch >= 97 && ch <= 121){
+        printf("Character is 'Lowercase'.");
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 30. WAP. to input the length and breadth of a rectangle, find whether the area of the rectangle is greater than its perimeter.
+
+> Test Data
+
+    Enter the length and breadth of a rectangle: 5 4
+
+> Expected Output
+
+    Area of rectangle is greater than its perimeter.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int length, breadth, area, perimeter;
+
+    printf("\nEnter the length and breadth of a rectangle:");
+    scanf("%d %d", &length, &breadth);
+
+    area = length * breadth;
+    perimeter = 2 * (length + breadth);
+
+    if(area > perimeter)
+        printf("\nArea is greater than it's perimeter.");
+    else
+        printf("\nArea is not greater than it's perimeter.");
+
+    return 0;
+}
+```
+
+<br>
+
+### 31. WAP. to input three points (x1, y1), (x2, y2) and (x3, y3), check if all the three points fall on one straight line.
+
+> Test Data
+
+    Enter points (x1, y1):1 2
+    Enter points (x2, y2):3 4
+    Enter points (x3, y3):5 6
+
+> Expected Output
+
+    All the three points fall on the straight line:
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int x1, y1, x2, y2, x3, y3, m, n;
+
+    printf("Enter points (x1, y1):");
+    scanf("%d %d", &x1, &y1);
+
+    printf("Enter points (x2, y2):");
+    scanf("%d %d", &x2, &y2);
+
+    printf("Enter points (x3, y3):");
+    scanf("%d %d", &x3, &y3);
+
+    m = (y2 - y1) / (x2 - x1);
+    n = (y3 - y2) / (x3 - x2);
+
+    if(m == n)
+        printf("All the three points fall on the straight line:");
+    else
+        printf("All 3 points do not lie on the same line\n");
+
+    return 0;
+}
+```
+
+<br>
+
+### 32. WAP. to input a point (x, y), find out if it lies on the x-axis, y-axis or at the origin, viz. (0, 0).
+
+> Condition
+
+In point (x, y), if x = 0 and y = 0, then the point lies on the origin. If value of x is zero and y is greater than zero, then the point lies on y-axis. If y is zero and x is greater than zero, then the point lies on x-axis.
+
+> Test Data
+
+    Enter point (x, y): 35 20
+
+> Expected Output
+
+    Point (35, 20) neither lie on x-axis nor on y-axis
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int x1, y1;
+
+    printf("Enter (x, y): ");
+    scanf("%d %d", &x1, &y1);
+
+    if(x1 == 0 && y1 == 0)
+        printf("\nThe point (%d, %d) lies on the origin.", x1, y1);
+    else if(x1 == 0 && y1 > 0)
+        printf("\nThe point (%d, %d) lies on the y-axis.", x1, y1);
+    else if(x1 > 0 && y1 == 0)
+        printf("\nThe point (%d, %d) lies on the x-axis.", x1, y1);
+    else
+        printf("Point (%d, %d) neither lie on x-axis nor on y-axis", x1, y1);
+}
+```
+
+<br>
+
+### 33. WAP. to check whether a given number is even or odd without using modulo (%) operator
+
+> Test Data:
+
+    Enter a number: 12
+
+> Expected Output:
+
+    Even number
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num, rem;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    rem = num - num / 2 * 2;
+
+    if(rem == 0)
+        printf("\nEven number");
+    else
+        printf("\nOdd number");
+
+    return 0;
+}
+```
+
+<br>
+
+### 34. WAP. An electricity board charges the following rates for the use of electricity:
+
+| Unit             | Price             |
+| ---------------- | ----------------- |
+| first 200 units  | Rs. 0.80 per unit |
+| next 100 units   | Rs. 0.90 per unit |
+| Beyond 300 units | Rs. 1 per unit    |
+
+All users are charged a minimum of Rs. 100 as meter charge.
+
+If the total amount is more than Rs. 400, then an additional surcharge of 15% of total amount is charged.
+
+> Test Data
+
+    Enter number of units: 417
+
+> Expected Output
+
+    Total Charges = 437.05
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    float units, price;
+
+    printf("\nEnter number of units: ");
+    scanf("%f", &units);
+
+    if(units <= 200 && units > 0)
+        price = units * 0.80;
+    else if(units <= 300 && units > 200)
+        price = 160 + (units - 200) * 0.90;
+    else if(units > 300)
+        price = 250 + (units - 300) * 1;
+    else
+        price = 0;
+
+    price = price + 100;
+
+    if(price > 400)
+        price = price + (price * 15 / 100);
+
+    printf("\nTotal Charges = %.2f", price);
+
+    return 0;
+}
+```
+
+<br>
+
+<!-- ### 35.
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br> -->
+
+<br>
+<br>
+
+# Conditional or Ternary Operator
+
+### 1. WAP. to input a number and print even or odd.
+
+> Test Data
+
+    Enter a number: 5
+
+> Expected Output
+
+    5 is a Odd number.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num;
+
+    printf("Enter a number:");
+    scanf("%d", &num);
+
+    num % 2 == 0 ? printf("Even Number.") : printf("Odd number");
+
+    return 0;
+}
+```
+
+<br>
+
+### 2. WAP. to find the greatest of the two numbers.
+
+> Test Data
+
+    Enter two number: 5 10
+
+> Expected Output
+
+    Greater number = 10
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2, great;
+
+    printf("Enter two number: ");
+    scanf("%d %d", &num1, &num2);
+
+    great = num1 > num2 ? num1 : num2;
+
+    printf("Greater number = %d", great);
+
+    return 0;
+}
+```
+
+<br>
+
+### 3. WAP. to find the greatest of the three numbers.
+
+> Test Data
+
+    Enter Three number: 22 43 10
+
+> Expected Output
+
+    Greater number = 43
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2, num3, great;
+
+    printf("\nEnter three number: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    great = num1 > num2 ? num1 > num3 ?
+    num1 : num3 : num2 > num3 ? num2 : num3;
+
+    printf("\nGreater number = %d", great);
+
+    return 0;
+}
+```
+
+<br>
+
+### 4. WAP. using conditional operators to determine whether a year entered through the keyboard is a leap year or not
+
+> Test Data
+
+    Enter a year: 2021
+
+> Expected Output
+
+    Not a leap year.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int year;
+
+    printf("\nEnter a year:");
+    scanf("%d", &year);
+
+    year % 4 == 0 ? printf("\nLeap year.") :
+    year % 100 != 0 && year % 400 == 0 ?
+    printf("\nLeap year.") : printf("\nNot a Leap year.");
+
+    return 0;
+}
+```
+
+<br>
+
+### 5. WAP. The cost of one type of mobile service is Rs. 250 plus Rs. 1.25 for each call made over and above 100 calls. print the bill. (ternary operator)
+
+> Test Data
+
+    Enter number of Calls: 200
+
+> Expected Output
+
+    Total Bill = 251.25
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    float calls, bill;
+
+    printf("Enter number of Calls: ");
+    scanf("%f", &calls);
+
+    bill = calls > 100 ?(250 + (calls - 100) * 1.25 ): 250;
+
+    printf("Total Bill = %.2f", bill);
+
+    return 0;
+}
+```
+
+<br>
+
+### 6. WAP. to find Whether the character entered through the keyboard is a lower case alphabet or uppercase.
+
+> Test Data
+
+    Enter a character: a
+
+> Expected Output
+
+    Character is Lowercase.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    ch >= 65 && ch <= 90 ? printf("Character is Uppercase.") :
+    ch >= 97 && ch <= 121 ? printf("Character is Lowercase.") :
+    printf("Not a character.");
+
+    return 0;
+}
+```
+
+<br>
+
 <!--
 ### . WAP. to
 
@@ -2157,8 +2932,7 @@ int main(){
 
 <h1 align="center">Hi 👋, I'm Rajiv Kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
-
-<br>   
+ 
 <br>   
 <h2 align="left">🌐 Connect with me:</h2>
 
