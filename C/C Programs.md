@@ -2930,6 +2930,770 @@ int main(){
 <br>
 -->
 
+# Loop Control Instruction
+
+### 1. WAP. to print first 10 natural numbers.
+
+> Natural numbers
+
+First 10 Natural Numbers are: **_1, 2, 3, 4, 5, 6, 7, 8, 9 and 10._**
+
+> Expected Output
+
+    1 2 3 4 5 6 7 8 9 10
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    for(int i = 1; i <= 10; i++){
+        printf("%d ", i);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 2. WAP. to print first 10 natural numbers in reverse order.
+
+> Natural numbers
+
+First 10 Natural Numbers are: **_1, 2, 3, 4, 5, 6, 7, 8, 9 and 10._**
+
+> Expected Output
+
+    10 9 8 7 6 5 4 3 2 1
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    for(int i = 1; i >= 1; i--){
+        printf("%d ", i);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 3. WAP. to print first 10 odd natural numbers
+
+> Odd numbers
+
+Odd numbers are **_not multiples of 2_**.
+
+> Expected Output
+
+    1 3 5 7 9 11 13 15 17 19
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    int count = 0;
+
+    for(int i = 1; i <= 100; i++){
+        if(i % 2 != 0){
+            printf("%d ", i);
+            count++;
+        }
+        if(count == 10)
+            break;
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 4. WAP. to print first 10 even natural numbers
+
+> Even numbers
+
+Even numbers are **_multiples of 2_**.
+
+> Expected Output
+
+    2 4 6 8 10 12 14 16 18 20
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    int count = 0;
+
+    for(int i = 1; i<= 100; i++){
+        if(i % 2 == 0){
+            printf("%d ", i);
+            count++;
+        }
+        if(count == 10)
+            break;
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 5. WAP. to print first N natural numbers. Value of N is given by user.
+
+> Test Data
+
+    Enter n number: 15
+
+> Expected Output
+
+    1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n;
+
+    printf("\nEnter n number: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        printf("%d ", i);
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 6. WAP. to print first N odd natural numbers in reverse order. Value of N is given by user.
+
+> Test Data
+
+    Enter n number: 25
+
+> Expected Output
+
+    First 25 Odd numbers in reverse order = 25 23 21 19 17 15 13 11 9 7 5 3 1
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n;
+
+    printf("Enter n number: ");
+    scanf("%d", &n);
+
+    printf("\nFirst %d Odd numbers in reverse order = ", n);
+    for(int i = n; i >= 1; i--){
+        if(i % 2 != 0)
+            printf("%d ", i);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 7. WAP. to calculate sum of first N natural numbers. Value of N is given by user.
+
+> Test Data
+
+    Enter n number: 5
+
+> Expected Output
+
+    Sum of 5 Natural number = 15
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n, sum = 0;
+
+    printf("Enter n number: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        sum += i;
+    }
+
+    printf("\nSum of %d Natural number = %d", n, sum);
+    return 0;
+}
+```
+
+<br>
+
+### 8. WAP. to calculate factorial of a numbers.
+
+> Factorial number
+
+the factorial of 6 is $1*2*3*4*5*6 = 720$
+
+> Test Data
+
+    Enter n number: 6
+
+> Expected Output
+
+    Factorial of 6 = 720
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n, fact = 1;
+
+    printf("\nEnter a number:");
+    scanf("%d", &n);
+
+    for(int i = 1; i<= n; i++){
+        fact *= i;
+    }
+
+    printf("Factorial of %d = %d", n, fact);
+
+    return 0;
+}
+```
+
+<br>
+
+### 9. WAP. to calculate $x^y$. Values of x and y are given by user.
+
+> Test Data
+
+    Enter x and y: 3 5
+
+> Expected Output
+
+    Value of x and y = 243
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int x, y, value = 1;
+
+    printf("Enter x and y: ");
+    scanf("%d %d", &x, &y);
+
+    for(int i = 1; i <= y; i++){
+        value *= x;
+    }
+
+    printf("Value of x and y = %d", value);
+    return 0;
+}
+```
+
+<br>
+
+### 10. WAP. to count number of digits in a given number.
+
+> Test Data
+
+    Enter a number: 123
+
+> Expected Output
+
+    3 number of digits in a given number.
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int count = 0, num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0){
+        count++;
+        num /= 10;
+    }
+
+    printf("%d number of digits in a given number.", count);
+
+    return 0;
+}
+```
+
+<br>
+
+### 11. WAP. to calculate sum of the digits of a given number.
+
+> Test Data
+
+    Enter a number: 352
+
+> Expected Output
+
+    Sum = 10
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num, sum = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0){
+        sum += num % 10;
+        num /= 10;
+    }
+
+    printf("Sum = %d", sum);
+    return 0;
+}
+```
+
+<br>
+
+### 12. WAP. to reverse a number.
+
+> Test Data
+
+    Enter a number: 352
+
+> Expected Output
+
+    Reverse number = 253
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num, rev = 0, rem;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num > 0){
+        rem = num % 10;
+        rev = rev * 10 + rem;
+        num /= 10;
+    }
+
+    printf("Reverse number = %d", rev);
+
+    return 0;
+}
+```
+
+<br>
+
+### 13. WAP. to check whether the two given numbers are reverse of each other or not.
+
+> Test Data
+
+    Enter two number: 123 321
+
+> Expected Output
+
+    YES
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2, rev = 0;
+
+    printf("Enter a number: ");
+    scanf("%d %d", &num1, &num2);
+
+    while(num1 > 0){
+        rev = rev * 10 + num1 % 10;
+        num1 /= 10;
+    }
+
+    (rev == num2) ? printf("YES") : printf("NO");
+    return 0;
+}
+```
+
+<br>
+
+### 14. WAP. to check whether a given number is Prime or not.
+
+> Test Data
+
+    Enter a number: 5
+
+> Expected Output
+
+    Prime number
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num, flag = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for(int i = 2; i <= num / 2; i++){
+        if(num % i == 0){
+            flag = 0;
+            break;
+        }
+    }
+
+    if(num == 1)
+        flag = 0;
+
+    if(flag == 1)
+        printf("Prime number");
+    else
+        printf("Not a Prime number");
+    return 0;
+}
+```
+
+<br>
+
+### 15. WAP. to print all prime numbers between two given numbers.
+
+> Test Data
+
+    Enter the range between two number: 25 50
+
+> Expected Output
+
+    29 31 37 41 43 47
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n1, n2, flag;
+
+    printf("Enter the range between two numbers: ");
+    scanf("%d %d", &n1, &n2);
+
+    printf("\nPrime numbers in the given range are = ");
+    for(int i = n1; i <= n2; i++){
+        flag = 1;
+        for(int j = 2; j <= i / 2; j++){
+            if(i % j == 0){
+                flag = 0;
+                break;
+            }
+        }
+        if(i == 1)
+            flag = 0;
+        if(flag == 1)
+            printf("%d ", i);
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 16. WAP. to print all prime numbers in first 1000 natural numbers.
+
+> Expected Output
+
+    2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 101 103 107 109 113 127 131 137 139 149 151 157 163 167 173 179 181 191 193 197 199 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 353 359 367 373 379 383 389 397 401 409 419 421 431 433 439 443 449 457 461 463 467 479 487 491 499 503 509 521 523 541 547 557 563 569 571 577 587 593 599 601 607 613 617 619 631 641 643 647 653 659 661 673 677 683 691 701 709 719 727 733 739 743 751 757 761 769 773 787 797 809 811 821 823 827 829 839 853 857 859 863 877 881 883 887 907 911 919 929 937 941 947 953 967 971 977 983 991 997
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int flag;
+
+    printf("\nPrime numbers = ");
+    for(int i = 1; i <= 1000; i++){
+        flag = 1;
+        for(int j = 2; j <= i / 2; j++){
+            if(i % j == 0){
+                flag = 0;
+                break;
+            }
+        }
+        if(i == 1)
+            flag = 0;
+        if(flag == 1)
+            printf("%d ", i);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 17. WAP. to find GCD of two numbers.
+
+> Greatest Common Divisor - GCD
+
+Find the **_GCD_** of **_15 and 20._**
+
+    Factor of 15 = 1, 3, 5, 15
+    Factor of 20 = 1, 2, 4, 5, 10, 20
+
+    GCD of 15 and 20 = 5
+
+> Test Data
+
+    Enter two numbers:  36 60
+
+> Expected Output
+
+    GCD = 12
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2, smaller, gcd;
+
+    printf("\nEnter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    smaller = num1;
+
+    if(num1 > num2)
+        smaller = num2;
+
+    while(smaller != 0){
+        if(num1 % smaller == 0 && num2 % smaller == 0){
+            gcd = smaller;
+            break;
+        }
+        smaller--;
+    }
+
+    printf("\nGCD = %d", gcd);
+
+    return 0;
+}
+```
+
+<br>
+
+### 18. WAP. to find LCM of two numbers.
+
+> Test Data
+
+    Enter two number: 12 52
+
+> Expected Output
+
+    LCM = 156
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num1, num2, greater, lcm;
+
+    printf("Enter two number: ");
+    scanf("%d %d", &num1, &num2);
+
+    greater = num1;
+
+    if(num1 < num2)
+        greater = num2;
+
+    while(1){
+        if(greater % num1 == 0 && greater % num2 == 0){
+            lcm = greater;
+            break;
+        }
+        greater++;
+    }
+
+    printf("LCM = %d", lcm);
+
+    return 0;
+}
+```
+
+<br>
+
+<!-- ### 19. WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+### 20. WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+### 21. WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+### 22. WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+### 23. WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+### 24. WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+### 25. WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+### 26. WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+<!--
+
+### . WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+
+-->
+
 <h1 align="center">Hi 👋, I'm Rajiv Kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
  
