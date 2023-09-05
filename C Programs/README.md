@@ -3559,86 +3559,249 @@ int main(){
 
 <br>
 
-<!-- ### 19. WAP. to
-
-> Test Data
+### 19. WAP. to print the following 1, 4, 7, 10 ..... 40.
 
 > Expected Output
+
+    1 4 7 10 13 16 19 22 25 28 31 34 37 40
 
 > Source Code
 
 ```c
+#include <stdio.h>
 
+int main(){
+    int i = 1;
+
+    while(i <= 40){
+        printf("%d ", i);
+        i += 3;
+    }
+
+    return 0;
+}
 ```
 
 <br>
 
-### 20. WAP. to
-
-> Test Data
+### 20. WAP. to print the following 1, -4, 7, -10 ..... -40.
 
 > Expected Output
+
+    1 -4 7 -10 13 -16 19 -22 25 -28 31 -34 37 -40
 
 > Source Code
 
 ```c
+#include <stdio.h>
 
+int main(){
+    int i = 1, s = 1;
+
+    while(i <= 40){
+        printf("%d ",i * s);
+        i += 3;
+        s *= -1;
+    }
+
+    return 0;
+}
 ```
 
 <br>
 
-### 21. WAP. to
+### 21. WAP. to print table of a given number.
 
 > Test Data
 
+    Enter a number: 19
+
 > Expected Output
+
+    19 x 1 = 19
+    19 x 2 = 38
+    19 x 3 = 57
+    19 x 4 = 76
+    19 x 5 = 95
+    19 x 6 = 114
+    19 x 7 = 133
+    19 x 8 = 152
+    19 x 9 = 171
+    19 x 10 = 190
 
 > Source Code
 
 ```c
+#include <stdio.h>
 
+int main(){
+    int n, i = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    while(i <= 10){
+        printf("\n%d x %d = %d", n, i, n * i);
+        i++;
+    }
+
+    return 0;
+}
 ```
 
 <br>
 
-### 22. WAP. to
+### 22. WAP. to find a 3 digit number is Armstrong or not. (without using pow function)
+
+> Armstrong number
+
+**_0, 1, 153, 370, 371 and 407_** are the Armstrong numbers.
+
+$153 = 1 * 1 * 1 + 5 * 5 * 5 + 3 * 3 * 3$
+
+$153 = 1 + 125 + 27$
+
+$153 = 153$
 
 > Test Data
 
+    Enter a number: 9474
+
 > Expected Output
+
+    9474 is a Armstrong number
 
 > Source Code
 
 ```c
+#include <stdio.h>
 
+int main(){
+    int num, rem, arm = 0, temp;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while(temp != 0){
+        rem = temp % 10;
+        arm += rem * rem * rem;
+        temp /= 10;
+    }
+
+    if(num == arm)
+        printf("%d is a Armstrong number.", num);
+    else
+        printf("%d is not a Armstrong number.", num);
+
+
+    return 0;
+}
 ```
 
 <br>
 
-### 23. WAP. to
+### 23. WAP. to Find Number Is Armstrong Or Not
+
+> Armstrong number
+
+**_0, 1, 153, 370, 371 and 407_** are the Armstrong numbers.
+
+$153 = 1 * 1 * 1 + 5 * 5 * 5 + 3 * 3 * 3$
+
+$153 = 1 + 125 + 27$
+
+$153 = 153$
 
 > Test Data
 
+    Enter a number: 9474
+
 > Expected Output
+
+    9474 is a Armstrong number
 
 > Source Code
 
 ```c
+#include <stdio.h>
+#include <math.h>
 
+int main(){
+    int n, count = 0, temp, arm = 0, rem;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    temp = n;
+
+    while(temp != 0){
+        count++;
+        temp /= 10;
+    }
+
+    temp = n;
+
+    while(temp != 0){
+        rem = temp % 10;
+        arm += pow(rem, count);
+        temp /= 10;
+    }
+
+    printf("Arm = %d n = %d", arm, n);
+
+    if(arm == n)
+        printf("%d is a Armstrong number.", n);
+    else
+        printf("%d is not an Armstrong number.", n);
+
+    return 0;
+}
 ```
 
 <br>
 
-### 24. WAP. to
+### 24. WAP. to check whether it is a Palindrome number or not.
+
+> Palindrome number
+
+that remains the **_same when its digits are reversed._**
 
 > Test Data
 
+    Enter a number: 35153
+
 > Expected Output
+
+    35153 is a Palindrome number
 
 > Source Code
 
 ```c
+#include <stdio.h>
 
+int main(){
+    int num, rev = 0, rem, temp;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while(temp != 0){
+        rem = temp % 10;
+        rev = rev * 10 + rem;
+        temp /= 10;
+    }
+
+    if(rev == num)
+        printf("%d is a Palindrome number.", num);
+    else
+        printf("%d is not a Palindrome number.", num);
+
+    return 0;
+}
 ```
 
 <br>
@@ -3671,8 +3834,6 @@ int main(){
 
 <br>
 
-<!--
-
 ### . WAP. to
 
 > Test Data
@@ -3686,9 +3847,6 @@ int main(){
 ```
 
 <br>
-
-
--->
 
 <h1 align="center">Hi 👋, I'm Rajiv Kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
