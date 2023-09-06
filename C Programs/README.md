@@ -3926,7 +3926,7 @@ int main(){
 
 <br>
 
-### 28. WAP. to the following series 1, 8, 27, 64, 125 , 216....
+### 28. WAP. to print the following series 1, 8, 27, 64, 125 , 216....
 
 > Test Data
 
@@ -3993,7 +3993,11 @@ int main(){
 
 > Test Data
 
+    Enter the value of n: 5
+
 > Expected Output
+
+    1 1 2 4 7
 
 > Source Code
 
