@@ -3153,7 +3153,7 @@ int main(){
 
 > Factorial number
 
-the factorial of 6 is $1*2*3*4*5*6 = 720$
+the factorial of 6 is $1 * 2 * 3 * 4 * 5 * 6 = 720$
 
 > Test Data
 
@@ -3174,7 +3174,7 @@ int main(){
     printf("\nEnter a number:");
     scanf("%d", &n);
 
-    for(int i = 1; i<= n; i++){
+    for(int i = n; i >= 1; i--){
         fact *= i;
     }
 
@@ -3665,11 +3665,11 @@ $153 = 153$
 
 > Test Data
 
-    Enter a number: 9474
+    Enter a number: 153
 
 > Expected Output
 
-    9474 is a Armstrong number
+    153 is a Armstrong number
 
 > Source Code
 
@@ -3806,7 +3806,190 @@ int main(){
 
 <br>
 
-### 25. WAP. to
+### 25. WAP. to print Armstrong number between 1 to 1000.
+
+> Test Data
+
+    Enter the value of n: 10000
+
+> Expected Output
+
+    1 2 3 4 5 6 7 8 9 153 370 371 407 1634 8208 9474
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int n, count = 0, temp, rem, arm = 0;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        arm = 0;
+        count = 0;
+        temp = i;
+        while(temp != 0){
+            count++;
+            temp /= 10;
+        }
+        temp = i;
+        while(temp != 0){
+            rem = temp % 10;
+            arm += pow(rem, count);
+            temp /= 10;
+        }
+
+        if(i == arm)
+            printf("%d ", i);
+
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 26. WAP. to print n fibonacci series.
+
+> Fibonacci numbers
+
+The Fibonacci numbers are the numbers in the following integer sequence: **_0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …….._**
+
+> Test Data
+
+    Enter the value of n: 5
+
+> Expected Output
+
+    0 1 1 2 3
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n, n1 = 0, n2 = 1, sum = 0;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 0; i <= n; i++){
+        if(i <= 1)
+            printf("%d ", i);
+        else{
+            sum = n1 + n2;
+            n1 = n2;
+            n2 = sum;
+            printf("%d ", sum);
+        }
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 27. WAP. to print n Square number series ex:- 1, 4, 9, 16, 25, 36, 48;
+
+> Test Data
+
+    Enter the value of n: 6
+
+> Expected Output
+
+    1, 4, 9, 16, 25, 36
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        printf("%d ", i * i);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 28. WAP. to the following series 1, 8, 27, 64, 125 , 216....
+
+> Test Data
+
+    Enter the value of n: 5
+
+> Expected Output
+
+    1 8 27 64 125
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        printf("%d ", i * i * i);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 29. WAP. to print the following 1, -1, 1, -1, 1, ......
+
+> Test Data
+
+    Enter the value of n: 5
+
+> Expected Output
+
+    1 -1 1 -1 1
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n, num = 1;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        printf("%d ", num);
+        num *= -1;
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 30. WAP. to print the following 1, 1, 2, 4, 7, 13, 24, ... (Lucas series)
 
 > Test Data
 
@@ -3815,31 +3998,40 @@ int main(){
 > Source Code
 
 ```c
+#include <stdio.h>
 
+int main(){
+    int n, n1 = 1, n2 = 1, n3 = 0, temp;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        if(i <= 2){
+            printf("%d ", 1);
+        } else {
+            temp = n1 + n2 + n3;
+            n3 = n2;
+            n2 = n1;
+            n1 = temp;
+
+            printf("%d ", n1);
+        }
+    }
+    return 0;
+}
 ```
 
 <br>
 
-### 26. WAP. to
-
-> Test Data
-
-> Expected Output
-
-> Source Code
-
-```c
-
-```
-
-<br>
-
+<!--
 ### . WAP. to
 
 > Test Data
 
 > Expected Output
 
+
 > Source Code
 
 ```c
@@ -3847,6 +4039,7 @@ int main(){
 ```
 
 <br>
+ -->
 
 <h1 align="center">Hi 👋, I'm Rajiv Kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
