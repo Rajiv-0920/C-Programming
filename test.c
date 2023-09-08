@@ -1,22 +1,25 @@
 #include <stdio.h>
 
 int main(){
-    int n, n1 = 1, n2 = 1, n3 = 0, temp;
+    int n, temp, fact, sum, rem;
 
-    printf("Enter the value of n: ");
+    printf("\nEnter the value of n: ");
     scanf("%d", &n);
 
     for(int i = 1; i <= n; i++){
-        if(i <= 2){
-            printf("%d ", 1);
-        } else {
-            temp = n1 + n2 + n3;
-            n3 = n2;
-            n2 = n1;
-            n1 = temp;
-            
-            printf("%d ", n1);
+        temp = i;
+        sum = 0;
+        while(temp != 0){
+            fact = 1;
+            rem = temp % 10;
+            for(int j = rem; j >= 1; j--)
+                fact *= j;
+            sum += fact;
+            temp /= 10;
         }
+
+        if(sum == i)
+            printf("%d ", i);
     }
     return 0;
 }

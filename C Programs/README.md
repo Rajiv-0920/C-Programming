@@ -4028,13 +4028,314 @@ int main(){
 
 <br>
 
+### 31. WAP. to print 1 to n Triangular number sequence.
+
+> Triangular number
+
+    1, 3, 6, 10, 15, 21, 28, 36, 45,...
+
+> Test Data
+
+    Enter the value of n: 10
+
+> Expected Output
+
+    1 3 6 10 15 21 28 36 45 55
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int sum = 0, n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        sum += i;
+        printf("%d ", sum);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 32. WAP. to print the following sequence 1, 2, 0, 3, -1, 4, -2, 5, -3, 6, -4, 7, …….n
+
+> Test Data
+
+    Enter the value of n: 10
+
+> Expected Output
+
+    1 2 0 3 -1 4 -2 5 -3 6
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n, n1 = 2, n2 = 1;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        if(i % 2 == 0)
+            printf("%d ", n1++);
+        else
+            printf("%d ", n2--);
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 33. WAP. to print the following sequence 1, 5, 2, 4, 3, 3, 4, 2, 5, 1
+
+> Test Data
+
+    Enter the value of n: 20
+
+> Expected Output
+
+    1 10 2 9 3 8 4 7 5 6 6 5 7 4 8 3 9 2 10 1
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n, n1 = 1, n2;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    n2 = n / 2;
+
+    for(int i = 1; i <= n; i++){
+        if(i % 2 == 0)
+            printf("%d ", n2--);
+        else
+            printf("%d ", n1++);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 34. WAP. to print the following sequence 1, 5, 2, 6, 3, 7, 4, 8, 5, 9
+
+> Test Data
+
+    Enter the value of n: 20
+
+> Expected Output
+
+    1 10 2 11 3 12 4 13 5 14 6 15 7 16 8 17 9 18 10 19
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n, n1, n2;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    n1 = 1;
+    n2 = n / 2;
+
+    for(int i = 1; i <= n; i++){
+        if(i % 2 == 0)
+            printf("%d ", n2++);
+        else
+            printf("%d ", n1++);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 35. WAP. to input a number and print sum of its even and odd digits.
+
+> Test Data
+
+    Enter any number: 3875698
+
+> Expected Output
+
+    Sum of even number = 22 and odd number = 24
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int evenSum = 0, oddSum = 0, num, rem;
+
+    printf("Enter any number: ");
+    scanf("%d", &num);
+
+    while(num != 0){
+        rem = num % 10;
+        rem % 2 == 0 ? evenSum += rem : (oddSum += rem);
+        num /= 10;
+    }
+
+    printf("Sum of even number = %d and odd number = %d", evenSum, oddSum);
+
+    return 0;
+}
+```
+
+<br>
+
+### 36. WAP. to input any number and print its factors.
+
+> Test Data
+
+    Enter any number: 36
+
+> Expected Output
+
+    1 2 3 4 6 9 12 18 36
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num;
+
+    printf("Enter any number: ");
+    scanf("%d", &num);
+
+    for(int i = 1; i <= num; i++){
+        if(num % i == 0)
+            printf("%d ", i);
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 37. WAP. to input a number and check it for Strong number.
+
+> Strong number
+
+Strong number is a special number **_whose sum of the factorial of digits is equal to the original number._**
+For Example: **_145 is strong number._** Since, **_1! + 4! + 5! = 145._**
+
+> Test Data
+
+    Enter any number: 40585
+
+> Expected Output
+
+    40585 is a strong number
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num, sum = 0, temp, fact = 1, rem;
+
+    printf("Enter any number: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while(temp != 0){
+        fact = 1;
+        rem = temp % 10;
+        for(int i = rem; i >= 1; i--){
+            fact *= i;
+        }
+        sum += fact;
+        temp /= 10;
+    }
+
+    if(sum == num)
+        printf("%d is a strong number", num);
+    else
+        printf("%d is not a strong number", num);
+    return 0;
+}
+```
+
+<br>
+
+### 38. WAP. to input n number and print all strong numbers in between 1 to n.
+
+> Strong number
+
+Strong number is a special number **_whose sum of the factorial of digits is equal to the original number._**
+For Example: **_145 is strong number._** Since, **_1! + 4! + 5! = 145._**
+
+> Test Data
+
+    Enter the value of n: 50000
+
+> Expected Output
+
+    1 2 145 40585
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n, temp, fact, sum, rem;
+
+    printf("\nEnter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        temp = i;
+        sum = 0;
+        while(temp != 0){
+            fact = 1;
+            rem = temp % 10;
+            for(int j = rem; j >= 1; j--)
+                fact *= j;
+            sum += fact;
+            temp /= 10;
+        }
+
+        if(sum == i)
+            printf("%d ", i);
+    }
+    return 0;
+}
+```
+
+<br>
 <!--
 ### . WAP. to
 
 > Test Data
 
 > Expected Output
-
 
 > Source Code
 
@@ -4043,7 +4344,7 @@ int main(){
 ```
 
 <br>
- -->
+-->
 
 <h1 align="center">Hi 👋, I'm Rajiv Kumar</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
