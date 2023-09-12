@@ -4750,8 +4750,220 @@ int main(){
 
 <br>
 
-<!--
+### 8. WAP. to print the following pattern
 
+> Test Data
+
+    Enter the value of n: 5
+
+> Expected Output
+
+            *
+          * *
+        * * *
+      * * * *
+    * * * * *
+      * * * *
+        * * *
+          * *
+            *
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        for(int j = 1; j <= n - i; j++){
+            printf("  ");
+        }
+        for(int j = 1; j <= i; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    for(int i = 1; i <= n - 1; i++){
+        for(int j = 1; j <= i; j++){
+            printf("  ");
+        }
+        for(int j = n - i; j >= 1; j--){
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 9. WAP. to print the following pattern
+
+> Test Data
+
+    Enter the value of n: 5
+
+> Expected Output
+
+            *
+          * * *
+        * * * * *
+      * * * * * * *
+    * * * * * * * * *
+      * * * * * * *
+        * * * * *
+          * * *
+            *
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        for(int j = 1; j <= n - i; j++){
+            printf(" ");
+        }
+        for(int j = 1; j <= (i * 2) - 1; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    for(int i = n - 1; i >= 1; i--){
+        for(int j = 1; j <= n - i; j++){
+            printf(" ");
+        }
+        for(int j = 1; j <= (i * 2) - 1; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 10. WAP. to print the following pattern
+
+> Test Data
+
+    Enter the value of n: 5
+
+> Expected Output
+
+    * * * * * * * * *
+    * * * * * * *
+    * * * * *
+    * * *
+    *
+    * * *
+    * * * * *
+    * * * * * * *
+    * * * * * * * * *
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        for(int j = 1; j <= (2 * n) - i + 1; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    for(int i = 1; i <= n - 1; i++){
+        for(int j = 1; j <= (2 * i) + 1; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+### 11. WAP. to print the following pattern
+
+> Test Data
+
+    Enter the value of n: 5
+
+> Expected Output
+
+    * * * * * * * * *
+        * * * * * * *
+            * * * * *
+                * * *
+                    *
+                * * *
+            * * * * *
+        * * * * * * *
+    * * * * * * * * *
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        for(int j = 1; j <= (i - 1) * 2; j++){
+            printf("  ");
+        }
+        for(int j = 1; j <= 2 * (n - i) + 1; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for(int i = 1; i <= n - 1; i++){
+        for(int j = 1; j <= 2 * (n - i) - 2; j++){
+            printf("  ");
+        }
+        for(int j = 1; j <= (2 * i) + 1; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+<br>
+
+<!--
 
 ### . WAP. to print the following pattern
 
@@ -4766,7 +4978,6 @@ int main(){
 ```
 
 <br>
-
 
 -->
 
