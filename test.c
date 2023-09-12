@@ -1,25 +1,20 @@
 #include <stdio.h>
 
 int main(){
-    int n, temp, fact, sum, rem;
+    int num, sum = 0;
 
-    printf("\nEnter the value of n: ");
-    scanf("%d", &n);
+    printf("Enter a number: ");
+    scanf("%d", &num);
 
-    for(int i = 1; i <= n; i++){
-        temp = i;
-        sum = 0;
-        while(temp != 0){
-            fact = 1;
-            rem = temp % 10;
-            for(int j = rem; j >= 1; j--)
-                fact *= j;
-            sum += fact;
-            temp /= 10;
-        }
-
-        if(sum == i)
-            printf("%d ", i);
+    for(int i = 1; i <= num / 2; i++){
+        if(num % i == 0)
+            sum += i;
     }
+    
+    if(sum == num)
+        printf("Perfect number");
+    else
+        printf("Not a Perfect number");
+    
     return 0;
 }
