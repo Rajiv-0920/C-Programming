@@ -3,5 +3,5 @@
     "*.embeddedhtml": "html",
     "stdio.h": "c"
   },
-  "cSpell.words": ["Kumar"]
+  "cSpell.words": ["Kumar", "scanf"]
 }
