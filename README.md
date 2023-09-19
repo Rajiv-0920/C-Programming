@@ -4523,6 +4523,102 @@ int main(){
 
 <br>
 
+### 44. WAP. to express a given number as a sum of two prime numbers. Print all possible solutions.
+
+> Test Data
+
+    Enter a number: 34
+
+> Expected Output
+
+    3 + 31 = 34
+    5 + 29 = 34
+    11 + 23 = 34
+    15 + 19 = 34
+    17 + 17 = 34
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num, c, c1, subVal;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for(int i = 2; i <= num / 2; i++){
+        c = 1;
+        if(i == 2){
+            c = 1;
+        } else if(i % 2 == 0){
+            c = 0;
+        }
+
+        if(c == 1){
+            subVal = num - i;
+            c1 = 1;
+            for(int j = 2; j <= subVal/2; j++){
+                if(subVal % j == 0){
+                    c1 = 0;
+                    break;
+                }
+            }
+            if(c1 == 1){
+                printf("\n%d + %d = %d", i, subVal, i + subVal);
+            }
+        }
+    }
+    if(c1 != 1){
+        printf("Sum of Prime possible number is 0");
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 45. WAP. to input a number and check it is square of 2 or not
+
+> Test Data
+
+    Enter any number: 64
+
+> Expected Output
+
+    64 is a square of 2
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int n, s = 1;
+
+    printf("Enter any number: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        s *= 2;
+        if(s == n){
+            break;
+        }
+    }
+
+    if(s == n){
+        printf("%d is a square of 2", n);
+    } else{
+        printf("%d is not a square of 2", n);
+    }
+
+    return 0;
+}
+```
+
+<br>
+
 <br>
 <br>
 
@@ -4599,7 +4695,7 @@ int main(){
 > Source Code
 
 ```c
-# include <stdio.h>
+#include <stdio.h>
 
 int main(){
     int n;
@@ -4637,7 +4733,7 @@ int main(){
 > Source Code
 
 ```c
-# include <stdio.h>
+#include <stdio.h>
 
 int main(){
     int n;
@@ -4674,7 +4770,7 @@ int main(){
 > Source Code
 
 ```c
-# include <stdio.h>
+#include <stdio.h>
 
 int main(){
     int n;
@@ -4714,7 +4810,7 @@ int main(){
 > Source Code
 
 ```c
-# include <stdio.h>
+#include <stdio.h>
 
 int main(){
     int n;
@@ -4754,7 +4850,7 @@ int main(){
 > Source Code
 
 ```c
-# include <stdio.h>
+#include <stdio.h>
 
 int main(){
     int n;
@@ -4796,7 +4892,7 @@ int main(){
 > Source Code
 
 ```c
-# include <stdio.h>
+#include <stdio.h>
 
 int main(){
     int n;
@@ -6313,6 +6409,530 @@ int main(){
 <!--
 
 ### . WAP. to print the following pattern
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+-->
+
+<br>
+<br>
+<br>
+
+# Switch Case Statement
+
+### 1. Compute the following:
+
+1. Factorial of a number
+2. Prime or not
+3. Odd or even
+4. Exit
+
+Once a menu item is selected the appropriate action should be taken and once this action is finished, the menu should reappear. Unless the user selects the ‘Exit’ option the program should continue to run.
+
+**Hint:** Make use of an infinite while and a switch statement.
+
+> Test Data
+
+    Enter a character: (Factorial 'f' Prime 'p' Even or Odd 'e' or Exit ''): f
+
+    Enter a number: 5
+    Factorial = 120
+    Enter a character: (Factorial 'f' Prime 'p' Even or Odd 'e' or Exit ''): p
+
+    Enter a number: 15
+
+    Not a Prime Number
+    Enter a character: (Factorial 'f' Prime 'p' Even or Odd 'e' or Exit ''): t
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    char ch;
+    int a = 1, flag = 1, num, fact = 1;
+
+    while(a){
+        printf("\nEnter a character:
+        (Factorial 'f' Prime 'p' Even or Odd 'e' or Exit ''): ");
+        scanf(" %c", &ch);
+
+        switch(ch){
+            case 'f':
+                    printf("\nEnter a number: ");
+                    scanf("%d", &num);
+
+                    for(int i = num; i >= 1; i--){
+                        fact *= i;
+                    }
+
+                    printf("Factorial = %d", fact);
+                    break;
+            case 'p':
+                    printf("\nEnter a number: ");
+                    scanf("%d", &num);
+
+                    for(int i = 2; i <= num / 2; i++){
+                        flag = 1;
+                        if(num % i == 0){
+                            flag = 0;
+                            break;
+                        }
+                    }
+
+                    if(flag == 1){
+                        printf("\nPrime Number");
+                    } else {
+                        printf("\nNot a Prime Number");
+                    }
+                    break;
+            case 'e':
+                    printf("\nEnter a number: ");
+                    scanf("%d", &num);
+
+                    if(num % 2 == 0){
+                        printf("\nEven Number");
+                    } else{
+                        printf("\nOdd Number");
+                    }
+                    break;
+            default:
+                a = 0;
+    }
+    }
+    return 0;
+}
+```
+
+<br>
+
+<!--
+
+### .
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+-->
+
+<br>
+<br>
+
+# Functions
+
+### 1. WAP. To Accept Two Numbers From User And Print It’s Addition,Subtraction,Multiplication,Division Using Different Functions In C Language
+
+> Test Data
+
+    Enter 2 numbers: 10 5
+
+> Expected Output
+
+    Sum = 15 Sub = 5 Mul = 50 Div = 2
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int addition(int, int);
+int subtraction(int, int);
+int multiplication(int, int);
+int division(int, int);
+
+int main(){
+    int x, y, sum, sub, div, mul;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &x, &y);
+
+    sum = addition(x, y);
+    sub = subtraction(x, y);
+    mul = multiplication(x, y);
+    div = division(x, y);
+
+    printf("Sum = %d Sub = %d Mul = %d Div = %d", sum, sub, mul, div);
+
+    return 0;
+}
+
+int addition(int x, int y){
+    return x + y;
+}
+
+int subtraction(int x, int y){
+    return x - y;
+}
+
+int multiplication(int x, int y){
+    return x * y;
+}
+
+int division(int x, int y){
+    return x / y;
+}
+```
+
+<br>
+
+### 2. WAP. to print greatest among the two numbers.
+
+> Test Data
+
+    Enter 2 Numbers: 15 20
+
+> Expected Output
+
+    Greater number = 20
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int greater(int, int);
+
+int main(){
+    int x, y, max;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d", &x, &y);
+
+    max = greater(x, y);
+
+    printf("Greater number = %d", max);
+
+    return 0;
+}
+
+int greater(int x, int y){
+    if(x > y){
+        return x;
+    } else {
+        return y;
+    }
+}
+```
+
+<br>
+
+<!--
+
+### .
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+```
+
+<br>
+-->
+
+### 3. Write a function to calculate factorial of a number.(Takes Something, Returns Something)
+
+> Test Data
+
+    Enter a number: 6
+
+> Expected Output
+
+    Factorial = 720
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int factorial(int);
+
+int main(){
+    int n, fact;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    fact = factorial(n);
+
+    printf("Factorial = %d", fact);
+    return 0;
+}
+
+int factorial(int n){
+    int f = 1;
+    for(int i = n; i >= 1; i--){
+        f *= i;
+    }
+
+    return f;
+}
+```
+
+<br>
+
+### 4. Write a function to calculate area of a circle.(Takes Something, Returns Something)
+
+> Test Data
+
+    Enter radius: 27
+
+> Expected Output
+
+    Area of a circle = 2289.000000
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int areaOfCircle(float);
+
+int main(){
+    float r, area;
+
+    printf("Enter radius: ");
+    scanf("%f", &r);
+
+    area = areaOfCircle(r);
+
+    printf("Area of a Circle = %f", area);
+    return 0;
+}
+
+int areaOfCircle(float r){
+    float pi = 3.141;
+
+    return pi * r * r;
+}
+```
+
+<br>
+
+### 5. Write a function to calculate sum of first N natural numbers. (all four ways: TNRN, TSRN, TNRS, TSRS)
+
+> Test Data
+
+    Enter the value of n: 10
+
+> Expected Output
+
+    Sum = 55
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int sumOfNaturalNumber(int);
+
+int main(){
+    int n, sum;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    sum = sumOfNaturalNumber(n);
+
+    printf("Sum = %d", sum);
+
+    return 0;
+}
+
+int sumOfNaturalNumber(int n){
+    int sum = 0;
+    for(int i = 1; i <= n; i++){
+        sum += i;
+    }
+    return sum;
+}
+```
+
+<br>
+
+### 6. Write a function to calculate sum of squares of first N natural numbers.(all four ways: TNRN, TSRN, TNRS, TSRS)
+
+> Test Data
+
+    Enter the value of n: 5
+
+> Expected Output
+
+    Sum of square of natural = 55
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int sumOfSquareOfNatural(int);
+
+int main(){
+    int n, sum;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    sum = sumOfSquareOfNatural(n);
+
+    printf("Sum of square of natural = %d", sum);
+
+    return 0;
+}
+
+int sumOfSquareOfNatural(int n){
+    int sum = 0;
+
+    for(int i = 1; i <= n; i++){
+        sum += i * i;
+    }
+
+    return sum;
+}
+```
+
+<br>
+
+### 7. Write a function to express a given number as a sum of two prime numbers. Print all possible solutions
+
+> Test Data
+
+    Enter a number: 34
+
+> Expected Output
+
+    3 + 31 = 34
+    5 + 29 = 34
+    11 + 23 = 34
+    17 + 17 = 34
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int isPrime(int);
+
+int main(){
+    int num, subVal, flag;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for(int i = 2; i <= num/2; i++){
+        flag = 1;
+
+        if(isPrime(i)){
+            subVal = num - i;
+            if(isPrime(subVal)){
+                printf("\n%d + %d = %d", i, subVal, i + subVal);
+            } else{
+                flag = 0;
+            }
+        }
+    }
+
+    if(flag == 0){
+        printf("Sum of prime possible number is 0");
+    }
+
+    return 0;
+}
+
+int isPrime(int n){
+    for(int i = 2; i <= n/2; i++){
+        if(n % i == 0){
+            return 0;
+        }
+    }
+    return 1;
+}
+```
+
+<br>
+
+<!--
+
+### .
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+-->
+
+<br>
+<br>
+
+# Arrays
+
+### 1. WAP. to find out the Largest element in the array.
+
+> Array
+
+    20, 50, 90, 60, 70, 80, 30, 10
+
+> Expected Output
+
+    Largest element = 90
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
+    int max = 0, length;
+
+    length = sizeof(arr) / sizeof(arr[0]);
+
+    for(int i = 0; i < length; i++){
+        if(max < arr[i]){
+            max = arr[i];
+        }
+    }
+
+    printf("%d", max);
+    return 0;
+}
+```
+
+<br>
+
+<!--
+
+### .
 
 > Test Data
 
