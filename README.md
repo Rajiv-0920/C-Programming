@@ -5533,7 +5533,7 @@ int main(){
 
     for(int i = 1; i <= 5; i++){
         for(int j = n + i - 1; j >= i; j--){
-            printf("%d", j);
+            printf("%2d", j);
         }
         printf("\n");
     }
@@ -5779,8 +5779,7 @@ int main(){
     for(int i = 1; i <= n; i++){
         count = i;
         for(int j = 1; j <= i; j++){
-            printf("%d", count);
-            count++;
+            printf("%2d", count++);
         }
         printf("\n");
     }
@@ -5816,17 +5815,12 @@ int main(){
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    for(int i = 1; i <= n; i++){
-        if(i % 2 == 0)
-            count = 2;
-        else
-            count = 1;
-
-        for(int j = 1; j <= i; j++){
-            if(count == 2)
-                printf("%d", count--);
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j <= i; j++){
+            if((i + j) % 2 == 0)
+                printf("1 ");
             else
-                printf("%d", count++);
+                printf("2 ");
         }
         printf("\n");
     }
@@ -5857,22 +5851,14 @@ int main(){
 #include <stdio.h>
 
 int main(){
-    int n, count;
+    int n;
 
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
     for(int i = 1; i <= n; i++){
-        if(i % 2 == 0)
-            count = 0;
-        else
-            count = 1;
-
-        for(int j = 1; j <= i; j++){
-            if(count == 0)
-                printf("%d", count++);
-            else
-                printf("%d", count--);
+        for(int j = i; j >= 1; j--){
+            printf("%2d", j%2);
         }
         printf("\n");
     }
@@ -5903,18 +5889,14 @@ int main(){
 #include <stdio.h>
 
 int main(){
-    int n, count;
+    int n;
 
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
     for(int i = 1; i <= n; i++){
-        count = 1;
         for(int j = 1; j <= i; j++){
-            if(count == 1)
-                printf("%d", count--);
-            else
-                printf("%d", count++);
+            printf("%2d", j%2);
         }
         printf("\n");
     }
@@ -5952,8 +5934,7 @@ int main(){
 
     for(int i = 1; i <= n; i++){
         for(int j = 1; j <= i; j++){
-            printf("%d ", count);
-            count++;
+            printf("%2d ", count++);
         }
         printf("\n");
     }
@@ -6911,11 +6892,20 @@ int isPrime(int n){
 ```c
 #include <stdio.h>
 
+int findMax(int [], int);
+
 int main(){
     int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
-    int max = 0, length;
+    int max;
 
-    length = sizeof(arr) / sizeof(arr[0]);
+    max = findMax(arr, sizeof(arr) / sizeof(arr[0]));
+
+    printf("Largest element = %d", max);
+    return 0;
+}
+
+int findMax(int arr[], int length){
+    int max = 0;
 
     for(int i = 0; i < length; i++){
         if(max < arr[i]){
@@ -6923,8 +6913,236 @@ int main(){
         }
     }
 
-    printf("%d", max);
+    return max;
+}
+```
+
+<br>
+
+### 2. WAP. to find out the Smallest element in the array.
+
+> Array
+
+    20, 50, 90, 60, 70, 80, 30, 10
+
+> Expected Output
+
+    Smallest element = 10
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int findMin(int [], int);
+
+int main(){
+    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
+    int min;
+
+    min = findMin(arr, sizeof(arr) / sizeof(arr[0]));
+
+    printf("Smallest element = %d", min);
     return 0;
+}
+
+int findMin(int arr[], int length){
+    int min = arr[0];
+
+    for(int i = 0; i < length; i++){
+        if(min > arr[i]){
+            min = arr[i];
+        }
+    }
+
+    return min;
+}
+```
+
+<br>
+
+### 3. C Programs for Sorting an array
+
+> Array
+
+    20, 50, 90, 60, 70, 80, 30, 10
+
+> Expected Output
+
+    Sorted Array: 10 20 30 50 60 70 80 90
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+void sort(int [], int);
+
+int main(){
+    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
+
+    sort(arr, sizeof(arr) / sizeof(arr[0]));
+
+    return 0;
+}
+
+void sort(int arr[], int length){
+    int temp;
+
+    for(int i = 0; i < length; i++){
+        for(int j = 0; j < length; j++){
+            if(arr[i] < arr[j]){
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    printf("Sorted Array: ");
+    for(int i = 0; i < length; i++){
+        printf("%d ", arr[i]);
+    }
+}
+```
+
+<br>
+
+### 3. C Programs for Sorting an array in Descending order
+
+> Array
+
+    20, 50, 90, 60, 70, 80, 30, 10
+
+> Expected Output
+
+    90 80 70 60 50 30 20 10
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+void sort(int [], int);
+
+int main(){
+    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
+
+    sort(arr, sizeof(arr) / sizeof(arr[0]));
+
+    return 0;
+}
+
+void sort(int arr[], int length){
+    int temp;
+
+    for(int i = 0; i < length; i++){
+        for(int j = 0; j < length; j++){
+            if(arr[i] > arr[j]){
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    printf("Sorted Array: ");
+    for(int i = 0; i < length; i++){
+        printf("%d ", arr[i]);
+    }
+}
+```
+
+<br>
+
+### 4. Program to find the average of n numbers using arrays
+
+> Test Data
+
+    Enter number of elements: 5
+    Enter marks: 50 75 85 65 92
+
+> Expected Output
+
+    Average marks = 73.40
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+void calcAverage(float [], int);
+
+int main(){
+    int n;
+    float arr[100];
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    calcAverage(arr, n);
+}
+
+void calcAverage(float arr[], int n){
+    float sum = 0, average;
+
+    printf("Enter marks: ");
+    for(int i = 0; i < n; i++){
+        scanf("%f", &arr[i]);
+    }
+
+    for(int i = 0; i < n; i++)
+        sum += arr[i];
+
+    average = sum / n;
+
+    printf("Average marks = %.2f", average);
+}
+```
+
+<br>
+
+### 5. WAP. to find the second largest element in the array.
+
+> Array
+
+    20, 50, 90, 60, 70, 80, 30, 10
+
+> Expected Output
+
+    Second Largest Element = 80
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int secondLargest(int [], int);
+
+int main(){
+    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
+    int secLargest;
+
+    secLargest = secondLargest(arr, sizeof(arr) / sizeof(arr[0]));
+
+    printf("Second Largest Element = %d", secLargest);
+
+    return 0;
+}
+
+int secondLargest(int arr[], int length){
+    int max = 0, secLargest;
+
+    for(int i = 0; i < length; i++){
+        if(max < arr[i]){
+            secLargest = max;
+            max = arr[i];
+        }
+        if(secLargest < arr[i] && max > arr[i]){
+            secLargest = arr[i];
+        }
+    }
+    return secLargest;
 }
 ```
 

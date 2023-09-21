@@ -1,17 +1,29 @@
 #include <stdio.h>
 
+int secondLargest(int [], int);
+
 int main(){
     int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
-    int max = 0, length;
+    int secLargest;
 
-    length = sizeof(arr) / sizeof(arr[0]);
+    secLargest = secondLargest(arr, sizeof(arr) / sizeof(arr[0]));
+
+    printf("Second Largest Element = %d", secLargest);
+
+    return 0;
+}
+
+int secondLargest(int arr[], int length){
+    int max = 0, secLargest;
 
     for(int i = 0; i < length; i++){
         if(max < arr[i]){
+            secLargest = max;
             max = arr[i];
         }
+        if(secLargest < arr[i] && max > arr[i]){
+            secLargest = arr[i];
+        }
     }
-    
-    printf("%d", max);
-    return 0;
+    return secLargest;
 }
