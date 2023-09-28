@@ -4619,7 +4619,245 @@ int main(){
 
 <br>
 
+### 46. WAP. to swap first and last digit of a number
+
+> Test Data
+
+    Enter any number: 452
+
+> Expected Output
+
+    252
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int num, temp, count = 0, swappedNum, firstDigit, lastDigit;
+
+    printf("Enter any number: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while(temp != 0){
+        count++;
+        temp /= 10;
+    }
+
+    lastDigit = num % 10;
+    firstDigit = num / (int)pow(10, count - 1);
+    swappedNum = num % (int)pow(10, count - 1);
+    swappedNum -= lastDigit;
+    swappedNum += firstDigit;
+    swappedNum += lastDigit * (int)pow(10, count - 1);
+
+    printf("%d", swappedNum);
+    return 0;
+}
+```
+
 <br>
+
+### 47. WAP. to find all prime factors of a number.
+
+> Test Data
+
+    Enter any number: 88
+
+> Expected Output
+
+    2 11
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int num, count;
+
+    printf("Enter any number: ");
+    scanf("%d", &num);
+
+    for(int i = 1; i <= num; i++){
+        count = 0;
+        if(num % i == 0){
+            for(int j = 1; j <= i; j++){
+                if(i % j == 0){
+                    count++;
+                }
+            }
+        }
+
+        if(count == 2){
+            printf("%d ", i);
+        }
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 48. WAP. to convert Decimal to Binary number system.
+
+> Test Data
+
+    Enter any number: 10
+
+> Expected Output
+
+    Decimal number = 2
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int dec = 0, i = 0, rem;
+    long long bin;
+    printf("Enter a number: ");
+    scanf("%lld", &bin);
+
+    while(bin != 0){
+        rem = bin % 10;
+        dec += rem * (int)pow(2, i);
+        i++;
+        bin /= 10;
+    }
+
+    printf("Decimal number = %d", dec);
+    return 0;
+}
+```
+
+<br>
+
+### 49. WAP. to convert Octal to Decimal number system.
+
+> Test Data
+
+    Enter any number: 16
+
+> Expected Output
+
+    Decimal number = 14
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int octal, dec = 0, i = 0, rem;
+
+    printf("Enter a number: ");
+    scanf("%d", &octal);
+
+    while(octal != 0){
+        rem = octal % 10;
+        dec += rem * (int)pow(8, i);
+        i++;
+        octal /= 10;
+    }
+
+    printf("Decimal number = %d", dec);
+    return 0;
+}
+```
+
+<br>
+
+### 50. WAP. to convert Decimal to Binary number system.
+
+> Test Data
+
+    Enter any number: 10
+
+> Expected Output
+
+    Binary number = 1010
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int dec, rem, i = 1;
+    long long bin = 0;
+
+    printf("Enter any number: ");
+    scanf("%d", &dec);
+
+    while(dec != 0){
+        rem = dec % 2;
+        bin += rem * i;
+        i *= 10;
+        dec /= 2;
+    }
+
+    printf("Binary number = %d", bin);
+    return 0;
+}
+```
+
+<br>
+
+### 51. WAP. to convert Decimal to Octal number system.
+
+> Test Data
+
+    Enter any number: 14
+
+> Expected Output
+
+    Octal number = 16
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int dec, rem, i = 1, octal = 0;
+
+    printf("Enter any number: ");
+    scanf("%d", &dec);
+
+    while(dec != 0){
+        rem = dec % 8;
+        octal += rem * i;
+        i *= 10;
+        dec /= 8;
+    }
+
+    printf("Octal number = %d", octal);
+    return 0;
+}
+```
+
+<br>
+
+### 52. WAP. to
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
 <br>
 
 <!--
@@ -6877,185 +7115,109 @@ int isPrime(int n){
 
 # Arrays
 
-### 1. WAP. to find out the Largest element in the array.
+### 1. WAP. to print sum of all elements.
 
-> Array
+> Test Data
 
-    20, 50, 90, 60, 70, 80, 30, 10
+    Enter length of the Array: 5
+
+    Enter Element 1: 5
+
+    Enter Element 2: 10
+
+    Enter Element 3: 2
+
+    Enter Element 4: 3
+
+    Enter Element 5: 4
 
 > Expected Output
 
-    Largest element = 90
+    Sum = 24
 
 > Source Code
 
 ```c
 #include <stdio.h>
 
-int findMax(int [], int);
+int calcSum(int arr[], int length){
+    int sum = 0, i;
+    for(i = 0; i < length; i++){
+        sum += arr[i];
+    }
+    return sum;
+}
 
 int main(){
-    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
-    int max;
+    int n, i, sum;
+    int arr[100];
 
-    max = findMax(arr, sizeof(arr) / sizeof(arr[0]));
+    printf("\nEnter length of the Array: ");
+    scanf("%d", &n);
 
-    printf("Largest element = %d", max);
+    for(i = 0; i < n; i++){
+        printf("\nEnter Element %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    sum = calcSum(arr, n);
+
+    printf("\nSum = %d", sum);
     return 0;
 }
 
-int findMax(int arr[], int length){
-    int max = 0;
-
-    for(int i = 0; i < length; i++){
-        if(max < arr[i]){
-            max = arr[i];
-        }
-    }
-
-    return max;
-}
 ```
 
 <br>
 
-### 2. WAP. to find out the Smallest element in the array.
+### 2. WAP. to display the sum of all odd and even numbers.
 
-> Array
+> Test Data
 
-    20, 50, 90, 60, 70, 80, 30, 10
+    Enter any 10 numbers: 10 15 20 13 30 20 55 22 33 29
 
 > Expected Output
 
-    Smallest element = 10
+    Sum of Even number = 102 and Odd number = 145
 
 > Source Code
 
 ```c
 #include <stdio.h>
 
-int findMin(int [], int);
-
-int main(){
-    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
-    int min;
-
-    min = findMin(arr, sizeof(arr) / sizeof(arr[0]));
-
-    printf("Smallest element = %d", min);
-    return 0;
+void evenOddSum(int arr[], int length){
+  int evenSum = 0, oddSum = 0;
+  for(int i = 0; i < length; i++){
+    if(arr[i] % 2 == 0){
+      evenSum += arr[i];
+    }
+    else{
+      oddSum += arr[i];
+    }
+  }
+  printf("\nSum of Even number = %d and Odd number = %d", evenSum, oddSum);
 }
 
-int findMin(int arr[], int length){
-    int min = arr[0];
+int main(){
+  int arr[100];
+  int n;
 
-    for(int i = 0; i < length; i++){
-        if(min > arr[i]){
-            min = arr[i];
-        }
-    }
+  printf("\nEnter length of the array: ");
+  scanf("%d", &n);
 
-    return min;
+  for(int i = 0; i < n; i++){
+    printf("\nEnter Element %d: ", i + 1);
+    scanf("%d", &arr[i]);
+  }
+
+  evenOddSum(arr, n);
+  return 0;
 }
 ```
 
 <br>
 
-### 3. C Programs for Sorting an array
-
-> Array
-
-    20, 50, 90, 60, 70, 80, 30, 10
-
-> Expected Output
-
-    Sorted Array: 10 20 30 50 60 70 80 90
-
-> Source Code
-
-```c
-#include <stdio.h>
-
-void sort(int [], int);
-
-int main(){
-    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
-
-    sort(arr, sizeof(arr) / sizeof(arr[0]));
-
-    return 0;
-}
-
-void sort(int arr[], int length){
-    int temp;
-
-    for(int i = 0; i < length; i++){
-        for(int j = 0; j < length; j++){
-            if(arr[i] < arr[j]){
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-    }
-
-    printf("Sorted Array: ");
-    for(int i = 0; i < length; i++){
-        printf("%d ", arr[i]);
-    }
-}
-```
-
-<br>
-
-### 3. C Programs for Sorting an array in Descending order
-
-> Array
-
-    20, 50, 90, 60, 70, 80, 30, 10
-
-> Expected Output
-
-    90 80 70 60 50 30 20 10
-
-> Source Code
-
-```c
-#include <stdio.h>
-
-void sort(int [], int);
-
-int main(){
-    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
-
-    sort(arr, sizeof(arr) / sizeof(arr[0]));
-
-    return 0;
-}
-
-void sort(int arr[], int length){
-    int temp;
-
-    for(int i = 0; i < length; i++){
-        for(int j = 0; j < length; j++){
-            if(arr[i] > arr[j]){
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-    }
-
-    printf("Sorted Array: ");
-    for(int i = 0; i < length; i++){
-        printf("%d ", arr[i]);
-    }
-}
-```
-
-<br>
-
-### 4. Program to find the average of n numbers using arrays
+### 3. Program to find the average of n numbers using arrays
 
 > Test Data
 
@@ -7071,7 +7233,21 @@ void sort(int arr[], int length){
 ```c
 #include <stdio.h>
 
-void calcAverage(float [], int);
+void calcAverage(float arr[], int n){
+    float sum = 0, average;
+
+    for(int i = 0; i < n; i++){
+        printf("\nEnter marks %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    for(int i = 0; i < n; i++)
+        sum += arr[i];
+
+    average = sum / n;
+
+    printf("Average marks = %.2f", average);
+}
 
 int main(){
     int n;
@@ -7082,67 +7258,339 @@ int main(){
 
     calcAverage(arr, n);
 }
-
-void calcAverage(float arr[], int n){
-    float sum = 0, average;
-
-    printf("Enter marks: ");
-    for(int i = 0; i < n; i++){
-        scanf("%f", &arr[i]);
-    }
-
-    for(int i = 0; i < n; i++)
-        sum += arr[i];
-
-    average = sum / n;
-
-    printf("Average marks = %.2f", average);
-}
 ```
 
 <br>
+ 
+### 4. WAP. to find out the Largest element in the array.
 
-### 5. WAP. to find the second largest element in the array.
+> Test Data
 
-> Array
+    Enter number of elements: 5
 
-    20, 50, 90, 60, 70, 80, 30, 10
+    Enter element 1: 55
+
+    Enter element 2: 12
+
+    Enter element 3: 22
+
+    Enter element 4: 78
+
+    Enter element 5: 23
 
 > Expected Output
 
-    Second Largest Element = 80
+    Largest element = 78
 
 > Source Code
 
 ```c
 #include <stdio.h>
 
-int secondLargest(int [], int);
+int findMax(int arr[], int length){
+    int i, max = 0;
+    for(i = 0; i < length; i++){
+        if(max < arr[i]){
+            max = arr[i];
+        }
+    }
+    return max;
+}
 
 int main(){
-    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
-    int secLargest;
+    int n, max;
+    int arr[100];
 
-    secLargest = secondLargest(arr, sizeof(arr) / sizeof(arr[0]));
+    printf("\nEnter number of elements: ");
+    scanf("%d", &n);
 
-    printf("Second Largest Element = %d", secLargest);
+    for(int i = 0; i < n; i++){
+        printf("\nEnter element %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    max = findMax(arr, n);
+
+    printf("\nLargest element = %d", max);
+}
+```
+
+<br>
+
+### 5. WAP. to find out the Smallest element in the array.
+
+> Test Data
+
+    Enter number of elements: 5
+
+    Enter element 1: 22
+
+    Enter element 2: 55
+
+    Enter element 3: 59
+
+    Enter element 4: 75
+
+    Enter element 5: 21
+
+> Expected Output
+
+    Smallest element = 21
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int findMin(int arr[], int length){
+    int i, min = arr[0];
+    for(i = 0; i < length; i++){
+        if(min > arr[i]){
+            min = arr[i];
+        }
+    }
+    return min;
+}
+
+int main(){
+    int n, min;
+    int arr[100];
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    for(int i = 0; i < n; i++){
+        printf("\nEnter element %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    min = findMin(arr, n);
+
+    printf("\nSmallest element = %d", min);
+}
+```
+
+<br>
+
+### 6. Write a C program to print all negative elements in an array.
+
+> Test Data
+
+    Enter length of the array: 5
+    Enter 5 elements: 1 2 -5 2 -1
+
+> Expected Output
+
+    -5 -1
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int arr[100];
+    int i, length;
+
+    printf("Enter length of the array: ");
+    scanf("%d", &length);
+
+    printf("Enter %d Elements\n", length);
+    for(i = 0; i < length; i++){
+        scanf("%d", &arr[i]);
+    }
+
+    for(i = 0; i < length; i++){
+        if(arr[i] < 0){
+            printf("%d ", arr[i]);
+        }
+    }
 
     return 0;
 }
+```
 
-int secondLargest(int arr[], int length){
-    int max = 0, secLargest;
+<br>
 
-    for(int i = 0; i < length; i++){
-        if(max < arr[i]){
-            secLargest = max;
-            max = arr[i];
-        }
-        if(secLargest < arr[i] && max > arr[i]){
-            secLargest = arr[i];
+### 7. Write C program to count total number of negative elements in array.
+
+> Test Data
+
+    Enter length of the array: 5
+    Enter 5 Element: 1 2 -3 5 -4
+
+> Expected Output
+
+    Total negative number = 2
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int arr[100];
+    int i, length, count = 0;
+
+    printf("Enter length of the array: ");
+    scanf("%d", &length);
+
+    printf("Enter %d Element\n", length);
+    for(i = 0; i < length; i++){
+        scanf("%d", &arr[i]);
+    }
+
+    for(i = 0; i < length; i++){
+        if(arr[i] < 0){
+            count++;
         }
     }
-    return secLargest;
+
+    printf("Total negative number = %d", count);
+    return 0;
+}
+```
+
+<br>
+
+### 8. C program to insert an element at end of an Array
+
+> Test Data
+
+    Enter length of the array: 5
+    Enter 5 element: 1 2 3 4 5
+    Give a number to insert at end: 6
+
+> Expected Output
+
+    1 2 3 4 5 6
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int arr[100];
+    int i, length, num;
+
+    printf("Enter length of the array: ");
+    scanf("%d", &length);
+
+    printf("Enter %d Element\n", length);
+    for(i = 0; i < length; i++){
+        scanf("%d", &arr[i]);
+    }
+    printf("Give a number to insert at end: ");
+    scanf("%d", &num);
+    length++;
+    arr[length-1] = num;
+
+    for(i = 0; i < length;i++){
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 9. Write C program to insert an element at beginning of an array
+
+> Test Data
+
+    Enter length of the array: 5
+    Enter 5 element: 1 2 3 4 5
+    Give a number to insert at beginning: 0
+
+> Expected Output
+
+    0 1 2 3 4 5
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int arr[100];
+    int i, length, num;
+
+    printf("Enter length of the array: ");
+    scanf("%d", &length);
+
+    printf("Enter %d Element\n", length);
+    for(i = 0; i < length; i++){
+        scanf("%d", &arr[i]);
+    }
+    printf("Give a number to insert at beginning: ");
+    scanf("%d", &num);
+    length++;
+
+    for(i = length - 1; i >= 0; i--){
+        arr[i + 1] = arr[i];
+    }
+    arr[0] = num;
+
+    for(i = 0; i < length;i++){
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 10. Write C program to insert an element in array.
+
+> Test Data
+
+    Enter length of the array: 3
+    Enter 3 elements: 1 2 4
+    Enter the position: 3
+    Enter the value: 3
+
+> Expected Output
+
+    1 2 3 4
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int arr[100];
+    int length, i, position, value;
+
+    printf("Enter length of the array: ");
+    scanf("%d", &length);
+
+    printf("Enter %d elements: ", length);
+    for(i = 0; i < length; i++){
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter the position: ");
+    scanf("%d", &position);
+    printf("Enter the value: ");
+    scanf("%d", &value);
+
+    if(position < 1 || position > length + 1){
+        printf("Enter Valid position..!");
+        return 0;
+    }
+
+    for(i = length; i >= position; i--){
+        arr[i] = arr[i - 1];
+    }
+    length++;
+    arr[position - 1] = value;
+
+    for(i = 0; i < length; i++){
+        printf("%d ", arr[i]);
+    }
+    return 0;
 }
 ```
 

@@ -1,29 +1,35 @@
 #include <stdio.h>
 
-int secondLargest(int [], int);
-
 int main(){
-    int arr[] = {20, 50, 90, 60, 70, 80, 30, 10};
-    int secLargest;
+    int arr[100];
+    int length, i, position, value;
+    
+    printf("Enter length of the array: ");
+    scanf("%d", &length);
 
-    secLargest = secondLargest(arr, sizeof(arr) / sizeof(arr[0]));
-
-    printf("Second Largest Element = %d", secLargest);
-
-    return 0;
-}
-
-int secondLargest(int arr[], int length){
-    int max = 0, secLargest;
-
-    for(int i = 0; i < length; i++){
-        if(max < arr[i]){
-            secLargest = max;
-            max = arr[i];
-        }
-        if(secLargest < arr[i] && max > arr[i]){
-            secLargest = arr[i];
-        }
+    printf("Enter %d elements: ", length);
+    for(i = 0; i < length; i++){
+        scanf("%d", &arr[i]);
     }
-    return secLargest;
+
+    printf("Enter the position: ");
+    scanf("%d", &position);
+    printf("Enter the value: ");
+    scanf("%d", &value);
+
+    if(position < 1 || position > length + 1){
+        printf("Enter Valid position..!");
+        return 0;
+    }
+
+    for(i = length; i >= position; i--){
+        arr[i] = arr[i - 1];
+    }
+    length++;
+    arr[position - 1] = value;
+
+    for(i = 0; i < length; i++){
+        printf("%d ", arr[i]);
+    }
+    return 0;
 }
