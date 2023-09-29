@@ -4846,18 +4846,6 @@ int main(){
 
 <br>
 
-### 52. WAP. to
-
-> Test Data
-
-> Expected Output
-
-> Source Code
-
-```c
-
-```
-
 <br>
 
 <!--
@@ -7591,6 +7579,124 @@ int main(){
         printf("%d ", arr[i]);
     }
     return 0;
+}
+```
+
+<br>
+
+### 11. Write C program to print all unique element in an array.
+
+> Test Data
+
+    Enter length of the array: 4
+    Enter 4 elements: 3 2 2 5
+
+> Expected Output
+
+    The unique elements found in the array are: 3 5
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+	int arr[100];
+	int length, i, j, f;
+
+	printf("Enter length of the array: ");
+	scanf("%d", &length);
+
+	printf("Enter %d elements: ", length);
+	for(i = 0; i < length; i++){
+		scanf("%d", &arr[i]);
+	}
+
+	printf("\nThe unique elements found in the array are: ");
+	for(i = 0;i < length; i++){
+		f = 0;
+		for(j = 0; j < length; j++){
+			if(arr[i] == arr[j] && i != j){
+				f++;
+			}
+		}
+		if(f == 0){
+			printf("%d ", arr[i]);
+		}
+	}
+
+	return 0;
+}
+```
+
+<br>
+
+### 12. Write C program to sort an array in ascending order.
+
+> Test Data
+
+    Enter length of the array: 5
+    Enter 5 elements: 2 1 5 4 3
+
+> Expected Output
+
+    1 2 3 4 5
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+	int arr[100];
+	int length, i, j, temp;
+
+	printf("Enter length of the array: ");
+	scanf("%d", &length);
+
+	printf("Enter %d elements: ", length);
+	for(i = 0; i < length; i++){
+		scanf("%d", &arr[i]);
+	}
+
+    // Selection Sort
+	// for(i = 0; i < length - 1; i++){
+	// 	for(j = i + 1; j < length; j++){
+	// 		if(arr[i] > arr[j]){
+	// 			temp = arr[i];
+	// 			arr[i] = arr[j];
+	// 			arr[j] = temp;
+	// 		}
+	// 	}
+	// }
+
+    // Bubble Sort
+	// for(i = 1; i < length; i++){
+	// 	for(j = 0; j < length - i; j++){
+	// 		if(arr[j] > arr[j + 1]){
+	// 			temp = arr[j];
+	// 			arr[j] = arr[j + 1];
+	// 			arr[j + 1] = temp;
+	// 		}
+	// 	}
+	// }
+
+    // Insertion Sort
+    for(i = 1; i < length; i++){
+		int current = arr[i];
+		j = i - 1;
+		while(arr[j] > current && j >= 0){
+			arr[j + 1] = arr[j];
+			j--;
+		}
+		arr[j + 1] = current;
+	}
+
+	for(i = 0; i < length; i++){
+		printf("%d ", arr[i]);
+	}
+
+	return 0;
 }
 ```
 
