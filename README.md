@@ -5285,7 +5285,7 @@ int main(){
     scanf("%d", &n);
 
     for(int i = 1; i <= n; i++){
-        for(int j = 1; j <= (2 * n) - i + 1; j++){
+        for(int j = 1; j <= 2 * (n - i) + 1; j++){
             printf("* ");
         }
         printf("\n");
@@ -7698,6 +7698,276 @@ int main(){
 
 	return 0;
 }
+```
+
+<br>
+
+### 13. Write C program to copy all elements of one array to another.
+
+> Test Data
+
+    Enter length of the array: 5
+    Enter 5 elements: 1 2 3 4 5
+
+> Expected Output
+
+    1st Array: 1 2 3 4 5
+    2nd Array: 1 2 3 4 5
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+void copyArray(int arr[], int arr2[], int length){
+	int i;
+	for(i = 0; i < length; i++){
+		arr2[i] = arr[i];
+	}
+}
+
+void printArray(int arr[], int length){
+	for(int i = 0; i < length; i++){
+		printf("%d ", arr[i]);
+	}
+}
+
+
+int main(){
+	int arr[100];
+	int arr2[100];
+	int length, i;
+
+	printf("Enter length of the array: ");
+	scanf("%d", &length);
+
+	printf("Enter %d elements: ", length);
+	for(i = 0; i < length;i++){
+		scanf("%d", &arr[i]);
+	}
+
+	copyArray(arr, arr2, length);
+
+	printf("\n1st Array: ");
+	printArray(arr, length);
+	printf("\n2nd Array: ");
+	printArray(arr2, length);
+	return 0;
+}
+```
+
+<br>
+
+### 14. Write C program to delete an element from an array
+
+> Test Data
+
+    Enter length of the array: 5
+    Enter 5 elements: 1 2 4 3 4
+
+> Expected Output
+
+    1 2 3 4
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+	int arr[100];
+	int length, i, position;
+
+	printf("Enter length of the array: ");
+	scanf("%d", &length);
+
+	printf("Enter %d elements: ", length);
+	for(i = 0; i < length; i++){
+		scanf("%d", &arr[i]);
+	}
+
+	printf("Enter position of element you want to delete: ");
+	scanf("%d", &position);
+
+	for(i = position - 1; i < length - 1;i++){
+		arr[i] = arr[i + 1];
+	}
+	length--;
+
+	for(i = 0; i < length; i++){
+		printf("%d ", arr[i]);
+	}
+	return 0;
+}
+```
+
+<br>
+
+### 15. Write C program to delete all duplicate elements from an array
+
+> Test Data
+
+    Enter the length of the array: 10
+    Enter 10 elements: 57 12 89 32 62 12 89 35 67 75
+
+> Expected Output
+
+    57 12 89 32 62 35 67 75
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+	int arr[100];
+	int length, i, j, k, position;
+
+	printf("Enter length of the array: ");
+	scanf("%d", &length);
+
+	printf("Enter %d elements: ", length);
+	for(i = 0; i < length; i++){
+		scanf("%d", &arr[i]);
+	}
+
+	for(i = 0; i < length; i++){
+		for(j = 0; j < length; j++){
+			if(arr[i] == arr[j] && i != j){
+				int current = j;
+				for(k = current; k < length; k++){
+					arr[k] = arr[k + 1];
+				}
+				length--;
+			}
+		}
+	}
+
+	for(i = 0; i < length; i++){
+		printf("%d ", arr[i]);
+	}
+	return 0;
+}
+```
+
+<br>
+
+### 16. Write C program to count number of each element in an array.
+
+> Test Data
+
+    Enter 10 elements: 57 12 89 32 62 12 89 35 67 75
+
+> Expected Output
+
+    57 occurs 1 times
+    12 occurs 2 times
+    89 occurs 2 times
+    32 occurs 1 times
+    62 occurs 1 times
+    35 occurs 1 times
+    67 occurs 1 times
+    75 occurs 1 times
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+	int arr[100];
+	int length, i, j, k, position;
+
+	printf("Enter length of the array: ");
+	scanf("%d", &length);
+
+	printf("Enter %d elements: ", length);
+	for(i = 0; i < length; i++){
+		scanf("%d", &arr[i]);
+	}
+
+	for(i = 0; i < length; i++){
+		int count = 1;
+		for(j = 0; j < length; j++){
+			if(arr[i] == arr[j] && i != j){
+				count++;
+				int current = j;
+				for(k = current; k < length; k++){
+					arr[k] = arr[k + 1];
+				}
+				length--;
+			}
+		}
+		printf("\n%d occurs %d times", arr[i], count);
+	}
+
+	return 0;
+}
+```
+
+<br>
+
+### 17. Write C program count total duplicate elements in an array.
+
+> Test Data
+
+    Enter length of the array: 10
+    Enter 10 elements: 1 1 1 2 2 3 4 3 1 5
+
+> Expected Output
+
+    Number of duplicate elements count = 3
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+	int arr[100];
+	int length, i, count = 0, position, dup;
+
+	printf("Enter length of the array: ");
+	scanf("%d", &length);
+
+	printf("Enter %d elements: ", length);
+	for(i = 0; i < length; i++){
+		scanf("%d", &arr[i]);
+	}
+
+	for(i = 0; i < length; i++){
+		for(int j = 0; j < length;j++){
+			if(arr[j] == arr[i] && i != j){
+				if(dup != arr[j]){
+					count++;
+					dup = arr[j];
+				}
+				position = j;
+				for(int k = position; k < length; k++){
+					arr[k] = arr[k + 1];
+				}
+				length--;
+			}
+		}
+	}
+
+	printf("Number of duplicate elements count = %d", count);
+	return 0;
+}
+```
+
+<br>
+
+### 18. Write C program to merge two sorted array
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
 ```
 
 <br>

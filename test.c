@@ -1,21 +1,24 @@
 #include <stdio.h>
 
 int main(){
-	int arr[100];
-	int length, i, j, temp;
-	
-	printf("Enter length of the array: ");
-	scanf("%d", &length);
+    int n;
 
-	printf("Enter %d elements: ", length);
-	for(i = 0; i < length; i++){
-		scanf("%d", &arr[i]);
-	}
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
 
+    for(int i = 1; i <= n; i++){
+        for(int j = 1; j <= 2 * (n - i) + 1; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
 
-	for(i = 0; i < length; i++){
-		printf("%d ", arr[i]);
-	}
-	
-	return 0;
+    for(int i = 1; i <= n - 1; i++){
+        for(int j = 1; j <= (2 * i) + 1; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
 }
