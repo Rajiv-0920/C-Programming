@@ -7101,6 +7101,316 @@ int isPrime(int n){
 <br>
 <br>
 
+# Recursion
+
+### 1. Addition of two numbers using recursion
+
+> Test Data
+
+    Enter two numbers: 10 5
+    
+> Expected Output
+
+    Sum = 15
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int sum(int, int);
+    int n1, n2, s;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d", &n1, &n2);
+
+    s = sum(n1, n2);
+
+    printf("Sum = %d", s);
+    return 0;
+}
+
+// Function Defination
+int sum(int n1, int n2){
+    if(n2 == 0){    // Base Case
+        return n1;
+    }
+    sum(n1 + 1, n2 - 1);  // Recursive Case
+}
+```
+
+<br>
+
+### 2. Subtraction of two numbers using recursion.
+
+> Test Data
+
+    Enter two numbers: 20 5
+    
+> Expected Output
+
+    Sum = 15
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int sub(int, int);
+    int n1, n2, s;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d", &n1, &n2);
+
+    s = sub(n1, n2);
+
+    printf("Subtraction = %d", s);
+    return 0;
+}
+
+int sub(int n1, int n2){
+    if(n2 == 0){
+        return n1;
+    }
+    sub(n1 - 1, n2 - 1);
+}
+```
+
+<br>
+
+
+### 3. Multiplication of two numbers using recursion.
+
+> Test Data
+
+    Enter two numbers: 20 5
+    
+> Expected Output
+
+    Sum = 100
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int mul(int, int);
+    int n1, n2, m;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d", &n1, &n2);
+
+    m = mul(n1, n2);
+
+    printf("Multiplication = %d", m);
+    return 0;
+}
+
+int mul(int n1, int n2){
+    if(n2 == 1){
+        return n1;
+    }
+    return n1 + mul(n1, n2 - 1);
+}
+```
+
+<br>
+
+### 4. Division of two numbers using recursion.
+
+> Test Data
+
+    Enter two numbers: 20 5
+    
+> Expected Output
+
+    Sum = 4
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    int div(int, int);
+    int n1, n2, d;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d", &n1, &n2);
+
+    d = div(n1, n2);
+
+    printf("Division = %d", d);
+    return 0;
+}
+int div(int n1, int n2){
+    if(n1 == 0){
+        return 0;
+    }
+    return 1 + div(n1 - n2, n2);
+}
+```
+
+<br>
+
+### 5. print n to 1 using recursion
+
+> Test Data
+
+    Enter the value of n: 5
+    
+> Expected Output
+
+    5 4 3 2 1
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    void printN(int);
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printN(n);
+    return 0;
+}
+
+void printN(int n){
+    if(n == 0){
+        return;
+    }
+    printf("%d ", n);
+    printN(n - 1);
+}
+```
+
+<br>
+
+### 6. print using 1 to n using recursion.
+
+> Test Data
+
+    Enter the value of n: 5
+    
+> Expected Output
+
+    1 2 3 4 5
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    void printN(int);
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printN(n);
+    return 0;
+}
+
+void printN(int n){
+    if(n == 0){
+        return;
+    }
+    printN(n - 1);
+    printf("%d ", n);
+}
+```
+
+<br>
+
+### 7. Recursive Program to print multiplication table of a number
+
+> Test Data
+
+    Enter the value of n: 5
+
+> Expected Output
+
+    5 X 1 = 5
+    5 X 2 = 10
+    5 X 3 = 15
+    5 X 4 = 20
+    5 X 5 = 25
+    5 X 6 = 30
+    5 X 7 = 35
+    5 X 8 = 40
+    5 X 9 = 45
+    5 X 10 = 50    
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main(){
+    void printTable(int, int);
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printTable(n, 1);
+    return 0;
+}
+
+void printTable(int n, int t){
+    if(t > 10){
+        return;
+    }
+    printf("\n%d X %d = %d",n, t, n * t);
+    printTable(n, t + 1);
+}
+```
+
+<br>
+
+### 8.
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+<!--
+
+### .
+
+> Test Data
+
+> Expected Output
+
+> Source Code
+
+```c
+
+```
+
+<br>
+
+-->
+
+<br>
+<br>
+
 # Arrays
 
 ### 1. WAP. to print sum of all elements.
@@ -7951,8 +8261,7 @@ int main(){
 		}
 	}
 
-	printf("Number of duplicate elements count = %d", count);
-	return 0;
+	printf("Number of duplicate elements count = %d", count); 
 }
 ```
 
@@ -7960,14 +8269,262 @@ int main(){
 
 ### 18. Write C program to merge two sorted array
 
-> Test Data
+> Array
+
+    Array 1 = {9, 7, 3, 5, 1};
+    Array 2 = {4, 6, 8, 10};
 
 > Expected Output
+
+    1 3 4 5 6 7 8 9 10
 
 > Source Code
 
 ```c
+#include <stdio.h>
 
+void sort(int arr[], int length){
+    int i, j;
+    for(i = 0; i < length; i++){
+        for(j = 0; j < length - 1;j++){
+            if(arr[j] > arr[j+1]){
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+
+int main(){
+    int length1 = 5, length2 = 4;
+    int arr1[5] = {9, 7, 3, 5, 1};
+    int arr2[4] = {4, 6, 8, 10};
+    int arr3[length1+length2];
+    int i, j = 0, k = 0;
+
+    sort(arr1, length1);
+    sort(arr2, length2);
+
+    for(i = 0; k < length2 || j < length1; i++){
+        if(arr1[j] > arr2[k]){
+            arr3[i] = arr2[k];
+            k++;
+        } else{
+            arr3[i] = arr1[j];
+            j++;
+        }
+    }
+
+    for(i = 0; i < length1 + length2; i++){
+        printf("%d ", arr3[i]);
+    }
+    
+    return 0;
+}
+```
+
+<br>
+
+### 19. Write C program to put even and odd elements of array in two separate array
+
+> Array
+
+    {55, 13, 22, 45, 67, 68, 88, 98, 19, 12}
+    
+> Expected Output
+
+    Even Array: 22 68 88 98 12 
+    Odd Array: 55 13 45 67 19 
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+void printArray(int arr[], int length){
+    for(int i = 0; i < length; i++){
+        printf("%d ", arr[i]);
+    }
+}
+
+int isEven(int num){
+    if(num % 2 == 0){
+        return 1;
+    }
+    return 0;
+}
+
+int main(){
+    int arr[10] = {55, 13, 22, 45, 67, 68, 88, 98, 19, 12};
+    int length = 10, i, j = 0, k = 0;
+    int evenArray[100];
+    int oddArray[100];
+
+    for(i = 0; i < length;i++){
+        if(isEven(arr[i])){
+            evenArray[j] = arr[i];
+            j++;
+        } else{
+            oddArray[k] = arr[i];
+            k++;
+        }
+    }
+
+    printf("\nEven Array: ");
+    printArray(evenArray, j);
+
+    printf("\nOdd Array: ");
+    printArray(oddArray, k);
+
+    return 0;
+}
+```
+
+<br>
+
+### 20. Write C program to find reverse of an array.
+
+> Array
+
+    {55, 13, 22, 45, 67, 68, 88, 98, 19, 12}
+
+> Expected Output
+
+    12 19 98 88 68 67 45 22 13 55
+    
+> Source Code
+
+```c
+#include <stdio.h>
+
+void swap(int arr[], int i, int j){
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
+
+int main(){      
+    int arr[5] = {1, 2, 3, 4, 5};
+    int length = 5, i;
+
+    for(i = 0; i < length / 2; i++){
+        swap(arr, i, length - i - 1);
+    }
+
+    for(i = 0; i < length; i++){
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
+```
+
+<br>
+
+### 21.  Write C program to right rotate an array.
+
+> Array
+
+    {1, 2, 3, 4, 5}
+
+> Test Data
+
+    Enter the value of k: 2
+    
+> Expected Output
+
+    4 5 1 2 3    
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+void reverse(int arr[], int i, int j){
+    while(i < j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+}
+
+
+void printArray(int arr[], int n){
+    for(int i = 0; i < n; i++){
+        printf("%d ", arr[i]);
+    }
+}
+
+int main(){
+    int arr[5] = {1, 2, 3, 4, 5};
+    int n = 5, k;
+
+    printf("Enter the value of k: ");
+    scanf("%d", &k);
+    k = k % n;
+    reverse(arr, n - k, n - 1);
+    reverse(arr, 0, n - k - 1);    
+    reverse(arr, 0, n - 1);         
+    printArray(arr, n);
+
+    return 0;
+}
+```
+
+<br>
+
+### 22. Write C program to left rotate an array.
+
+> Array
+
+    {1, 2, 3, 4, 5}
+    
+> Test Data
+
+    Enter the value of k: 2
+    
+> Expected Output
+
+    3 4 5 1 2
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+void reverse(int arr[], int i, int j){
+    while(i < j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+}
+
+
+void printArray(int arr[], int n){
+    for(int i = 0; i < n; i++){
+        printf("%d ", arr[i]);
+    }
+}
+
+int main(){
+    int arr[5] = {1, 2, 3, 4, 5};
+    int n = 5, k;
+
+    printf("Enter the value of k: ");
+    scanf("%d", &k);
+    k = k % n;
+    reverse(arr, 0, k - 1);
+    reverse(arr, k, n - 1);    
+    reverse(arr, 0, n - 1);         
+    printArray(arr, n);
+
+    return 0;
+}
 ```
 
 <br>
