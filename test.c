@@ -1,20 +1,22 @@
 #include <stdio.h>
 
 int main(){
-    void printTable(int, int);
-    int n;
+    int isPalindrome(int, int);
+    int num, rev = 0;
 
-    printf("Enter the value of n: ");
-    scanf("%d", &n);
+    printf("Enter any number: ");
+    scanf("%d", &num);
 
-    printTable(n, 1);
+    if(isPalindrome(num, rev) == num)
+        printf("Palindrome number");
+    else
+        printf("Not a palindrome number");
+
     return 0;
 }
 
-void printTable(int n, int t){
-    if(t > 10){
-        return;
-    }
-    printf("\n%d X %d = %d",n, t, n * t);
-    printTable(n, t + 1);
+int isPalindrome(int num, int rev){
+    if(num == 0)
+        return rev;
+    isPalindrome(num / 10, rev * 10 + (num % 10));
 }
