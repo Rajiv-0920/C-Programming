@@ -1,22 +1,19 @@
 #include <stdio.h>
 
-int main(){
-    int isPalindrome(int, int);
-    int num, rev = 0;
-
-    printf("Enter any number: ");
-    scanf("%d", &num);
-
-    if(isPalindrome(num, rev) == num)
-        printf("Palindrome number");
-    else
-        printf("Not a palindrome number");
-
-    return 0;
+int main ()
+{
+    int sum (int n);
+    int n;
+    printf ("\nEnter the value of n: ");
+    scanf ("%d",&n);
+    n =sum(n);
+    printf ("%d",n);
+    
 }
-
-int isPalindrome(int num, int rev){
-    if(num == 0)
-        return rev;
-    isPalindrome(num / 10, rev * 10 + (num % 10));
+int sum (int n)
+{
+    if (n==0)
+    return 0;
+     else 
+    return n + sum(n-1);
 }
