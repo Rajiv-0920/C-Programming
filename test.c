@@ -5,7 +5,6 @@ int main()
         int reverse(int);
         int totalDigit(int);
         int num, n;
-
         printf("Enter a number: ");
         scanf("%d", &num);
 
