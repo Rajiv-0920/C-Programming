@@ -1,77 +1,50 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
-        int reverse(int);
-        int totalDigit(int);
-        int num, n;
-        printf("Enter a number: ");
-        scanf("%d", &num);
+    int findOccurrence(char *, char *);
+    char str[100];
+    char fw[50];
+    int idx;
 
-        n = reverse(num);
-        printf("Digit = %d", totalDigit(num));
+    printf("Enter the string: ");
+    gets(str);
 
-        while (n != 0)
-        {
-                int temp = n % 10;
-                switch (temp)
-                {
-                case 0:
-                        printf("Zero ");
-                        break;
-                case 1:
-                        printf("One ");
-                        break;
-                case 2:
-                        printf("Two ");
-                        break;
-                case 3:
-                        printf("Three ");
-                        break;
-                case 4:
-                        printf("Four ");
-                        break;
-                case 5:
-                        printf("Five ");
-                        break;
-                case 6:
-                        printf("Six ");
-                        break;
-                case 7:
-                        printf("Seven ");
-                        break;
-                case 8:
-                        printf("Eight ");
-                        break;
-                case 9:
-                        printf("Nine ");
-                        break;
-                default:
-                        printf("Not in the list");
-                }
-                n /= 10;
-        }
-        return 0;
+    printf("Enter word to be searched: ");
+    gets(fw);
+
+    idx = findOccurrence(str, fw);
+
+    printf("Word '%s' is first occurrence at location %d", fw, idx);
+    return 0;
 }
 
-int reverse(int num)
+int findOccurrence(char *str, char *fw)
 {
-        int rev = 0, rem;
-        while (num != 0)
+    int i, j, sl, wl, temp;
+    int findAt = -1;
+    sl = strlen(str);
+    wl = strlen(fw);
+    for (i = 0; i < sl; i++)
+    {
+        j = 0;
+        temp = i;
+        while (j < wl)
         {
-                rem = num % 10;
-                rev = rev * 10 + rem;
-                num /= 10;
+            if (str[temp] == fw[j])
+            {
+                j++;
+                temp++;
+            }
+            else
+                break;
         }
-        return rev;
-}
-int totalDigit(int num)
-{
-        int count = 0;
-        while (num)
+        if (j == wl)
         {
-                count++;
-                num /= 10;
+            findAt = i + 1;
+            break;
         }
-        return count;
+    }
+    return findAt;
 }
