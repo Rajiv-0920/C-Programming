@@ -16,7 +16,7 @@ int main()
 
     idx = findOccurrence(str, fw);
 
-    printf("Word '%s' is first occurrence at location %d", fw, idx);
+    printf("Word '%s' is last occurrence at location %d", fw, idx);
     return 0;
 }
 
@@ -26,7 +26,7 @@ int findOccurrence(char *str, char *fw)
     int findAt = -1;
     sl = strlen(str);
     wl = strlen(fw);
-    for (i = 0; i < sl; i++)
+    for (i = sl - 1; i >= 0; i--)
     {
         j = 0;
         temp = i;

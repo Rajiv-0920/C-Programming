@@ -10614,6 +10614,74 @@ int findOccurrence(char *str, char *fw)
 
 <br>
 
+### 28. Find the last occurrence of a word in a given string.
+
+> Test Data
+
+    Enter the string: Keep your eyes on the stars and your feet on the ground
+    Enter word to be searched: eyes
+
+> Expected Output
+
+    Word 'on' is last occurrence at location: 43
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int findOccurrence(char *, char *);
+    char str[100];
+    char fw[50];
+    int idx;
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("Enter word to be searched: ");
+    gets(fw);
+
+    idx = findOccurrence(str, fw);
+
+    printf("Word '%s' is last occurrence at location %d", fw, idx);
+    return 0;
+}
+
+int findOccurrence(char *str, char *fw)
+{
+    int i, j, sl, wl, temp;
+    int findAt = -1;
+    sl = strlen(str);
+    wl = strlen(fw);
+    for (i = sl - 1; i >= 0; i--)
+    {
+        j = 0;
+        temp = i;
+        while (j < wl)
+        {
+            if (str[temp] == fw[j])
+            {
+                j++;
+                temp++;
+            }
+            else
+                break;
+        }
+        if (j == wl)
+        {
+            findAt = i + 1;
+            break;
+        }
+    }
+    return findAt;
+}
+```
+
+<br>
+
 <!--
 
 ### .
