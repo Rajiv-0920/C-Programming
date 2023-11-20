@@ -10555,7 +10555,7 @@ void replace(char *str, char fi, char re)
 
 > Expected Output
 
-    Word 'eyes' is first occurrence at location: 11
+    Word 'eyes' is first occurrence at location: 10
 
 > Source Code
 
@@ -10604,7 +10604,7 @@ int findOccurrence(char *str, char *fw)
         }
         if (j == wl)
         {
-            findAt = i + 1;
+            findAt = i;
             break;
         }
     }
@@ -10623,7 +10623,7 @@ int findOccurrence(char *str, char *fw)
 
 > Expected Output
 
-    Word 'on' is last occurrence at location: 43
+    Word 'on' is last occurrence at location: 42
 
 > Source Code
 
@@ -10672,11 +10672,562 @@ int findOccurrence(char *str, char *fw)
         }
         if (j == wl)
         {
-            findAt = i + 1;
+            findAt = i;
             break;
         }
     }
     return findAt;
+}
+```
+
+<br>
+
+### 24. Search all occurrences of a word in a given string.
+
+> Test Data
+
+    Enter the string: Keep your eyes on the stars and your feet on the ground
+    Enter the word to search: on
+    
+> Expected Output
+
+    'on' is found at index: 15
+    'on' is found at index: 42
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    void findOccurrence(char *, char *);
+    char str[100];
+    char fw[30];
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("Enter word to search: ");
+    gets(fw);
+
+    findOccurrence(str, fw);
+
+    return 0;
+}
+
+void findOccurrence(char *str, char *fw)
+{
+    int i, j, sl, wl, t, idx;
+    sl = strlen(str);
+    wl = strlen(fw);
+    for (i = 0; i < sl; i++)
+    {
+        t = i;
+        j = 0;
+        while (j < wl)
+        {
+            if (str[t] == fw[j])
+            {
+                j++;
+                t++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        if (j == wl)
+        {
+            printf("\n'%s' is found at index: %d", fw, i);
+        }
+    }
+}
+```
+
+<br>
+
+### 25. Count occurrences of a word in a given string.
+
+> Test Data
+
+    Enter the string: Keep your eyes on the stars and your feet on the ground
+    Enter word to search: on
+    
+> Expected Output
+
+    Occurrences of word 'on' = 2 Time
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    int countOccurrence(char *, char *);
+    char str[100];
+    char fw[30];
+    int count;
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("Enter word to search: ");
+    gets(fw);
+
+    count = countOccurrence(str, fw);
+
+    printf("Occurrences of word '%s' = %d Time", fw, count);
+    return 0;
+}
+
+int countOccurrence(char *str, char *fw)
+{
+    int i, j, sl, wl, t, idx, count = 0;
+    sl = strlen(str);
+    wl = strlen(fw);
+    for (i = 0; i < sl; i++)
+    {
+        t = i;
+        j = 0;
+        while (j < wl)
+        {
+            if (str[t] == fw[j])
+            {
+                j++;
+                t++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        if (j == wl)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+```
+
+<br>
+
+### 26. Remove the first occurrence of a word from the string.
+
+> Test Data
+
+    Enter the string: Keep your eyes on the stars and your feet on the ground
+    Enter word to be remove: on
+    
+> Expected Output
+
+    Keep your eyes the stars and your feet on the ground
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    void removeOccurrence(char *, char *);
+    char str[100];
+    char fw[50];
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("Enter word to be remove: ");
+    gets(fw);
+
+    removeOccurrence(str, fw);
+
+    printf("%s", str);
+    return 0;
+}
+
+void removeOccurrence(char *str, char *fw)
+{
+    int i, j, sl, wl, temp, f = 0;
+    sl = strlen(str);
+    wl = strlen(fw);
+    for (i = 0; i < sl; i++)
+    {
+        j = 0;
+        temp = i;
+        while (j < wl)
+        {
+            if (str[temp] == fw[j] && f == 0)
+            {
+                j++;
+                temp++;
+            }
+            else
+                break;
+        }
+        if (j == wl)
+        {
+            for (int k = i; k < sl; k++)
+                str[k] = str[k + wl + 1];
+            f = 1;
+        }
+    }
+}
+```
+
+<br>
+
+### 26. Remove the last occurrence of a word from the string.
+
+> Test Data
+
+    Enter the string: Keep your eyes on the stars and your feet on the ground
+    Enter word to be remove: on
+    
+> Expected Output
+
+    Keep your eyes on the stars and your feet the ground
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    void removeOccurrence(char *, char *);
+    char str[100];
+    char fw[50];
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("Enter word to be remove: ");
+    gets(fw);
+
+    removeOccurrence(str, fw);
+
+    printf("%s", str);
+    return 0;
+}
+
+void removeOccurrence(char *str, char *fw)
+{
+    int i, j, sl, wl, temp, f = 0;
+    sl = strlen(str);
+    wl = strlen(fw);
+    for (i = sl - 1; i >= 0; i--)
+    {
+        j = 0;
+        temp = i;
+        while (j < wl)
+        {
+            if (str[temp] == fw[j] && f == 0)
+            {
+                j++;
+                temp++;
+            }
+            else
+                break;
+        }
+        if (j == wl)
+        {
+            for (int k = i; k < sl; k++)
+                str[k] = str[k + wl + 1];
+            f = 1;
+        }
+    }
+}
+```
+
+<br>
+
+### 27. Delete all occurrence of a word in a given string.
+
+> Test Data
+
+    Enter the string: Keep your eyes on the stars and your feet on the ground
+    Enter word to be remove: on
+    
+> Expected Output
+
+    Keep your eyes the stars and your feet the ground
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    void removeOccurrence(char *, char *);
+    char str[100];
+    char fw[50];
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("Enter word to be remove: ");
+    gets(fw);
+
+    removeOccurrence(str, fw);
+
+    printf("%s", str);
+    return 0;
+}
+
+void removeOccurrence(char *str, char *fw)
+{
+    int i, j, sl, wl, temp, k;
+    sl = strlen(str);
+    wl = strlen(fw);
+    for (i = 0; i < sl; i++)
+    {
+        j = 0;
+        temp = i;
+        while (j < wl)
+        {
+            if (str[temp] == fw[j])
+            {
+                j++;
+                temp++;
+            }
+            else
+                break;
+        }
+        if (j == wl)
+        {
+            for (k = i; k < sl; k++)
+                str[k] = str[k + wl + 1];
+            str[k] = '\0';
+            i = i - 1;
+        }
+    }
+}
+```
+
+<br>
+
+### 28. C Program To Trim (front) Leading & Trailing White Space Characters From String
+
+> Test Data
+
+    Enter the string:      Removing leading and trailing white spaces
+    
+> Expected Output
+
+    Before: '     Removing leading and trailing white spaces'
+    After: 'Removing leading and trailing white spaces'
+    
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    void trimSpaces(char *);
+    char str[100];
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("\nBefore: '%s'", str);
+    trimSpaces(str);
+    printf("\nAfter: '%s'", str);
+    return 0;
+}
+
+void trimSpaces(char *str)
+{
+    int i, l, j;
+    l = strlen(str);
+    while (str[0] == ' ' || str[0] == '\t')
+    {
+        for (j = 0; j < l - 1; j++)
+        {
+            str[j] = str[j + 1];
+        }
+        str[j] = '\0';
+        l--;
+    }
+}
+```
+
+<br>
+
+### 29. Trim trailing (end) white space characters from a given string.
+
+> Test Data
+
+    Enter the string: Removing leading and trailing white spaces    
+    
+> Expected Output
+
+    Before: 'Removing leading and trailing white spaces     '
+    After: 'Removing leading and trailing white spaces'
+    
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    void trimSpaces(char *);
+    char str[100];
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("\nBefore: '%s'", str);
+    trimSpaces(str);
+    printf("\nAfter: '%s'", str);
+    return 0;
+}
+
+void trimSpaces(char *str)
+{
+    int i, l, j;
+    l = strlen(str);
+    while (str[l - 1] == ' ' || str[l - 1] == '\t')
+    {
+        str[l - 1] = '\0';
+        l--;
+    }
+}
+```
+
+<br>
+
+### 30. Trim both leading and trailing white space characters from a given string
+
+> Test Data
+
+    Enter the string:      Removing leading and trailing white spaces                    
+    
+> Expected Output
+
+    Before: '     Removing leading and trailing white spaces      '
+    After: 'Removing leading and trailing white spaces'
+    
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    void trimSpaces(char *);
+    char str[100];
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("\nBefore: '%s'", str);
+    trimSpaces(str);
+    printf("\nAfter: '%s'", str);
+    return 0;
+}
+
+void trimSpaces(char *str)
+{
+    int i, l, j;
+    l = strlen(str);
+    while (str[0] == ' ' || str[0] == '\t')
+    {
+        for (j = 0; j < l - 1; j++)
+        {
+            str[j] = str[j + 1];
+        }
+        str[j] = '\0';
+        l--;
+    }
+    while (str[l - 1] == ' ' || str[l - 1] == '\t')
+    {
+        str[l - 1] = '\0';
+        l--;
+    }
+}
+```
+
+<br>
+
+### 31. Remove all extra blank spaces from the given string.
+
+> Test Data
+
+    Enter the string:   Keep  your eyes  on  the stars and your feet  on the   ground. 
+
+> Expected Output
+
+    Before: '  Keep  your eyes  on  the stars and your feet  on the   ground.        '
+
+    After: 'Keep your eyes on the stars and your feet on the ground.'
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    void trimSpaces(char *);
+    char str[100];
+
+    printf("Enter the string: ");
+    gets(str);
+
+    printf("\nBefore: '%s'", str);
+    trimSpaces(str);
+    printf("\nAfter: '%s'", str);
+    return 0;
+}
+
+void trimSpaces(char *str)
+{
+    int i, l, j;
+    l = strlen(str);
+    while (str[0] == ' ' || str[0] == '\t')
+    {
+        for (j = 0; j < l - 1; j++)
+        {
+            str[j] = str[j + 1];
+        }
+        str[j] = '\0';
+        l--;
+    }
+    while (str[l - 1] == ' ' || str[l - 1] == '\t')
+    {
+        str[l - 1] = '\0';
+        l--;
+    }
+    for (i = 0; i < l; i++)
+    {
+        if ((str[i] == ' ' || str[i] == '\t') &&
+        (str[i + 1] == ' ' || str[i + 1] == '\t'))
+        {
+            for (j = i; j < l - 1; j++)
+            {
+                str[j] = str[j + 1];
+                str[i] = ' ';
+            }
+            str[j] = '\0';
+            l--;
+            i--;
+        }
+    }
 }
 ```
 
