@@ -6824,6 +6824,107 @@ int main(){
 
 <br>
 
+
+### 2.Write a program which will take input a three digit number and print it into words. For example, 153 will be printed as "One Hundred Fifty Three".
+
+> Test Data
+
+    Enter any 3 digit number: 153
+
+> Expected Output
+
+    One Hundred Fifty Three
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int n1, n2, n3;
+	printf("Enter a 3 digit number: ");
+	scanf("%d", &n1);
+	
+	if(n1 / 1000){
+		printf("Please enter 3 digit number");
+		exit(1);
+	}
+	
+	n2 = n1 % 100 / 10;
+	n3 = n1 % 100 % 10;
+	n1 = n1 / 100;
+	
+	switch(n1)
+	{
+		case 1: printf("\nOne Hundred "); break;
+		case 2: printf("\nTwo Hundred "); break;
+		case 3: printf("\nThree Hundred "); break;
+		case 4: printf("\nFour Hundred "); break;
+		case 5: printf("\nFive Hundred "); break;
+		case 6: printf("\nSix Hundred "); break;
+		case 7: printf("\nSeven Hundred "); break;
+		case 8: printf("\nEight Hundred "); break;
+		case 9: printf("\nNine Hundred "); break;
+	}
+	switch(n2)
+	{
+		case 2: printf("Twenty "); break;
+		case 3: printf("Thirty "); break;
+		case 4: printf("Forty "); break;
+		case 5: printf("Fifty "); break;
+		case 6: printf("sixty "); break;
+		case 7: printf("Seventy "); break;
+		case 8: printf("Eighty "); break;
+		case 9: printf("Ninety "); break;
+	}
+	switch(n2)
+	{
+		case 0:
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+			switch(n3)
+			{
+				case 1: printf("One");break;
+				case 2: printf("Two");break;
+				case 3: printf("Three");break;
+				case 4: printf("Four");break;
+				case 5: printf("Five");break;
+				case 6: printf("Six");break;
+				case 7: printf("Seven");break;
+				case 8: printf("Eight");break;
+				case 9: printf("Nine");break;
+			}
+	}
+	switch(n2)
+	{
+		case 1:
+		switch(n3)
+		{
+			case 1: printf("Eleven"); break;
+			case 2: printf("Twelve"); break;
+			case 3: printf("Thirteen"); break;
+			case 4: printf("Fourteen"); break;
+			case 5: printf("Fiveteen"); break;
+			case 6: printf("Sixteen"); break;
+			case 7: printf("Seventeen"); break;
+			case 8: printf("Eighteen"); break;
+			case 9: printf("Nineteen"); break;
+		}
+	}
+	return 0;
+}
+```
+
+<br>
+
 <!--
 
 ### .
