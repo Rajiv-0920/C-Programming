@@ -11482,6 +11482,138 @@ int main(){
 
 <br>
 
+
+### 3. Write a C Program to maintain a record of 'n' students detail using an array of strucutres with three fields (id, name, marks) and print the details of students (in sorted according to name)
+
+> Test Data
+
+
+    Enter the value of n: 10
+    
+    Enter Details of 10 Student:
+    Enter Id Name & Marks of 1: 1 Rahul 95
+    
+    Enter Id Name & Marks of 2: 2 Ranjan 96
+    
+    Enter Id Name & Marks of 3: 3 Sandeep 95
+    
+    Enter Id Name & Marks of 4: 4 Biplab 96
+    
+    Enter Id Name & Marks of 5: 5 Amit 88
+    
+    Enter Id Name & Marks of 6: 6 Debomoy 75
+    
+    Enter Id Name & Marks of 7: 7 Sneha 75
+    
+    Enter Id Name & Marks of 8: 8 Jagrit 85
+    
+    Enter Id Name & Marks of 9: 9 Rajiv 10
+    
+    Enter Id Name & Marks of 10: 10 Sumit 35
+
+> Expected Output
+
+    Before Sorting:
+    1 Rahul 95
+    2 Ranjan 96
+    3 Sandeep 95
+    4 Biplab 96
+    5 Amit 88
+    6 Debomoy 75
+    7 Sneha 75
+    8 Jagrit 85
+    9 Rajiv 10
+    10 Sumit 35
+
+    After Sorting:
+    5 Amit 88
+    4 Biplab 96
+    6 Debomoy 75
+    8 Jagrit 85
+    1 Rahul 95
+    9 Rajiv 10
+    2 Ranjan 96
+    3 Sandeep 95
+    7 Sneha 75
+    10 Sumit 35
+
+> Source Code
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+void swap(int *, int *);
+
+typedef struct student 
+{
+	int id;
+	char name[20];
+	int marks;
+} student;
+
+int main()
+{
+	void sort(student *, int);
+	student s1[10];
+	int n, i;
+	
+	printf("\nEnter the value of n: ");
+	scanf("%d", &n);
+	
+	printf("\nEnter Details of %d Student: ", n);
+	for(i = 0; i < n; i++)
+	{
+		printf("\nEnter Id Name & Marks of %d: ", i+1);
+		scanf("%d%s%d", &s1[i].id, s1[i].name, &s1[i].marks);
+	}
+	
+	printf("\nBefore Sorting: ");
+	for(i = 0; i < n; i++)
+	{
+		printf("\n%d %s %d", s1[i].id, s1[i].name, s1[i].marks);
+	}
+	
+	sort(s1, n);
+	
+	printf("\nAfter Sorting: ");
+	for(i = 0; i < n; i++)
+	{
+		printf("\n%d %s %d", s1[i].id, s1[i].name, s1[i].marks);
+	}
+	return 0;
+}
+
+void sort(student *s1, int n)
+{
+	int i, j;
+	char temp[20];
+	for(i = 0; i < n-1; i++)
+	{
+		for(j = i+1; j < n; j++)
+		{
+			if(strcmp(s1[i].name, s1[j].name) > 0)
+			{
+				strcpy(temp, s1[i].name);
+				strcpy(s1[i].name, s1[j].name);
+				strcpy(s1[j].name, temp);
+				swap(&s1[i].id, &s1[j].id);
+				swap(&s1[i].marks, &s1[j].marks);
+			}
+		}
+	}
+}
+
+void swap(int *n1, int *n2)
+{
+	int temp = *n1;
+	*n1 = *n2;
+	*n2 = temp;
+}
+```
+
+<br>
+
 <!--
 
 ### .
