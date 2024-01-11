@@ -6713,6 +6713,51 @@ int main(){
 
 <br>
 
+### 42. WAP. to print the following pattern
+
+> Test Data
+
+    Enter the value of n: 4
+
+> Expected Output
+
+	    	 1
+	      2  3  2
+       3  4  5  4  3
+    4  5  6  7  6  5  4
+
+> Source Code
+
+```c
+#include <stdio.h>
+
+int main()
+{
+	int i, j, n = 4;
+
+	for (i = 1; i <= n; i++)
+	{
+		for (j = 1; j <= n - i; j++)
+		{
+			printf("%2c", ' ');
+		}
+		for (j = i; j <= i + i - 1; j++)
+		{
+			printf("%2d", j);
+		}
+
+		for (j -= 2; j > i - 1; j--)
+		{
+			printf("%2d", j);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+```
+
+<br>
+
 <!--
 
 ### . WAP. to print the following pattern
@@ -9965,7 +10010,7 @@ int find(char *str, char ch){
 
 <br>
 
-### 16. Enter the string: Keep your eyes on the stars and your feet on the ground
+### 16. Find the occurence of specific character
 
 > Test Data
 
