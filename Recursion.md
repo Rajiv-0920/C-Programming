@@ -437,31 +437,30 @@ int sum(int n){
 
 ```c
 #include <stdio.h>
-#include <math.h>
 
-int main(){
-    int reverse(int, int);
-    int num, length = 0, temp, rev;
-
-    printf("Enter the value of n: ");
-    scanf("%d", &num);
-
-    temp = num;
-    while(temp > 0){
-        length++;
-        temp /= 10;
-    }
-    rev = reverse(num, length - 1);
-
-    printf("Reverse number = %d", rev);
-    return 0;
+int main()
+{
+	int rev(int);
+	int n, r;
+	
+	printf("\nEnter any number: ");
+	scanf("%d", &n);
+	
+	r = rev(n);
+	
+	printf("\nReverse = %d", r);
+	return 0;
 }
 
-int reverse(int n, int length){
-    if(length == 0)
-        return n;
-    
-    return (n % 10) * pow(10, length) + reverse(n / 10, length - 1);
+int rev(int n)
+{
+	static int r = 0;
+	int rem;
+	if(n == 0)
+		return r;
+	rem = n % 10;
+	r = r * 10 + rem;
+	return rev(n / 10);
 }
 
 
